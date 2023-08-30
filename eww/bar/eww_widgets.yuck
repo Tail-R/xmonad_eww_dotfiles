@@ -1,0 +1,165 @@
+;; Widgets ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Background
+(defwidget widget_bg []
+  (box )
+)
+
+;; Start
+(defwidget widget_start []
+  (eventbox :class "start" 
+            :onclick "$HOME/.config/eww/popup/launch.sh --toggle_gnome_widget" 
+            :onhover "eww -c $HOME/.config/eww/bar/ update START_HOVER=true &"
+            :onhoverlost "eww -c $HOME/.config/eww/bar/ update START_HOVER=false &"
+    (overlay 
+      (revealer :reveal "${START_HOVER}" :transition "crossfade"
+        (box :style "${HOVER_STYLE}")
+      )
+
+      (label :text "󰮯") 
+    ) 
+  )
+)
+
+;; Workspace
+(defwidget widget_workspace []
+  (box :class "workspace" 
+       :halign "center" :valign "center"
+    (literal :halign "end" :content WORKSPACES_YUCK)
+  ) 
+)
+
+;; Activewindow
+(defwidget widget_activewindow []
+  (box :class "activewindow"
+       :halign "center" :valign "center"
+    (label :limit-width 15 :text "󰖲 ${ACTIVEWINDOW}")
+  )
+)
+
+;; Music
+(defwidget widget_music []
+  (eventbox :onhover "eww -c $HOME/.config/eww/bar/ update MUSIC_HOVER=true &"
+            :onhoverlost "eww -c $HOME/.config/eww/bar/ update MUSIC_HOVER=false &"
+            :onclick "$HOME/.config/eww/popup/launch.sh --toggle_music"
+
+    (overlay
+      (revealer :reveal "${MUSIC_PLAYING}" :transition "crossfade"
+        (box :class "music_animation" 
+             :css " .music_animation {
+                      background-image:     url('${MUSIC_ART}');
+                      background-repeat:    no-repeat;
+                      background-size:      cover;
+                      background-position:  center center;
+
+                      border-radius:        1rem;
+                      opacity:              0.5;
+                      transition:           1s ease-in;
+                    }
+                  "
+        )
+      )
+      
+      (revealer :reveal "${MUSIC_HOVER}" :transition "crossfade"
+        (box :style "${HOVER_STYLE}") 
+      )
+      
+      (box :class "music" 
+           :orientation "h" :halign "start" :valign "center" :space-evenly false :spacing 10
+ 
+        (overlay  
+          
+          ;; Default music cover
+          (box :style " background-image:     url('${MUSIC_ART_DEFAULT}');
+                        background-repeat:    no-repeat;
+                        background-size:      cover;
+                        background-position:  center center;
+                        min-width:            2.4rem;
+                        min-height:           2.4rem;
+
+                        border-radius:        0.2rem;
+                        margin-left:          0.7rem;
+                      "
+          )
+
+          ;; Music cover
+          (box :style " background-image:     url('${MUSIC_ART}');
+                        background-repeat:    no-repeat;
+                        background-size:      cover;
+                        background-position:  center center;
+
+                        border-radius:        0.2rem;
+                        margin-left:          0.7rem;
+                        transition:           1s ease-in;
+                      "
+          )
+        )
+
+        (box :orientation "v" :halign "start" :valign "center"
+          (label :halign "start" :limit-width 20 :text "${MUSIC_TITLE}")
+          (label :halign "start" :limit-width 12 :text "${MUSIC_ARTIST}") 
+        )
+      )
+    )
+  )
+)
+
+;; Systeminfo
+(defwidget widget_sysinfo []
+  (box :halign "center" :valign "center" :space-evenly false :spacing 20 
+    (box :halign "center" :valign "center" :space-evenly false :spacing 15
+      (label :class "sys_icon" :text {BLUETOOTH_CON_STATUS == "connected" ? "󰂯" : "󰂲"})
+      (label :class "sys_label" :limit-width 4 :text {BLUETOOTH_CON_STATUS == "connected" ? "${BLUETOOTH_DEVICE}" : "--"})
+    )
+    (box :halign "center" :valign "center" :space-evenly false :spacing 15
+      (label :class "sys_icon" :text {LAN_CON_STATUS == "connected" ? "󰤨" : "󰤭"})
+      (label :class "sys_label" :text {LAN_CON_STATUS == "connected" ? "online" : "offline"})
+    )
+    (box :halign "center" :valign "center" :space-evenly false :spacing 15
+      (label :class "sys_icon" :text "")
+      (label :class "sys_label" :text "${VOLUME_LEVEL}%")
+    )
+    (box :halign "center" :valign "center" :space-evenly false :spacing 15
+      (label :class "sys_icon" :text "")
+      (label :class "sys_label" :text "${BRIGHT_LEVEL}%")
+    )
+  )
+)
+
+;; Battery
+(defwidget widget_battery []
+  (box :halign "center" :valign "center" :space-evenly false :spacing 20
+    (label :class "sys_icon" :text "${BATTERY_ICONS}")
+  )
+)
+
+;; Clock
+(defwidget widget_clock []
+  (box :halign "center" :valign "center" :space-evenly false :spacing 20
+    (label :class "sys_icon" :text "")
+    (label :class "sys_label" :text "${TIME}")
+  )
+)
+
+;; Power
+(defwidget widget_power []
+  (eventbox :class "power" 
+            :onclick "$HOME/.config/eww/popup/launch.sh --toggle_powermenu" 
+            :onhover "eww -c $HOME/.config/eww/bar/ update POWER_HOVER=true &"
+            :onhoverlost "eww -c $HOME/.config/eww/bar/ update POWER_HOVER=false &"
+    (overlay 
+      (revealer :reveal "${POWER_HOVER}" :transition "crossfade"
+        (box :style "${HOVER_STYLE}")
+      )
+
+      (label :text "󰐥") 
+    ) 
+  )
+)
+
+
+
+
+
+
+
+
