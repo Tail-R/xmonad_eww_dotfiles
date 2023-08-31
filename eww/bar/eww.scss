@@ -1,0 +1,80 @@
+/** Variables *******************************************************/
+$fg:        #fadee1;
+$bg:        #2a2a2a;
+$bg-alt:    #545454;
+
+$pink:      #fea4b0;
+$bubblegum: #f282a7;
+
+/** Global **********************************************************/
+* {
+    all:            unset;
+    font-family:    "Hack";
+}
+/** Windows *********************************************************/
+.window_bg {
+    background:         $fg;
+    opacity:            0.37;
+}
+
+.window_start,
+.window_workspace,
+.window_activewindow,
+.window_music,
+.window_sysinfo,
+.window_battery,
+.window_clock, 
+.window_power,
+.window_workspace_secondary,
+.window_clock_secondary,
+.window_battery_secondary
+{
+    background-color:   $bg;
+    border:             0.1rem solid $pink;
+    border-radius:      1rem;
+}
+
+/** Widgets *********************************************************/
+// Start
+.start {
+    color:      $pink;
+}
+
+// Power
+.power { 
+    color:              $pink;
+    font-size:          1.37rem;
+}
+
+// Workspace
+.active {
+    color:      $bubblegum;
+}
+.inactive {
+    color:      $fg;
+}
+.occupied {
+    color:      $pink;
+}
+
+// Mucic
+.music {
+    color:      $fg;
+    font-size:  0.85rem;
+}
+
+// Systeminfo
+.sys_icon {
+    color:      $bubblegum;
+    font-size:  1rem; 
+}
+
+.sys_label {
+    color:          $fg;
+    font-size:      1rem;
+    font-weight:    bold;
+}
+
+
+
+
