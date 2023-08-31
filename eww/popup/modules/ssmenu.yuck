@@ -1,0 +1,33 @@
+;; Widget ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defwidget widget_ssmenu []
+  (box :halign "center" :valign "center" :space-evenly false :spacing 10
+    
+    ;; Screenshot full
+    (eventbox :class "sys_button_square"
+              :width 40 :height 40
+              :onhover "eww -c $HOME/.config/eww/popup update SS_FULL_HOVER=true &"
+              :onhoverlost "eww -c $HOME/.config/eww/popup update SS_FULL_HOVER=false &"
+              :onclick "scripts/screenshot.sh --full"
+      (overlay
+        (revealer :reveal "${SS_FULL_HOVER}" :transition "crossfade"
+          (box :style "${HOVER_STYLE}")
+        )
+        (label :text "󰘖")
+      )
+    )
+
+    ;; Screenshot select
+    (eventbox :class "sys_button_square"
+              :width 40 :height 40
+              :onhover "eww -c $HOME/.config/eww/popup update SS_SELECT_HOVER=true &"
+              :onhoverlost "eww -c $HOME/.config/eww/popup update SS_SELECT_HOVER=false &"
+              :onclick "scripts/screenshot.sh --select"
+      (overlay
+        (revealer :reveal "${SS_SELECT_HOVER}" :transition "crossfade"
+          (box :style "${HOVER_STYLE}")
+        )
+        (label :text "󰘕")
+      )
+    )
+  )
+)

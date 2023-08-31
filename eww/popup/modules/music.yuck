@@ -1,0 +1,164 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Q. How to adding a hover animation ?
+;; A. EVENTBOX -> OVERLAY -> REVEALER + MODULE
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Widget ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defwidget widget_music []
+  (eventbox ; :onhoverlost "$HOME/.config/eww/popup/launch.sh --toggle_music"
+    (box :orientation "v" :halign "center" :valign "center" :space-evenly false :spacing 15 
+      
+      ;; Top box
+      (overlay :width 330  :height 220
+   
+        ;; Background
+        (revealer :reveal "true" :transition "crossfade"
+          (box :class "music_reveal_cover"
+               :css " .music_reveal_cover {
+                        background-image:     url('${MUSIC_ART}');
+                        background-repeat:    no-repeat;
+                        background-size:      cover;
+                        background-position:  center center;
+                 
+                        border:               0.1rem solid #fadee1;
+                        border-radius:        0.8rem 0.8rem 2rem 2rem;
+                        opacity:              0.37;
+                        transition:           1s ease-in;
+                      }
+                    "
+          )
+        )
+   
+        ;; Foreground
+        (box :orientation "v" :halign "center" :valign "center" :space-evenly false :spacing 10
+          (overlay
+
+            ;; Default music Cover
+            (box :class "music_art_default" 
+                 :halign "center" :valign "center" :space-evenly false 
+                 :css " .music_art_default {
+                          background-image:     url('${MUSIC_ART_DEFAULT}');
+                          background-repeat:    no-repeat;
+                          background-size:      cover;
+                          background-position:  center center;
+                          min-width:            12rem;
+                          min-height:           12rem;
+
+                          box-shadow:           0rem 0rem 0.37rem 0.15rem #fadee1;
+                          transition:           1s ease-in;
+                        } 
+                      "
+            )
+            
+            ;; Music Cover
+            (box :class "music_art" 
+                 :halign "center" :valign "center" :space-evenly false 
+                 :css " .music_art {
+                          background-image:     url('${MUSIC_ART}');
+                          background-repeat:    no-repeat;
+                          background-size:      cover;
+                          background-position:  center center;
+                          min-width:            12rem;
+                          min-height:           12rem;
+                          
+                          transition:           1s ease-in;
+                        } 
+                      "
+            )
+          ) 
+        )
+      )
+
+      ;; control buttons
+      (box :orientation "h" :halign "center" :valign "center" :space-venly false :spacing 10
+        
+        ;; Previous button 
+        (eventbox :class "sys_button_square"
+                  :width 40 :height 40
+                  :onhover "eww -c $HOME/.config/eww/popup/ update PREV_HOVER=true&"
+                  :onhoverlost "eww -c $HOME/.config/eww/popup/ update PREV_HOVER=false&"
+                  :onclick "scripts/music.sh --prev"
+          (overlay
+            (revealer :reveal "${PREV_HOVER}" :transition "crossfade"
+              (box :style "${HOVER_STYLE}")
+            )
+            (label :text "󰒮")
+          )
+        )
+        
+        ;; Button that toggle play and pause
+        (eventbox :class "sys_button_square"
+                  :width 40 :height 40
+                  :onhover "eww -c $HOME/.config/eww/popup/ update TOGGLE_HOVER=true&"
+                  :onhoverlost "eww -c $HOME/.config/eww/popup/ update TOGGLE_HOVER=false&"
+                  :onclick "scripts/music.sh --toggle"
+          (overlay
+            (revealer :reveal "${TOGGLE_HOVER}" :transition "crossfade"
+              (box :style "${HOVER_STYLE}")
+            )
+            (box {MUSIC_PLAYING == "true" ? "󰏤" : "󰐊"})
+          )
+        )
+        
+        ;; Next button
+        (eventbox :class "sys_button_square"
+                  :width 40 :height 40
+                  :onhover "eww -c $HOME/.config/eww/popup/ update NEXT_HOVER=true&"
+                  :onhoverlost "eww -c $HOME/.config/eww/popup/ update NEXT_HOVER=false&"
+                  :onclick "scripts/music.sh --next"
+          (overlay
+            (revealer :reveal "${NEXT_HOVER}" :transition "crossfade"
+              (box :style "${HOVER_STYLE}")
+            )
+            (label :text "󰒭")
+          )
+        )
+        
+        ;; Loop button
+        (eventbox :class "sys_button_square"
+                  :width 40 :height 40
+                  :onhover "eww -c $HOME/.config/eww/popup/ update LOOP_HOVER=true&"
+                  :onhoverlost "eww -c $HOME/.config/eww/popup/ update LOOP_HOVER=false&"
+                  :onclick "scripts/music.sh --loop"
+          (overlay
+            (revealer :reveal "${LOOP_HOVER}" :transition "crossfade"
+              (box :style "${HOVER_STYLE}")
+            )
+            (box {"${MUSIC_LOOP_STATUS}" == "true" ? "󰑘" : "󰑖"}) 
+          )
+        )
+      )
+      
+      ;; Bottom box
+      (box :orientation "v" :halign "center" :valign "center" :space-evenly false 
+           :width 330 :height 55 :spacing 5 
+        
+        ;; Title and artist
+        (box :class "music_info"
+             :orientation "v" :valign "start" :height  40
+          (label :limit-width 17 :text "${MUSIC_TITLE}")
+          (label :limit-width 12 :text "${MUSIC_ARTIST}")
+        )
+
+        ;; Music bar
+        (box :class "sys_bar"
+             :orientation "v" :halign "center" :valign "end" :space-evenly false
+          (scale :value MUSIC_POSITION :min 0 :max 100 :active false)
+        )
+      ) 
+    )
+  )
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
