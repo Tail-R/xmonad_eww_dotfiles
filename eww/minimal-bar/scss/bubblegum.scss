@@ -1,0 +1,68 @@
+/** Variables *******************************************************/
+$fg:        #fadee1;
+$bg:        #2a2a2a;
+$bg-alt:    #545454;
+
+$pink:      #fea4b0;
+$bubblegum: #f282a7;
+
+/** Global **********************************************************/
+* {
+    all:            unset;
+    font-family:    "Hack";
+}
+
+/** Windows *********************************************************/
+.window_workspace,
+.window_music,
+.window_clock,
+.window_battery
+{
+    background-color:       $bg;
+    border:                 0.15rem solid $pink;
+}
+
+/** Widgets *********************************************************/
+
+// Workspace
+.workspace {
+    font-size:      1.15rem;
+    font-weight:    bold;
+}
+
+.active {
+    color:      $bubblegum;
+}
+.inactive {
+    color:      $fg;
+}
+.occupied {
+    color:      $pink;
+}
+
+// Music
+.music {
+    color:          $fg;
+    font-size:      0.9rem;
+    font-weight:    bold;
+}
+
+// Clock
+.clock {
+    color:          $fg;
+    font-size:      1.1rem;
+    font-weight:    bold;
+}
+
+// Battery
+.battery {
+    color:          $fg;
+    font-size:      1.15rem;
+}
+
+
+
+
+
+
+
