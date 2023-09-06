@@ -1,0 +1,92 @@
+/** Variables *******************************************************/
+
+// // Bubblegum
+// $fg:        #fadee1;
+// $bg:        #2a2a2a;
+// $bg-alt:    #545454;
+// 
+// $primary:        #f282a7;
+// $secondary:      #fea4b0;
+
+// Custom theme
+$fg:                #c6c8d1;
+$bg:                #161821;
+$bg-alt:            #545454;
+$primary:           #fea4b0;
+// $secondary:         #b4be82;
+$secondary:         #89b8c2;
+
+/** Global **********************************************************/
+* {
+    all:            unset;
+    font-family:    "Hack";
+}
+/** Windows *********************************************************/
+.window_bg {
+    background:         $fg;
+    opacity:            0.5;
+}
+
+.window_start,
+.window_workspace,
+.window_activewindow,
+.window_sysinfo,
+.window_battery,
+.window_clock, 
+.window_menu,
+{
+    background-color:   $bg;
+    border:             0.15rem solid $secondary;
+}
+
+.window_music {
+    background-color:   $bg;
+    border:             0.15rem solid $bg-alt;
+}
+
+/** Widgets *********************************************************/
+
+// Start
+.start {
+    color:              $secondary;
+}
+
+// Menu
+.menu { 
+    color:              $primary;
+    font-size:          1.5rem;
+}
+
+// Workspace
+.workspace_active {
+    color:              $primary;
+    font-weight:        bold;
+}
+.workspace_inactive {
+    color:              $fg;
+    font-weight:        bold;
+}
+.workspace_occupied {
+    color:              $secondary;
+    font-weight:        bold;
+}
+
+// Systeminfo
+.sys_icon {
+    color:              $primary;
+    font-size:          1rem; 
+}
+
+.sys_label {
+    color:              $fg;
+    font-size:          1rem;
+    font-weight:        bold;
+}
+
+.sys_label_thin {
+    color:              $fg;
+    font-size:          0.9rem;
+    font-weight:        bold;
+}
+
+
