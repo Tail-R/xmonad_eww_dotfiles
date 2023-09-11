@@ -1,8 +1,0 @@
-;; Include
-(include "eww_variables.yuck")
-(include "eww_windows.yuck")
-(include "eww_widgets.yuck")
-
-
-
-
