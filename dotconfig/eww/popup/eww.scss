@@ -1,0 +1,127 @@
+/** Variables *******************************************************/
+
+// Colors
+$fg:                #c6c8d1;
+$bg:                #161821;
+$bg-alt:            #545454;
+
+$primary:           $fg;
+$secondary:         $fg;
+
+/** Global **********************************************************/
+* {
+    all:            unset;
+    font-family:    "JetBrainsMono";
+}
+
+/** Windows *********************************************************/
+.window_gnome_widget,
+.window_music,
+.window_powermenu, 
+.window_ssmenu
+{
+    background-color:   $bg;
+    border:             0.15rem solid $secondary;
+}
+
+/** Widgets *********************************************************/
+// Clock
+.clock_time {
+    color:              $fg;
+    font-size:          3.5rem;
+    font-weight:        bold;
+}
+.clock_dow,
+.clock_date
+{
+	color:				$bg-alt;
+    font-size:          0.95rem;
+	font-weight:		bold;
+}
+
+// Profile
+.profile {
+    border:             0.15rem solid $bg-alt;
+    border-radius:      1rem;
+    padding:            0.5rem;
+}
+.profile_name {
+    color:              $fg;
+    font-size:          1.37rem;
+    font-weight:        bold;
+}
+
+// Systeminfo
+.battery_label,
+.battery_level,
+.bright_label,
+.bright_level,
+.volume_label,
+.volume_level,
+.lan_label,
+.bluetooth_label
+{
+	color:				$bg-alt;
+    font-size:          0.95rem;
+	font-weight:		bold;
+}
+
+.battery_icon,
+.bright_icon,
+.volume_icon
+{
+	color:				$fg;
+}
+
+.lan_ssid,
+.bluetooth_devicename
+{
+	color:				$fg;
+	font-size:			1.1rem;
+	font-weight:		bold;
+}
+
+// Buttons
+.sys_button_square {
+    background-color:   $bg-alt;
+    border-radius:      0.5rem;
+}
+    
+.sys_button_rect {
+    border:             0.15rem solid $bg-alt;
+    border-radius:      0.5rem;
+}
+
+// Bar
+.sys_bar scale trough {
+    all:                unset;
+    background-color:   $bg-alt;
+    min-width:          16rem;
+    min-height:         0.5rem;
+}
+.sys_bar scale trough highlight {
+    all:                unset;
+    background-color:   $primary;
+}
+
+// Music
+.music_prev_icon,
+.music_toggle_icon,
+.music_next_icon,
+.shutdown_icon,
+.suspend_icon,
+.logout_icon,
+.reboot_icon,
+.ss_full_icon,
+.ss_select_icon
+{
+	color:				$fg;
+	font-size:			1.5rem;
+}
+.music_title,
+.music_artist
+{
+	color:				$fg;
+	font-weight:		bold;
+}
+

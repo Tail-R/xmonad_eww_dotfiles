@@ -1,0 +1,10 @@
+;; Include
+(include "eww_variables.yuck")
+(include "eww_windows.yuck")
+(include "modules/gnome_widget.yuck")
+(include "modules/music.yuck")
+(include "modules/powermenu.yuck")
+(include "modules/ssmenu.yuck")
+
+
+
