@@ -1,0 +1,38 @@
+;; Variables ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Art of the music
+(defpoll ART :interval "2s"
+  "$HOME/.config/eww/popup/scripts/popupmusic.sh --art")
+
+; Position of the music
+(defpoll POSITION :interval "1s"
+  "$HOME/.config/eww/popup/scripts/popupmusic.sh --position")
+
+;; Windows ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defwindow music-popup
+  :monitor    0
+  :stacking   "fg"
+  :wm-ignore  true
+  :geometry (geometry :x        "400"
+                      :y        "80"
+                      :height   "16%" 
+                      :width    "10%")
+  (music))
+
+
+;; Widgets ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defwidget music []
+
+    (box :orientation   "v"
+         :space-evenly  false
+
+      ;; Album art
+      (box :class   "music-art"
+           :halign  "center"
+           :valign  "center"
+           :style   "background-image: url('${ART}');")
+
+      (box :class   "music-bar"
+        
+        (scale :min 0 :max 100 :active "false" :value POSITION))))
+
+
