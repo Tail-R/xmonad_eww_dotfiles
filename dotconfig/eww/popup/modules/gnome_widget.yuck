@@ -1,0 +1,156 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Q. How to adding a hover animation ?
+;; A. EVENTBOX -> OVERLAY -> REVEALER + MODULE
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Widgets ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defwidget widget_gnome_widget []
+  (box :orientation "v" :valign "center" :halign "center" :space-evenly false :spacing 15
+
+    ;; Clock
+    (box :orientation "v" :halign "center" :valign "center" :space-evenly false 
+         :width 280 :height 80 :spacing 20
+     
+      (label :class "clock_time" :text "${TIME}")
+      
+      (box :orientation "v" :halign "left" :space-evenly false
+        (box 
+          (box :class "clock_dow" :halign "start" (label :text "${DOW}"))
+          (box :class "clock_date" :halign "end" (label :text "${DAY}, ${MONTH}"))
+        ) 
+      )
+    )
+
+    ;; Profile
+    (box :class "profile" :orientation "v" :halign "center" :valign "center" 
+         :space-evenly false :width 280 :height 165 :spacing 20
+     
+      ;; Face
+      (box :halign "center" :valign "center" 
+           :style " background-image:     url('${FACE}');
+                    background-repeat:    no-repeat;
+                    background-size:      cover;
+                    background-position:  center center;
+                    min-width:            7.4rem;
+                    min-height:           7.4rem;
+                
+                    border-radius:        7.4rem;
+                  "
+      )
+      
+      ;; Name
+      (label :class "profile_name" :text "${NAME}")
+    ) 
+
+    ;; Battery
+    (box :orientation "v" :halign "left" :space-evenly false 
+    
+      ;; Top stuff
+      (box 
+        (box :class "battery_label" :halign "start" (label :text "battery")) 
+        (box :class "battery_level" :halign "end" (label :text "${BATTERY_LEVEL}%")) 
+      )
+
+      ;; Bottom stuff
+      (box :halign "center" :space-evenly false :spacing 30
+        (label :class "battery_icon" :text "")
+        (box :class "sys_bar" 
+          (scale :value BATTERY_LEVEL :min 0 :max 100 :active false)
+        ) 
+      )
+    )
+    
+    ;; Brightness
+    (box :orientation "v" :halign "left" :space-evenly false 
+     
+      ;; Top stuff
+      (box 
+        (box :class "bright_label" :halign "start" (label :text "brightness")) 
+        (box :class "bright_level" :halign "end" (label :text "${BRIGHT_LEVEL}%")) 
+      )
+
+      ;; Bottom stuff
+      (box :halign "center" :space-evenly false :spacing 30
+        (label :class "bright_icon":text "")
+        (box :class "sys_bar" 
+          (scale :value BRIGHT_LEVEL :min 0 :max 100 :active false)
+        ) 
+      )
+    )
+
+    ;; Volume
+    (box :orientation "v" :halign "left" :space-evenly false  
+     
+      ;; Top stuff
+      (box
+        (box :class "volume_label" :halign "start" (label :text "volume"))
+        (box :class "volume_level" :halign "end" (label :text "${VOLUME_LEVEL}%"))
+      )
+
+      ;; Bottom stuff
+      (box :halign "center" :space-evenly false :spacing 30
+        (label :class "volume_icon" :text "") 
+        (box :class "sys_bar" 
+          (scale :value VOLUME_LEVEL :min 0 :max 100 :active false)
+        ) 
+      )
+    )
+
+    ;; Lan
+    (box :orientation "v" :space-evenly false 
+
+      ;; Top stuff
+      (box :class "lan_label" :halign "start" :space-evenly false 
+        (label :text "Network")
+      )
+     
+      ;; Lan button
+      (eventbox :class "sys_button_rect" :width 280 :height 40 
+                :onclick "scripts/network.sh --toggle &" 
+
+        (overlay 
+          (revealer :reveal {"${LAN_CON_STATUS}" == "connected" ? true : false} 
+                    :transition "crossfade"
+            (box :style " background-color:     ${COLOR_BG_ALT};
+                          border-radius:        0.5rem;
+                        "
+            )
+          )
+
+          (label :class "lan_ssid" :text "${LAN_SSID}")
+        )
+      ) 
+    )
+
+    ;; Bluetooth 
+    (box :orientation "v" :space-evenly false 
+
+      ;; Top stuff
+      (box :class "bluetooth_label" :halign "start" :space-evenly false 
+        (label :text "Bluetooth")
+      )
+     
+      ;; Bluetooth button
+      (eventbox :class "sys_button_rect" :width 280 :height 40
+                :onclick "scripts/bluetooth.sh --toggle"
+         
+        (overlay 
+          (revealer :reveal {"${BLUETOOTH_CON_STATUS}" == "connected" ? true : false} 
+                    :transition "crossfade"
+            (box :style " background-color:     ${COLOR_BG_ALT};
+                          border-radius:        0.5rem;
+                        "
+            ) 
+          ) 
+          
+          (label :class "bluetooth_devicename" :text "${BLUETOOTH_DEVICENAME}")
+        )
+      )
+    )
+  )   
+)
+
+
+
+
+

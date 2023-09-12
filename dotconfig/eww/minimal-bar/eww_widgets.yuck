@@ -1,0 +1,57 @@
+;; Widgets ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Workspace
+(defwidget widget_workspace []
+  (box :halign "center" :valign "center"
+    (literal :content WORKSPACES_YUCK)
+  )
+)
+
+;; Music
+(defwidget widget_music []
+  (overlay
+
+    ;; Background
+    (revealer :reveal true :transition "crossfade"
+      (box :class "music_background-art"
+           :css " .music_background-art {
+                    background-image:       url('${MUSIC_ART}');
+                    background-repeat:      no-repeat;
+                    background-size:        cover;
+                    background-position:    center;
+                    min-width:              2.5rem; 
+                    min-height:             2.5rem;
+                    opacity:                0.5;
+                    transition:             1s ease-in;
+                  }
+                "
+      )
+    )
+
+    ;; Foreground
+    (box :orientation "v" :halign "center" :valign "center"
+      (label :class "music_title" :limit-width 26 :text "${MUSIC_TITLE}")
+      (label :class "music_artist" :limit-width 26 :text "${MUSIC_ARTIST}")
+    )
+  )
+)
+
+;; Battery
+(defwidget widget_battery []
+  (box :halign "center" :valign "center"
+    (label :class "battery_icons" :text "${BATTERY_ICONS}")
+  )
+)
+
+;; Clock 
+(defwidget widget_clock []
+  (box :halign "center" :valign "center"
+    (label :class "clock_time" :halign "start" :text "${TIME}")
+  )
+)
+
+
+
+
+
+

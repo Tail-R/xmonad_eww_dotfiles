@@ -1,0 +1,99 @@
+/********** Configuration **********/
+configuration {
+	modi:					"drun";
+    show-icons:	            true;
+    drun-display-format:    "{name}";
+}
+
+/********** Global setting **********/
+* {
+    font:           "JetBrainsMono 12";
+    fg:             #c6c8d1;
+    bg:             #161821;
+    bg-alt:         #545454;
+}
+
+/********** Window **********/
+window {
+    background-color:	@bg;    
+    
+	border:             0.3% 0.2% 0.3% 0.2%;
+    border-color:		@fg;
+
+    location:           center;
+    anchor:             center;
+
+    width:				35%;
+    height:             35%;
+
+    padding:			3% 2% 3% 2%; 
+}
+
+/********** Mainbox **********/
+mainbox {
+    orientation:        vertical;
+    children:           [ inputbar, listview ];
+}
+
+/********** inputbar **********/
+inputbar {
+    background-color:   @bg;
+
+    children:           [ "entry" ];
+}
+
+/********** entry **********/
+entry {
+	background-color:	@bg-alt;
+    text-color:         @fg;
+
+	border-radius:		10px;
+	padding:			0.7%;
+	margin:				0% 0% 0.5% 0%;
+
+    placeholder:        "Search";
+    placeholder-color:	@fg;
+}
+
+/********** Listview **********/
+listview {
+    columns:            2;
+    cycle:              true; 
+    scrollbar:          false;	
+}
+
+/********** Elements **********/
+element {
+    padding:		    0.7%;
+}
+
+/********** Normal element **********/
+element.normal.normal {
+    background-color:   @bg;
+    text-color:         @fg;
+}
+
+/* element.normal.urgent {
+    background-color:   @bg;
+    text-color:         @fg;
+} */
+
+/* element.normal.active {
+    background-color:   @bg;
+    text-color:         @fg;
+} */
+
+/********** Selected element **********/
+element.selected.normal {
+    background-color:   @fg;
+    text-color:         @bg;
+	border-radius:		10px;
+}
+
+/********** Alternate element **********/
+element.alternate.normal {
+    background-color:   @bg;
+    text-color:         @fg;
+}
+
+
