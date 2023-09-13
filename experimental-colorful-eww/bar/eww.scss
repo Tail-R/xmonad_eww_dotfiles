@@ -1,0 +1,129 @@
+/** Variables *******************************************************/
+
+// Colors
+$fg:        #ece0ce;
+$fg-alt:    #545454;
+$bg:        #32322e;
+$bg-alt:    #645454;
+
+$color0:    #efb286;
+$color1:    #6bdbca;
+$color2:    #efeda4;
+$color3:    #f290c2;
+$color4:    #a68bcf;
+$color5:    #6dc2e9;
+
+
+/** Global **********************************************************/
+* {
+    all:            unset;
+    font-family:    "JetBrainsMono";
+}
+/** Windows *********************************************************/
+.window_start,
+.window_workspace,
+.window_activewindow,
+.window_music,
+.window_sysinfo,
+.window_battery,
+.window_clock
+{
+    background-color:   $bg;
+    border:             0.25rem solid $fg;
+}    
+
+/** Widgets *********************************************************/
+
+// Start
+.start:hover {
+    background-color:   $fg-alt;
+    border:             0.25rem solid $fg;
+    
+    transition:         1s ease;
+}
+.start_icon {
+    color:              $color4;
+    font-size:          1.8rem;
+    padding:            0rem 0.7rem 0rem 0rem;
+}
+
+// Workspace
+.workspace_active {
+    color:              $color3;
+}
+.workspace_inactive {
+    color:              $color4;
+}
+.workspace_occupied {
+    color:              $color5;
+}
+
+// Activewindow
+.activewindow_icon {
+	color:				$color2;
+}
+.activewindow_name {
+	color:				$fg;
+	font-weight:		bold;
+}
+
+// Music
+.music:hover {
+    background-color:   $fg-alt;
+    border:             0.25rem solid $fg;
+    
+    transition:         1s ease;
+}
+.music_title, 
+.music_artist
+{
+	color:				$fg;
+	font-size:			0.95rem;
+	font-weight:		bold;
+}
+
+// Systeminfo
+.bluetooth_icon {
+	color:				$color4;
+}
+.lan_icon
+{
+	color:				$color0;
+}
+.bluetooth_devicename, 
+.lan_ssid
+{
+	color:				$fg;
+	font-size:			0.95rem;
+	font-weight:		bold;
+}
+
+.volume_icon {
+	color:				$color1;
+}
+.bright_icon {
+	color:				$color2;
+}
+.volume_level,
+.bright_level
+{
+	color:				$fg;
+	font-weight:		bold;
+}
+
+// Battery
+.battery_icons {
+	color:				$color3;
+    font-size:          1.12rem;
+}
+
+// Clock
+.clock_icon {
+	color:				$color5;
+}
+.clock_time {
+	color:				$fg;
+	font-weight:		bold;
+}
+
+
