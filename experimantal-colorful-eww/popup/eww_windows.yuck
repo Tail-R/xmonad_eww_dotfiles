@@ -1,0 +1,69 @@
+;; Windows ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Gnome widget
+(defwindow window_gnome_widget
+  :monitor 0 
+  :stacking "bg"
+  :wm-ignore true
+  :geometry (geometry :x "0%"
+                      :y "8%"
+                      :width "22%"
+                      :height "80%"
+                      :anchor "top left"
+            )
+  (widget_gnome_widget)
+)
+
+;; Music
+(defwindow window_music
+  :monitor 0 
+  :stacking "bg"
+  :wm-ignore true
+  :geometry (geometry :x "35%"
+                      :y "8%"
+                      :width "20%"
+                      :height "35%"
+                      :anchor "top left"
+            )
+  (widget_music)
+)
+
+;; Power menu
+(defwindow window_powermenu
+  :monitor 0 
+  :stacking "bg"
+  :wm-ignore true
+  :geometry (geometry :x "-0.5%"
+                      :y "-1%"
+                      :width "11.5%"
+                      :height "5.5%"
+                      :anchor "bottom right"
+            )
+  (widget_powermenu)
+)
+
+;; Screenshot menu
+(defwindow window_ssmenu
+  :monitor 0 
+  :stacking "bg"
+  :wm-ignore true
+  :geometry (geometry :x "0.5%"
+                      :y "-1%"
+                      :width "6.5%"
+                      :height "5.5%"
+                      :anchor "bottom left"
+            )
+  (widget_ssmenu)
+)
+
+
+
+
+
+
+
+
+
+
+
+

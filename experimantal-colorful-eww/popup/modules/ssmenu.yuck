@@ -1,0 +1,19 @@
+;; Widget ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defwidget widget_ssmenu []
+  (box :halign "center" :valign "center" :space-evenly false :spacing 10
+    
+    ;; Screenshot full
+    (eventbox :class "sys_button_square"
+              :width 40 :height 40
+              :onclick "scripts/screenshot.sh --full"
+      (label :class "ss_full_icon" :text "󰘖")
+    )
+
+    ;; Screenshot select
+    (eventbox :class "sys_button_square"
+              :width 40 :height 40
+              :onclick "scripts/screenshot.sh --select"
+      (label :class "ss_select_icon" :text "󰘕")
+    )
+  )
+)
