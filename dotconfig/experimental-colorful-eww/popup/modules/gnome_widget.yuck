@@ -1,0 +1,419 @@
+;; Variables ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Json array ;;;;;
+;; Idk why json array that ["a", "b", "c"] should be wrap by `` but @end4 did this so i use this way.
+
+;; Json array of the Lan AP SSID
+(defvar SSID_ARRAY `["there are no AP..."]`)
+
+;; Json array of the known Bluetooth device name
+(defvar BT_NAME_ARRAY `["there are no BT dev..."]`)
+
+;; Josn array of the notify
+;; the fortmat is [ "message", "appName", "notifyID" ]
+;;                [ string str, string str, int n]
+(defvar NOTIFY_ARRAY `[ ["there are no notify", "eww", 0] ]`)
+
+;; Widgets ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defwidget widget_gnome_widget []
+  (box 
+    (revealer :reveal "${GNOME_WIDGET_SHOW}" :transition "slideright" :duration "0.2s"
+      (box :class "gnome_widget_rootbox" :orientation "h" :halign "center"
+           :space-evenly false :width 440
+
+        ;; ***** Experimental ********************************************
+        
+        ; (box :orientation "v" :halign "center" :valign "center" :space-evenly false
+        ;   (for entry in NOTIFY_ARRAY
+        ;     (box (label :text "${entry[0]}"))
+        ;   )
+        ; )
+        
+
+        ; {jq(ARRAY, ".a")} 
+
+        ;; ***** Gnome widget page 1 *************************************
+        (revealer :reveal {"${NOTIFY_CLICK}" == false} :transition "slideright" :duration "0.2s"
+          
+          (box :class "gnome_widget_page1" :orientation "v" :halign "center"
+               :space-evenly false :width 440 :spacing 40
+            
+            ;; ***** Dummy padding box ***************************************
+            (box :height 20)
+             
+            ;; ***** Clock ***************************************************
+            (eventbox :onclick "${EWW_CMD} update CLOCK_CLICK=true &"
+                      :onhoverlost "${EWW_CMD} update CLOCK_CLICK=false &"
+              
+              (box :orientation "v" :halign "center" :space-evenly false :spacing 20
+                
+                ;; Current time
+                (eventbox :class "clock_time" :halign "center" :space-evenly false 
+                          :width 320 :height 100
+                  (label :text "${TIME}")
+                )    
+                
+                ;; Calendar
+                (revealer :reveal "${CLOCK_CLICK}" :transition "slidedown" :duration "0.2s"
+                  (box :class "clock_date_entry" :orientation "v" :space-evenly false 
+                       :height 220 :spacing 10
+                       
+                    
+                    ;; Current date
+                    (box :orientation "v" :halign "left" :space-evenly false :spacing 10
+                      (box
+                        (box :class "clock_dow"  :halign "start" (label :text "${DOW}"))
+                        (box :class "clock_date" :halign "end"   (label :text "${DAY} ${MONTH}"))
+                      )
+                    )
+                       
+                    (calendar :class "calendar" :show-heading false :active false)
+                  )
+                )
+              )
+            )
+
+            ;; ***** Weather *************************************************
+            
+            (box :orientation "v" :space-evenly false :spacing 10      
+
+              ;; Conditions
+              (box :halign "center" :height 40
+                (box :class "weather_con" {"${WEATHER_CON}" == "" ? "offline" : "${WEATHER_CON}"})
+              )
+                  
+              ;; CityID and the Tempelature
+              (box :halign "center"
+                (box :class "weather_locale" (label :text "${WEATHER_LOCALE}"))
+
+                (box :halign "center" :valign "center" :space-evenly false :spacing 5
+                  (label :class "weather_temp" :text "${WEATHER_TEMP}")
+                  (label :class "weather_temp_icon" :text "󰔄")
+                )
+              )
+            )
+            
+
+            ;; ***** Profile *************************************************
+            (revealer :reveal {CLOCK_CLICK == LAN_CLICK == BLUETOOTH_CLICK == false}
+                      :transition "slideup" :duration "0.2s"
+      
+              (box :class "profile" :halign "center" :width 320 :height 220
+                
+                (box :orientation "v" :valign "center" :space-evenly false :spacing 20
+                  
+                  ;; Face
+                  (box :halign "center" :valign "center"
+                       :style " background-image:     url('${FACE}');
+                                background-repeat:    no-repeat;
+                                background-size:      cover;
+                                background-position:  center center;
+                                min-width:            8rem;
+                                min-height:           8rem;
+                            
+                                border-radius:        4rem;
+                              "
+                  )
+                  
+                  ;; Name
+                  (label :class "profile_name" :text "${NAME}")
+                )
+              )
+            )
+            
+            ;; ***** Bar stuff ***********************************************
+            (box :orientation "v" :spacing 20
+              
+              ;; Battery
+              (box :orientation "v" :halign "left" :space-evenly false 
+              
+                ;; Bottom stuff
+                (box :halign "center" :space-evenly false :spacing 40
+                  (label :class "battery_icon" :text "")
+                  (box :class "battery_bar" 
+                    (scale :value BATTERY_LEVEL :min 0 :max 100 :active false)
+                  ) 
+                )
+              )
+              
+              ;; Brightness
+              (box :orientation "v" :halign "left" :space-evenly false 
+               
+                ;; Bottom stuff
+                (box :halign "center" :space-evenly false :spacing 40
+                  (label :class "bright_icon":text "")
+                  (box :class "bright_bar" 
+                    (scale :value BRIGHT_LEVEL :min 0 :max 100 :active false)
+                  ) 
+                )
+              )
+
+              ;; Volume
+              (box :orientation "v" :halign "left" :space-evenly false  
+               
+                ;; Bottom stuff
+                (box :halign "center" :space-evenly false :spacing 40
+                  (label :class "volume_icon" :text "") 
+                  (box :class "volume_bar" 
+                    (scale :value VOLUME_LEVEL :min 0 :max 100 :active false)
+                  ) 
+                )
+              )
+            )
+
+            ;; System control button stuff
+            (box :orientation "v" :space-evenly false :spacing 10
+
+
+              ;; ***** Lan **************************************************
+              (eventbox :onhover "${EWW_CMD} update LAN_HOVER=true &"
+                        :onhoverlost "${EWW_CMD} update LAN_CLICK=false; ${EWW_CMD} update LAN_HOVER=false &"
+                
+                (box :orientation "v" :space-evenly false :spacing 10
+                  
+                  ;; ***** Top box *****
+                  (box :halign "center" :space-evenly false :spacing 10
+
+                    (box :space-evenly false :spacing 10
+                      
+                      ;; Left
+                      (revealer :reveal {"${LAN_HOVER}" == false} :transition "slideright" :duration "0.2s"
+                        (box :width 50
+                          (label :class "lan_icon" :text {LAN_CON_STATUS == "connected" ? "󰤨" : "󰤭"}) 
+                        )
+                      )
+                      
+                      ;; Center
+                      (eventbox :class "sys_button_rect" :height 50
+                                :onclick "scripts/network.sh --toggle" 
+                        
+                        (box :width 270
+                          (label :class "lan_ssid" :limit-width 20 
+                                 :text {LAN_CON_STATUS == "connected" ? "${LAN_SSID}" : "offline"}
+                          ) 
+                        )
+                      )
+                    )
+                    
+                    ;; Right
+                    (revealer :reveal "${LAN_HOVER}" :transition "slideright" :duration "0.2s"
+                      
+                      (eventbox :class "sys_button_square" :width 50
+                                :onclick "${EWW_CMD} update LAN_CLICK=true &"
+                        
+                        (label :class "lan_reveal_entry_icon" :text "󰅂") 
+                      )
+                    )
+                  )
+
+                  ;; ***** Under entry *****
+                  (revealer :reveal "${LAN_CLICK}" :transition "slidedown" :duration "0.2s"
+                    (box :class "lan_ssid_entry" :halign "center" :width 320 :height 220
+                    
+                      (scroll :hscroll false :vscroll true :vexpand true
+                        (box :orientation "v" :space-evenly false
+                          (for entry in SSID_ARRAY
+                            (eventbox :class "lan_ssid_button" :height 50
+                              (button :onclick "nmcli con up '${entry}'" 
+                                (label :limit-width 20 :text "${entry}")
+                              )
+                            )
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+
+              ;; ***** Bluetooth *********************************************
+              (eventbox :onhover "${EWW_CMD} update BLUETOOTH_HOVER=true &"
+                        :onhoverlost "${EWW_CMD} update BLUETOOTH_CLICK=false; ${EWW_CMD} update BLUETOOTH_HOVER=false &"
+                
+                (box :orientation "v" :space-evenly false :spacing 10
+                  
+                  ;; ***** Top box *****
+                  (box :halign "center" :space-evenly false :spacing 10
+
+                    (box :space-evenly false :spacing 10
+                      
+                      ;; Left
+                      (revealer :reveal {"${BLUETOOTH_HOVER}" == false} :transition "slideright" :duration "0.2s"
+                        (box :width 50
+                          (label :class "bluetooth_icon" :text {BLUETOOTH_CON_STATUS == "connected" ? "󰋋" : "󰟎"})
+                        )
+                      )
+
+                      ;; Center
+                      (eventbox :class "sys_button_rect" :height 50
+                                :onclick "scripts/bluetooth.sh --toggle" 
+                        
+                        (box :width 270
+                          (label :class "bluetooth_devicename" :limit-width 20 
+                                 :text {BLUETOOTH_CON_STATUS == "connected" ? "${BLUETOOTH_DEVICENAME}" : "offline"}
+                          ) 
+                        )
+                      )
+                    )
+                    
+                    ;; Right
+                    (revealer :reveal "${BLUETOOTH_HOVER}" :transition "slideright" :duration "0.2s"
+                      (eventbox :class "sys_button_square" :width 50
+                                :onclick "${EWW_CMD} update BLUETOOTH_CLICK=true &"
+                        
+                        (label :class "bluetooth_reveal_entry_icon" :text "󰅂") 
+                      )
+                    )
+                  )
+                  
+                  ;; ***** Under entry *****
+                  (revealer :reveal "${BLUETOOTH_CLICK}" :transition "slidedown" :duration "0.2s"
+                    (box :class "bluetooth_devicename_entry" :halign "center" :width 320 :height 220
+                    
+                      (scroll :hscroll false :vscroll true :vexpand true
+                        (box :orientation "v" :space-evenly false
+                          (for entry in BT_NAME_ARRAY
+                            (eventbox :class "bluetooth_devicename_button" :height 50
+                              (button :onclick "bluetoothctl connect '${entry}'" 
+                                (label :limit-width 20 :text "${entry}")
+                              )
+                            )
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            
+            ;; ***** Page 1 bottom stuff  ********************************
+            (box :orientation "v" :halign "center" :space-evenly false :width 320
+              (box 
+                (eventbox :class "sys_button_rect" 
+                          :halign "start" :width 50 :height 50
+                          :onclick "${EWW_CMD} update GNOME_WIDGET_SHOW=false &"
+
+                  (label :text "")
+                )
+                
+                (eventbox :class "sys_button_rect" 
+                          :halign "end" :width 50 :height 50
+                          :onclick "${EWW_CMD} update NOTIFY_CLICK=true &"
+                  
+                  (label :text "󰂚")
+                )
+              )
+            )
+            
+            ;; ***** Dummy padding box ***********************************
+            (box :height 20)
+          )
+        ) 
+        
+
+
+
+
+        ;; ***** Gnome widget page 2 *************************************
+        (revealer :reveal "${NOTIFY_CLICK}" :transition "slideleft" :duration "0.2s"
+          
+          (box :class "gnome_widget_page2" :orientation "v" :halign "center"
+               :space-evenly false :width 440 :spacing 40
+          
+            ;; ***** Dummy padding box ***********************************
+            (box :height 20)
+                
+            ;; ***** Notifications title *********************************
+            (eventbox :class "notify_title" :halign "center" :space-evenly false :width 320 :height 100
+              (label :text "notifycations")
+            )    
+            
+            ;; ***** Notifications history *******************************
+            (box :class "notify_entry" :halign "center" :width 360 :height 500
+              (scroll :hscroll false :vscroll true :vexpand true
+                (box :orientation "v" :space-evenly false :valign "start" :spacing 10
+                  (box :height 10)
+                  
+                  (for entry in NOTIFY_ARRAY
+
+                    ;; Notification message box
+                    (box :orientation "v" :halign "center" :valign "center" :space-evenly false 
+                         :width 320 :height 100
+                      
+                      (centerbox
+
+                        ;; Right stuff
+                        (box :space-evenly false :spacing 10
+                          
+                          ;; Notify icon
+                          (box :orientation "v" :halign "start"
+                            (box :halign "center" :valign "center"
+                                 :style " background-image:     url('${FACE}');
+                                          background-repeat:    no-repeat;
+                                          background-size:      cover;
+                                          background-position:  center center;
+                                          min-width:            3.2rem;
+                                          min-height:           3.2rem;
+
+                                          border-radius:        1rem;
+                                        "
+                                
+                            
+                            )
+                          )
+ 
+                          ;; App name and the message
+                          (box :orientation "v" :halign "start"
+                            (label :halign "start" :text "from: ${entry[1]}")
+                            (label :halign "start" :text "time: ${entry[2]}")
+                          )
+                        )
+                          
+                        ;; Dummy box
+                        (box)
+
+                        ;; Left stuff
+                        
+                        ;; Remove button
+                        (eventbox :class "sys_button_rect" :halign "end" :width 50 :height 50
+                                  :onclick "scripts/notify.sh --remove ${entry[2]}"
+                          (box
+                            (label :text "󰩺")                      
+                          )
+                        )
+                      )
+
+                      ;; Message
+                      (box :orientation "v" :halign "center" :valign "end" :height 50
+                        (label :halign "start" :text "${entry[0]}")
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            
+            ;; ***** Page 2 bottom stuff  ********************************
+            (box :orientation "v" :halign "center" :space-evenly false :width 320
+              (box
+                (eventbox :class "sys_button_rect" 
+                          :halign "end" :width 50 :height 50
+                          :onclick "${EWW_CMD} update NOTIFY_CLICK=false &"
+                  
+                  (label :text "󰍜")
+                )
+              )
+            )
+            
+            ;; ***** Dummy padding box ***************************************
+            (box :height 20)
+          )
+        )
+      )
+    )
+  )
+)
+
+
+
