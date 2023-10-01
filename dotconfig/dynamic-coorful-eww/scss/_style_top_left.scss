@@ -1,0 +1,277 @@
+/***** Window *******************************************************/
+.window_top_left {
+}
+
+/***** Widget *******************************************************/
+// .top_left_head_bar {
+//     background-color: $bg;
+//     border-radius: 1rem;
+//     box-shadow: 0rem 0rem 0.4rem $bg;
+// }
+
+
+.top_left_main_widget {
+    background-color: $bg;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.4rem $bg;
+}
+
+// Clock
+.clock_time {
+    background-color: $color4;
+    border-radius: 2rem;
+    transition: 400ms ease;
+
+    .label {
+        color: $fg;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+.clock_date_entry {
+    border: 0.25rem solid $color1;
+    border-radius: 2rem;
+    padding: 0.6rem;
+}
+
+.clock_dow,
+.clock_day
+{
+    color: $color2;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.calendar {
+    color: $fg;
+    font-size: 0.95rem;
+    font-weight: bold;
+
+    &:selected {
+        color: $bg; 
+        background-color: $color4;
+        border-radius: 1rem;
+    }
+}
+
+// Weather
+.weather_con {
+    color: $fg;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: $color0;
+    border-radius: 1rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.weather_locale {
+    color: $fg;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.weather_temp_label {
+    color: $fg;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.weather_temp_icon {
+    color: $fg;
+    font-size: 1.8rem;
+}
+
+// Profile
+.profile_background {
+    border: 0.25rem solid $bg-alt;
+    border-radius: 2rem;
+}
+
+.profile_name {
+    color: $fg;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+// Sysinfo scale
+.sysinfo_scale_volume_scale scale trough {
+    background-color: $bg-alt;
+    min-width: 2rem;
+    min-height: 12rem;
+    border-radius: 2rem;
+}
+
+.sysinfo_scale_volume_scale scale highlight {
+    background-color: $color4;
+    border-radius: 2rem;
+}
+
+.sysinfo_scale_volume_icon {
+    color: $color4;
+    font-size: 1.6rem;
+    padding: 0rem 1rem 0rem 0rem;
+}
+
+.sysinfo_scale_brightness_scale scale trough {
+    background-color: $bg-alt;
+    min-width: 2rem;
+    min-height: 12rem;
+    border-radius: 2rem;
+}
+
+.sysinfo_scale_brightness_scale scale highlight {
+    background-color: $color5;
+    border-radius: 2rem;
+}
+
+.sysinfo_scale_brightness_icon {
+    color: $color5;
+    font-size: 1.6rem;
+    padding: 0rem 1rem 0rem 0rem;
+}
+
+.sysinfo_scale_battery_scale scale trough {
+    background-color: $bg-alt;
+    min-width: 2rem;
+    min-height: 12rem;
+    border-radius: 2rem;
+}
+
+.sysinfo_scale_battery_scale scale highlight {
+    background-color: $color0;
+    border-radius: 2rem;
+}
+
+.sysinfo_scale_battery_icon {
+    color: $color0;
+    font-size: 1.6rem;
+    padding: 0rem 1rem 0rem 0rem;
+}
+
+// LAN
+.lan_status {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+
+    .icon {
+        color: $color1;
+        font-size: 1.4rem;
+        padding: 0rem 0.4rem 0rem 0rem;
+    }
+}
+
+.lan_button_rect {
+    background-color: $fg-alt;
+    border-radius: 1rem;
+    transition: 400ms ease;
+
+    .label {
+        color: $fg;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+.lan_button_square {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+
+    .icon {
+        font-size: 1.8rem; 
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+.lan_ssid_entry {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+}
+
+.lan_ssid_button {
+    border-bottom: 0.1rem solid $fg-alt;
+
+    .label {
+        color: $fg;
+        font-size: 1.2rem;
+        font-weight: bold;   
+    }
+
+    &:hover {
+        background-color: $fg-alt;
+        border-radius: 1rem;
+    }
+}
+
+// Bluetooth
+.bluetooth_status {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+
+    .icon {
+        color: $color2;
+        font-size: 1.4rem;
+        padding: 0rem 0.4rem 0rem 0rem;
+    }
+}
+
+.bluetooth_button_rect {
+    background-color: $fg-alt;
+    border-radius: 1rem;
+    transition: 400ms ease;
+
+    .label {
+        color: $fg;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+.bluetooth_button_square {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+
+    .icon {
+        font-size: 1.8rem; 
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+.bluetooth_devicename_entry {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+}
+
+.bluetooth_devicename_button {
+    border-bottom: 0.1rem solid $fg-alt;
+
+    .label {
+        color: $fg;
+        font-size: 1.2rem;
+        font-weight: bold;   
+    }
+
+    &:hover {
+        background-color: $fg-alt;
+        border-radius: 1rem;
+    }
+}
+

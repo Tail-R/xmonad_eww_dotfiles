@@ -1,0 +1,333 @@
+// @keyframes gayflash {
+//     0% {
+//         background-position: 0% 0%; 
+//     }
+// 
+//     100% {
+//         background-position: 1000% 0%; 
+//     }
+// }
+// 
+// .gayflash {
+//     background: linear-gradient(45deg, $color0, $color1, $color2, $color3, $color4, $color5);
+//     background-size: 200% 200%;
+//     border-radius: 1rem;
+//     animation: gayflash 4s ease;
+//     animation-iteration-count: 1;
+// }
+
+/***** Window *******************************************************/
+.window_top_center {
+    background-color: rgba($fg, 0.5);
+    // background-color: rgba($color4, 0.37);
+}
+
+/***** Widget *******************************************************/
+.top_center_rootbox_solid {
+    background-color: $bg;
+    transition: 400ms ease; 
+}
+
+.top_center_rootbox_transparent {
+    transition: 400ms ease; 
+}
+
+/***** Left bar *****/
+.left_bar_start_button {
+    border: 0.25rem solid $bg-alt;
+    border-radius: 1rem;
+    transition: 400ms ease;
+
+    .icon {
+        color: $color2;
+        font-size: 2.5rem;
+        padding: 0rem 0.5rem 0rem 0rem;
+    }
+
+    // &:hover {
+    //     opacity: 0.5;
+    // }
+}
+
+.left_bar_workspaces { 
+    .workspace_active {
+        color: $color0; 
+        font-size: 1.2rem;
+    }
+
+    .workspace_inactive {
+        color: $color1;
+        font-size: 1.2rem;
+    }
+    
+    .workspace_occupied {
+        color: $color3;
+        font-size: 1.2rem;
+    }
+}
+
+.left_bar_launcher {
+    // background: linear-gradient(45deg, $color1, $color2, $color3, $color4, $color5, $color6, $color7); 
+    background-color: $fg-alt;
+    // border: 0.25rem solid $fg-alt;
+    border-radius: 1rem;
+    transition: 400ms ease;
+    
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+/***** Center bar *****/
+.center_bar {
+}
+
+.center_bar_page_switcher {
+}
+
+.center_bar_page_switcher_page0 {
+    border-radius: 1rem;
+    transition: 200ms ease;
+
+    .icon {
+        color: $color0; 
+        font-size: 1.8rem;
+    }
+
+    .label {
+        color: $fg;
+        font-weight: bold;
+    }
+
+    &:hover {
+        background-color: $bg-alt;
+        border-bottom: 0.25rem solid $color3;
+    }
+}
+
+.center_bar_page_switcher_page1 {
+    border-radius: 1rem;
+    transition: 200ms ease;
+
+    .icon {
+        color: $color4;
+        font-size: 1.8rem;
+        padding: 0rem 0.4rem 0rem 0rem;
+    }
+    
+    .label {
+        color: $fg;
+        font-weight: bold;
+    }
+    
+    &:hover {
+        background-color: $bg-alt;
+        border-bottom: 0.25rem solid $color4;
+    }
+}
+
+.center_bar_page_switcher_page2 {
+    border-radius: 1rem;
+    transition: 200ms ease;
+    
+    .icon {
+        color: $color2; 
+        font-size: 1.8rem;
+        padding: 0rem 0.6rem 0rem 0rem;
+    }
+    
+    .label {
+        color: $fg;
+        font-weight: bold;
+    }
+    
+    &:hover {
+        background-color: $bg-alt;
+        border-bottom: 0.25rem solid $color2;
+    }
+}
+
+.center_bar_page0 {
+    background-color: $bg;
+    border-radius: 1rem;
+}
+
+.center_bar_mpris_title {
+    color: $fg;
+    font-weight: bold;
+}
+
+.center_bar_mpris_artist {
+    color: $fg;
+    font-weight: bold;
+}
+
+.center_bar_page1 {
+    background-color: $bg;
+    border-radius: 1rem;
+}
+
+.center_bar_bluetooth_icon {
+    color: $color2;
+}
+
+.center_bar_bluetooth_devicename {
+    color: $fg;
+    font-weight: bold;
+}
+
+.center_bar_lan_icon {
+    color: $color3;
+    font-size: 1.2rem;
+}
+
+.center_bar_lan_ssid {
+    color: $fg;
+    font-weight: bold;
+}
+
+.center_bar_lan_inet4 {
+    color: $fg;
+    font-weight: bold;
+}
+
+.center_bar_page2 {
+    background-color: $bg;
+    border-radius: 1rem;
+}
+
+.center_bar_shutdown_button {
+    // border-radius: 1rem;
+    transition: 200ms ease;
+
+   .icon {
+        color: $color0;
+        font-size: 2rem;
+   }
+
+   // .label {
+   //      font-weight: bold; 
+   // }
+
+   &:hover {
+       background-color: $fg-alt;
+       border-bottom: 0.25rem solid $color0;
+   }
+}
+
+.center_bar_suspend_button {
+    // border-radius: 1rem;
+    transition: 200ms ease;
+
+   .icon {
+        color: $color7;
+        font-size: 2rem;
+   }
+   
+   // .label {
+   //      font-weight: bold; 
+   // }
+   
+   &:hover {
+       background-color: $fg-alt;
+       border-bottom: 0.25rem solid $color7;
+   }
+}
+
+.center_bar_logout_button {
+    // border-radius: 1rem;
+    transition: 200ms ease;
+
+   .icon {
+        color: $color4;
+        font-size: 2rem;
+   }
+   
+   // .label {
+   //      font-weight: bold; 
+   // }
+   
+   &:hover {
+       background-color: $fg-alt;
+       border-bottom: 0.25rem solid $color4;
+   }
+}
+
+.center_bar_reboot_button {
+    // border-radius: 1rem;
+    transition: 200ms ease;
+
+   .icon {
+        color: $color3;
+        font-size: 2rem;
+   }
+   
+   // .label {
+   //      font-weight: bold; 
+   // }
+
+   &:hover {
+       background-color: $fg-alt;
+       border-bottom: 0.25rem solid $color3;
+   }
+}
+
+/***** Right bar *****/
+.right_bar {
+    // box-shadow: -0.2rem 0.2rem 0.2rem $bg;
+}
+
+.right_bar_sysinfo_volume {
+    .icon {
+        color: $color4; 
+        font-size: 1.2rem;
+    }
+    
+    .label {
+        color: $fg; 
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+.right_bar_sysinfo_bright {
+    .icon {
+        color: $color5; 
+        font-size: 1.2rem;
+    }
+    
+    .label {
+        color: $fg;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+.right_bar_battery {
+    
+    .icon {
+        color: $color0; 
+        font-size: 1.2rem;
+    }
+}
+
+.right_bar_clock {
+    
+    .icon {
+        color: $color7; 
+        font-size: 1.2rem;
+    }
+
+    .label {
+        color: $fg;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+

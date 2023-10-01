@@ -1,0 +1,125 @@
+(defwidget widget_top_left []
+  (eventbox
+    :onhoverlost "eww close window_top_left && eww update SHOW_TOP_LEFT=false &"
+
+    (box
+      :style {SHOW_TOP_LEFT ?
+      "
+      transition:300ms ease;
+      "
+      :
+      "
+      margin-left: -60rem;
+      transition: 300ms ease;
+      "
+      }
+
+      (box
+
+        (box
+          :orientation "v"
+          :space-evenly false
+          :spacing 20
+
+          ;; Head bar
+          (box
+            :width {round(DP_WIDTH / 4.4, 0)}
+            :height {round(DP_HEIGHT / 14.3, 0)}
+
+            ; (box
+            ;   (box
+            ;     :class "top_left_head_bar"
+            ;     :halign "end"
+            ;     :valign "center"
+            ;     :width {round(DP_WIDTH / 4.6, 0)}
+            ;     :height {round(DP_HEIGHT / 20, 0)} 
+            ;   )
+            ; )
+          )
+          
+          ;; Main side bar
+          (box
+            :class "top_left_main_widget"
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / 4.4, 0)}
+            :height {round(DP_HEIGHT / 1.15, 0)}
+
+            (box
+              :orientation "v"
+              :halign "center"
+              :valign "center"
+              :space-evenly false
+              :width {round(DP_WIDTH / 4.6, 0)}
+              :height {round(DP_HEIGHT / 1.3, 0)}
+              :spacing 20
+
+              ;; Clock
+              (box
+                :halign "center"
+                :valign "center"
+              
+
+                (eventbox
+                  :onclick "${EWW_CMD} update SHOW_CALENDAR=true SHOW_PROFILE=false &"
+                  :onhoverlost "${EWW_CMD} update SHOW_CALENDAR=false SHOW_PROFILE=true &"
+
+                  (module_clock)
+                )
+              )
+
+              ;; Weather
+              (box 
+                :halign "center"
+                :valign "center"
+                
+                (module_weather)
+              )
+
+              ;; Profile
+              (box 
+                :halign "center"
+                :valign "center"
+                
+                (module_profile)
+              )
+
+              ;; Sysinfo_scale
+              (box 
+                :halign "center"
+                :valign "center"
+                :height {round(DP_HEIGHT / 4.2, 0)}
+                
+                (module_sysinfo_scale)
+              )
+
+              (box
+                :orientation "v"
+                :halign "center"
+                :valign "center"
+                :space-evenly false
+                :spacing 10
+              
+                ;; LAN
+                (module_lan)
+             
+                ;; Bluetooth
+                (module_bluetooth)
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,272 @@
+(defwidget module_center_bar []
+  (box 
+    (box
+      :halign "center"
+      :valign "center"
+
+      (eventbox
+        :onhover "${EWW_CMD} update SHOW_CENTER_BAR_PAGE_SWITCHER=true SHOW_CENTER_BAR_PAGE0=false SHOW_CENTER_BAR_PAGE1=false SHOW_CENTER_BAR_PAGE2=false &"
+
+        (box
+          ; :orientation "h"
+          :orientation "v"
+          :halign "center"
+          :space-evenly false
+          
+          (revealer
+            ; :transition "slideright" 
+            :transition "slidedown"
+            :reveal false
+            :reveal SHOW_CENTER_BAR_PAGE_SWITCHER
+            :duration "200ms"
+            
+            (box
+              :class "center_bar_page_switcher"
+              :width {round(DP_WIDTH / 4, 0)}
+              :height {round(DP_HEIGHT / 20, 0)}
+
+              (box
+                :halign "center"
+                :valign "center"
+                :spacing 10
+                :width {round(DP_WIDTH / 8, 0)}
+                :height {round(DP_HEIGHT / 20, 0)}
+              
+                (eventbox
+                  :class "center_bar_page_switcher_page0"
+                  :onclick "scripts/control_center_bar.sh --event_page0"
+                  
+                  (box
+                    :orientation "v"
+                    :space-evenly false
+
+                    (label :class "icon" :text "󰝚")
+                    (label :class "label" :text "mpris")
+                  )
+                )
+                
+                (eventbox
+                  :class "center_bar_page_switcher_page1"
+                  :onclick "scripts/control_center_bar.sh --event_page1"
+                  
+                  (box
+                    :orientation "v"
+                    :space-evenly false
+                    
+                    (label :class "icon" :text "")
+                    (label :class "label" :text "sys")
+                  )
+                )
+                
+                (eventbox
+                  :class "center_bar_page_switcher_page2"
+                  :onclick "scripts/control_center_bar.sh --event_page2"
+                  
+                  (box
+                    :orientation "v"
+                    :space-evenly false
+                    
+                    (label :class "icon" :text "")
+                    (label :class "label" :text "power")
+                  )
+                )
+              )
+            )
+          )
+          
+          (revealer
+            ; :transition "slideright" 
+            :transition "slidedown"
+            :reveal SHOW_CENTER_BAR_PAGE0
+            :duration "200ms"
+            
+            (box
+              :class "center_bar_page0"
+              :width {round(DP_WIDTH / 4, 0)}
+              :height {round(DP_HEIGHT / 20, 0)}
+
+              (overlay
+                (box
+                  :style
+                  "
+                  background-image: url('${MPRIS_COVER}');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center center;
+                  border-radius: 1rem;
+                  opacity: 0.75;
+                  "
+                )
+                
+                (box :orientation "v"
+                  (label 
+                    :class "center_bar_mpris_title"
+                    :limit-width 25 
+                    :text "${MPRIS_TITLE}"
+                  )    
+                  (label 
+                    :class "center_bar_mpris_artist"
+                    :limit-width 25 
+                    :text "${MPRIS_ARTIST}"
+                  )    
+                )
+              )
+            )
+          )
+          
+          (revealer
+            ; :transition "slideright"
+            :transition "slidedown"
+            :reveal SHOW_CENTER_BAR_PAGE1
+            :duration "200ms"
+            
+            (box
+              :class "center_bar_page1"
+              :width {round(DP_WIDTH / 4, 0)}
+              :height {round(DP_HEIGHT / 20, 0)}
+
+              (box
+                :orientation "v"
+                :space-evenly false
+                :halign "center"
+                :valign "center"
+                :spacing 5
+
+                (box
+                  :halign "center"
+                  :valign "center"
+                  :space-evenly false
+                  :spacing 15
+                  
+                  (label
+                    :class "center_bar_bluetooth_icon"
+                    :text {BLUETOOTH_CON_STATUS == "connected" ?
+                    "󰋋"
+                    :
+                    "󰟎"
+                    }
+                  )
+
+                  (label
+                    :class "center_bar_bluetooth_devicename"
+                    :limit-width 20
+                    :text {BLUETOOTH_CON_STATUS == "connected" ?
+                    "${BLUETOOTH_DEVICENAME}"
+                    :
+                    "offline"
+                    }
+                  )
+                )
+
+                (box
+                  :halign "center"
+                  :valign "center"
+                  :space-evenly false
+                  :spacing 15
+                  
+                  (label
+                    :class "center_bar_lan_icon"
+                    :text {LAN_CON_STATUS == "connected" ?
+                    "󰤨"
+                    :
+                    "󰤭"
+                    }
+                  )
+
+                  (label
+                    :class "center_bar_lan_ssid"
+                    :limit-width 20
+                    :text {LAN_CON_STATUS == "connected" ?
+                    "${LAN_SSID}"
+                    :
+                    "offline"
+                    }
+                  )
+                )
+              )
+            )
+          )
+          
+          (revealer
+            ; :transition "slideright"
+            :transition "slidedown"
+            :reveal SHOW_CENTER_BAR_PAGE2
+            :duration "200ms"
+            
+            (box
+              :class "center_bar_page2"
+              :width {round(DP_WIDTH / 4, 0)}
+              :height {round(DP_HEIGHT / 20, 0)}
+
+              (box
+                :halign "center"
+                :valign "center"
+                :width {round(DP_WIDTH / 6, 0)}
+                :height {round(DP_HEIGHT / 20, 0)}
+                :spacing 10
+
+                (eventbox
+                  :class "center_bar_shutdown_button"
+                  :onclick "systemctl poweroff"
+                  
+                  (label :class "icon" :text "󰐥")
+                  
+                  ; (box
+                  ;   :orientation "v"
+                  ;   :space-evenly false
+
+                  ;   (label :class "label" :text "go sleep")
+                  ; )
+                )
+                
+                (eventbox
+                  :class "center_bar_suspend_button"
+                  :onclick "systemctl suspend"
+
+                  (label :class "icon" :text "󰤄")
+                  
+                  ; (box
+                  ;   :orientation "v"
+                  ;   :space-evenly false
+
+                  ;   (label :class "label" :text "sleep")
+                  ; ) 
+                )
+
+                (eventbox
+                  :class "center_bar_logout_button"
+                  :onclick "kill -9 -1"
+
+                  (label :class "icon" :text "󰗼")
+                  
+                  ; (box
+                  ;   :orientation "v"
+                  ;   :space-evenly false
+                  ;   
+                  ;   (label :class "label" :text "exit")
+                  ; )
+                )
+
+                (eventbox
+                  :class "center_bar_reboot_button"
+                  :onclick "systemctl reboot"
+
+                  (label :class "icon" :text "󰑙")
+                  
+                  ; (box
+                  ;   :orientation "v"
+                  ;   :space-evenly false
+                  ; 
+                  ;   (label :class "label" :text "reboot")
+                  ; )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)
+
+

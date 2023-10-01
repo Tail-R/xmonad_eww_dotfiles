@@ -1,0 +1,13 @@
+* {
+    all: unset;
+    font-family: "Source Code";
+}
+
+/***** Color scheme *************************************************/
+// @import "scss/color-schemes/uwu.scss";
+@import 'scss/color-schemes/marshmallow.scss';
+
+/***** Style ********************************************************/
+@import 'scss/_style_top_center.scss';
+@import 'scss/_style_top_left.scss';
+

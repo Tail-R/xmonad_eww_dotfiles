@@ -1,0 +1,76 @@
+(defwidget module_sysinfo_scale []
+  (box
+    (box
+      :halign "center"
+      :valign "center"
+      :space-evenly false
+      :spacing 20
+
+      (box
+        :orientation "v"
+        :halign "center"
+        :space-evenly false
+        :spacing 20
+        
+        (box
+          :class "sysinfo_scale_volume_scale"
+          
+          (scale
+            :orientation "v"
+            :flipped true
+            :value VOLUME_LEVEL
+            :min 0
+            :max 100
+            :active false
+          )
+        )
+        
+        (label :class "sysinfo_scale_volume_icon" :text "")
+      )
+      
+      (box
+        :orientation "v"
+        :halign "center"
+        :space-evenly false
+        :spacing 20
+        
+        (box
+          :class "sysinfo_scale_brightness_scale"
+          
+          (scale
+            :orientation "v"
+            :flipped true
+            :value BRIGHTNESS
+            :min 0
+            :max 100
+            :active false
+          )
+        )
+        
+        (label :class "sysinfo_scale_brightness_icon" :text "")
+      )
+      
+      (box
+        :orientation "v"
+        :halign "center"
+        :space-evenly false
+        :spacing 20
+        
+        (box
+          :class "sysinfo_scale_battery_scale"
+          
+          (scale
+            :orientation "v"
+            :flipped true
+            :value BATTERY_LEVEL
+            :min 0
+            :max 100
+            :active false
+          )
+        )
+        
+        (label :class "sysinfo_scale_battery_icon" :text "")
+      )
+    )
+  )
+)
