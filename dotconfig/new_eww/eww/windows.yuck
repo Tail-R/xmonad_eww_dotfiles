@@ -1,0 +1,33 @@
+(defwindow window_top_bar
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry :width "100%"
+                      :height "7%"
+                      :anchor "top center"
+            )
+  (widget_top_bar)
+)
+
+(defwindow window_left_widget
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry :width "30%"
+                      :height "100%"
+                      :anchor "top left"
+            )
+  (widget_left_widget)
+)
+
+(defwindow window_right_mplayer
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry :width "25%"
+                      :height "60%"
+                      :anchor "top right"
+            )
+  (widget_right_mplayer)
+)
+
+
+
+

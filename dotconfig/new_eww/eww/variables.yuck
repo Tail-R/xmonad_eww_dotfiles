@@ -1,0 +1,138 @@
+;; Display size
+(defpoll DP_WIDTH :interval "1h"
+  "scripts/display.sh --get_dp_width")
+
+(defpoll DP_HEIGHT :interval "1h"
+  "scripts/display.sh --get_dp_height")
+
+;; Profile
+(defvar PF_FACE "images/gab.png")
+(defpoll PF_NAME :interval "1h" "echo $USER")
+
+;; Workspaces
+; (deflisten WORKSPACES :initial "[]"
+;   `scripts/./workspaces.py`)
+
+(deflisten WS :initial "(box (label :text 'init'))"
+  `scripts/./workspaces.sh`)
+
+;; Activewindow name
+(defpoll ACTIVE_WINNAME :interval "1s"
+  "scripts/ws_old.sh --active_winname")
+
+;; Time and Date
+; (deflisten TIME :initial "init" `scripts/./time.py`)
+(defpoll TIME_HOUR :interval "30s" "date +'%H'")
+(defpoll TIME_MIN :interval "30s" "date +'%M'")
+(defpoll DATE_MER :interval "1m" "date +'%p'")
+(defpoll DATE_DOW :interval "1m" "date +'%a'")
+(defpoll DATE_MON :interval "1m" "date +'%b'")
+(defpoll DATE_DAY :interval "1m" "date +'%d'")
+(defpoll UPTIME :interval "1m"
+  "uptime -p | awk '{print $1 \" \" $2 \" \" $3}' | sed -e s/,//g")
+
+;; Weather
+(defpoll WEATHER_CON :interval "1h"
+  "scripts/weather.sh --conditions")
+
+(defpoll WEATHER_TEMP :interval "1h"
+  "scripts/weather.sh --temperature")
+
+(defpoll WEATHER_LOCALE :interval "1h"
+  "scripts/weather.sh --locale")
+
+;; Battery
+(defpoll BATTERY_ICONS :interval "1m"
+  "scripts/battery.sh --icons")
+
+(defpoll BATTERY_LEVEL :interval "2s"
+  "scripts/battery.sh --level")
+
+;; Brightmess
+(defpoll BRIGHTNESS :interval "2s"
+  "scripts/display.sh --get_brightness")
+
+;; Volume
+(defpoll VOLUME_LEVEL :interval "2s"
+  "scripts/audio.sh --get_vol_sound")
+
+;; LAN
+(defpoll LAN_CON_STATUS :interval "2s"
+  "scripts/network.sh --con_status")
+
+(defpoll LAN_SSID :interval "2s"
+  "scripts/network.sh --ssid")
+
+;; Bluetooth
+(defpoll BT_CON_STATUS :interval "2s"
+  "scripts/bluetooth.sh --con_status")
+
+(defpoll BT_DEVNAME :interval "2s"
+  "scripts/bluetooth.sh --devname")
+
+;; Music status from mpris
+(defpoll MPRIS_STATUS :interval "2s"
+  "scripts/mpris.sh --status")
+
+(defpoll MPRIS_TITLE :interval "2s"
+  "scripts/mpris.sh --title")
+
+(defpoll MPRIS_ARTIST :interval "2s"
+  "scripts/mpris.sh --artist")
+
+(defvar MPRIS_COVER_DEFAULT
+  "images/music.png")
+
+(defpoll MPRIS_COVER :interval "2s"
+  "scripts/mpris.sh --cover")
+
+;; Json
+
+;; Json array of the LAN AP's SSID
+(defvar JSON_SSID `["there are no AP..."]`)
+
+;; Json array of the know Bluetooth devices name
+(defvar JSON_BT_DEVNAME `["there are no BT dev..."]`)
+
+;; Json array of the todo list
+(defvar JSON_TODO `["there are no Todo..."]`)
+
+;; Box size
+
+;; Top bar
+(defvar BOX_SIZE_TOP_BAR_P_H "3.6")
+(defvar BOX_SIZE_TOP_BAR_P_V "18")
+(defvar BOX_SIZE_TOP_BAR_C_H "3.8")
+(defvar BOX_SIZE_TOP_BAR_C_V "26")
+
+;; Left widget
+(defvar BOX_SIZE_LEFT_WIDGET_ROOT_BOX_P_H "3.8")
+(defvar BOX_SIZE_LEFT_WIDGET_ROOT_BOX_P_V "1.05")
+(defvar BOX_SIZE_LEFT_WIDGET_ROOT_BOX_C_H "4.5")
+(defvar BOX_SIZE_LEFT_WIDGET_ROOT_BOX_C_V "1.2")
+(defvar BOX_SIZE_LEFT_WIDGET_P_H "5")
+(defvar BOX_SIZE_LEFT_WIDGET_P_V "5")
+(defvar BOX_SIZE_LEFT_WIDGET_C_H "5.5")
+(defvar BOX_SIZE_LEFT_WIDGET_C_V "5.5")
+
+;; Boolean
+
+;; Top bar
+(defvar SHOW_BAR_CENTER       false)
+(defvar SHOW_BAR_CENTER_REV_SW false)
+(defvar SHOW_BAR_CENTER_PAGE0 true)
+(defvar SHOW_BAR_CENTER_PAGE1 false)
+(defvar SHOW_BAR_CENTER_PAGE2 false)
+
+;; Left widget
+(defvar SHOW_LEFT_WIDGET false)
+(defvar SHOW_CALENDAR false)
+(defvar HOVER_BLUETOOTH false)
+(defvar SHOW_BLUETOOTH false)
+(defvar HOVER_LAN false)
+(defvar SHOW_LAN false)
+
+
+
+
+

@@ -1,0 +1,3 @@
+(defwidget module_left_widget_bt_entry []
+  (box)
+)

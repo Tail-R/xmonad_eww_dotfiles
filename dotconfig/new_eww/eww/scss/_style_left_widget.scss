@@ -1,0 +1,79 @@
+/***** Window *******************************************************/
+.window_left_widget {
+}
+
+/***** Widget *******************************************************/
+.left_widget_root_box {
+    background-color: $bg;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.4rem $bg;
+}
+
+
+// Clock
+.left_widget_clock_time {
+    background-color: $color5;
+    border-radius: 2rem;
+
+    .label {
+        color: $color3;
+        font-size: 4.8rem;
+        font-style: italic;
+        font-weight: bold; 
+    }
+}
+
+// Weather
+.left_widget_weather_con {
+    background-color: $color4;
+    border-radius: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    color: $fg;
+    font-size: 1.8rem;
+    font-weight: bold; 
+    
+}
+
+.left_widget_weather_locale {
+    .label {
+        color: $fg;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+}
+
+.left_widget_weather_temp {
+    .label {
+        color: $fg;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .icon {
+        color: $fg;
+        font-size: 1.8rem;
+    }
+}
+
+// Profile
+.left_widget_profile_bg {
+    background-color: $fg-alt;
+    border-radius: 2rem;
+}
+
+.left_widget_profile_name {
+    color: $fg;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+// Sysinfo
+
+// Lan
+
+// Bluetooth
+
+

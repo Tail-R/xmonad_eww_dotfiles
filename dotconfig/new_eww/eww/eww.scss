@@ -1,0 +1,14 @@
+* {
+    all: unset;
+    font-family: "Source Code";
+ }
+
+/***** Color scheme *************************************************/
+@import 'scss/colors/uwu.scss';
+  
+/***** Style ********************************************************/
+@import 'scss/_style_top_bar.scss'
+@import 'scss/_style_left_widget.scss'
+@import 'scss/_style_right_mplayer.scss'
+
+
