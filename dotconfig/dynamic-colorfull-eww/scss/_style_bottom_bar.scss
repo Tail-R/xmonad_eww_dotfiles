@@ -1,0 +1,64 @@
+/***** Window *******************************************************/
+.window_bottom_bar {
+    background-color: rgba($purple, 0.5);
+}
+
+/***** Widget *******************************************************/
+.bottom_bar_root_box {
+    transition: 400ms ease;
+}
+
+.bottom_bar_root_box_div{
+    background-color: $bg;
+    transition: 400ms ease;
+}
+
+.bottom_bar_bar_center {
+    background-color: $bg;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.4rem $bg;
+}
+
+.bottom_bar_launch_left_widget {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    transition: 200ms ease;
+
+    .icon {
+        color: $yellow;
+        font-size: 2.2rem;
+        padding-right: 0.5rem;
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+.bottom_bar_active_winname {
+    background-color: $purple;
+    border-radius: 1rem;
+    transition: 200ms ease;
+
+    .label {
+        color: $yellow;
+        font-size: 1.2rem;
+        font-weight: bold; 
+    }
+}
+
+.bottom_bar_launch_right_mplayer {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    transition: 300ms ease;
+
+    .icon {
+        color: $pink;
+        font-size: 2.2rem;
+        padding-right: 0.5rem;
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}

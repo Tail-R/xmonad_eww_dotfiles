@@ -1,0 +1,4 @@
+(defwidget widget_right_mplayer []
+  (box
+  )
+)
