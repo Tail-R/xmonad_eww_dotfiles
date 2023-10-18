@@ -1,0 +1,12 @@
+(defwidget widget_center_dashboard []
+  (box
+    (box
+      :orientation "v"
+
+      (box
+        {replace(jq(JSON_VDESKTOPS, ".[1].img_path_array"), "\"", "")}
+      )
+      ; (label :text "${JSON_VDESKTOPS}")
+    )
+  )
+)

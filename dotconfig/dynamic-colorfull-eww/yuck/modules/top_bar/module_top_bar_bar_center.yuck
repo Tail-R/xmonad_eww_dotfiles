@@ -1,0 +1,422 @@
+(defwidget module_top_bar_bar_center []
+  (eventbox
+    :onhover "scripts/rev_sw/rev_sw_top_bar.sh --rev_rev_switcher"
+
+    (box
+      :orientation "v"
+      :space-evenly false
+
+      ;; Page rev switcher
+      (revealer
+        :transition "slidedown"
+        :reveal SHOW_BAR_CENTER_REV_SW
+        :duration "200ms"
+
+        (box
+          :class "bar_center_rev_sw"
+          :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_P_H, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_P_V, 0)}
+
+          (box
+            :orientation "v"
+            :halign "center"
+            :valign "center"
+            :space-evenly false
+
+            (box
+              :halign "center"
+              :valign "center"
+              :space-evenly false
+              :spacing 10
+
+              (eventbox
+                :class "bar_center_rev_sw_page0"
+                :onclick "scripts/rev_sw/rev_sw_top_bar.sh --rev_page0"
+
+                (box
+                  :halign "center"
+                  :valign "center"
+                  :width {round(DP_WIDTH / 16, 0)}
+                  :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+
+                  (box
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label :class "icon" :text "󰝚")
+                    (label :class "label" :text "music")
+                  )
+                )
+              )
+              
+              (eventbox
+                :class "bar_center_rev_sw_page1"
+                :onclick "scripts/rev_sw/rev_sw_top_bar.sh --rev_page1"
+
+                (box
+                  :halign "center"
+                  :valign "center"
+                  :width {round(DP_WIDTH / 16, 0)}
+                  :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+                  
+                  (box
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label :class "icon" :text "󰌢")
+                    (label :class "label" :text "system")
+                  )
+                )
+              )
+              
+              (eventbox
+                :class "bar_center_rev_sw_page2"
+                :onclick "scripts/rev_sw/rev_sw_top_bar.sh --rev_page2"
+
+                (box
+                  :halign "center"
+                  :valign "center"
+                  :width {round(DP_WIDTH / 16, 0)}
+                  :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+                  
+                  (box
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label :class "icon" :text "")
+                    (label :class "label" :text "power")
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+
+      ;; Page 0
+      (revealer
+        :transition "slidedown"
+        :reveal SHOW_BAR_CENTER_PAGE0
+        :duration "200ms"
+
+        (box
+          :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_P_H, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_P_V, 0)}
+
+          ;; Mpris
+          (overlay
+            (box
+              :style
+              "
+              background-image: url('${MPRIS_COVER}');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              border-radius: 1rem;
+              opacity: 0.5;
+              "
+            )
+            
+
+            (centerbox
+              :halign "center"
+              :space-evenly false
+              :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_C_H, 0)}
+              :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+              
+              (box
+                :space-evenly false
+                :spacing 10
+
+                (overlay
+                  (box
+                    :halign "center" 
+                    :valign "center"
+                    :width {round(DP_WIDTH / 38, 0)}
+                    :height {round(DP_WIDTH / 38, 0)}
+                    :style
+                    "
+                    background-image: url('${MPRIS_COVER_DEFAULT}');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    border-radius: 1rem;
+                    "
+                  )
+                  
+                  (box
+                    :halign "center" 
+                    :valign "center"
+                    :width {round(DP_WIDTH / 38, 0)}
+                    :height {round(DP_WIDTH / 38, 0)}
+                    :style
+                    "
+                    background-image: url('${MPRIS_COVER}');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    border-radius: 1rem;
+                    "
+                  )
+                )
+
+                (box
+                  :class "bar_center_mpris_label"
+                  :orientation "v"
+                  :valign "center"
+                  :space-evenly false
+                  
+                  (label
+                    :class "title"
+                    :halign "start"
+                    :limit-width 20
+                    :text "${MPRIS_TITLE}"
+                  )
+
+                  (label
+                    :class "artist"
+                    :halign "start"
+                    :limit-width 20
+                    :text "${MPRIS_ARTIST}"
+                  )
+                )
+              )
+
+              (box)
+
+              (box
+                :class "bar_center_mpris_con"
+                :halign "end"
+                :valign "center"
+                :width {round(DP_WIDTH / 14, 0)}
+                :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+              
+                (box
+                  (centerbox
+                    (box
+                      
+                      (button
+                        :class "prev_icon"
+                        :onclick "scripts/mpris.sh --prev"
+                        "󰒮"
+                      )
+                    )
+
+                    (box
+                      (button
+                        :class "toggle_icon" 
+                        :onclick "scripts/mpris.sh --toggle"
+                        {MPRIS_STATUS == "playing" ?
+                        "󰏤"
+                        :
+                        "󰐊"
+                        }
+                      )
+                    )
+
+                    (box
+                      (button
+                        :class "next_icon"
+                        :onclick "scripts/mpris.sh --next"
+                        "󰒭"
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+
+      ;; Page 1
+      (revealer
+        :transition "slidedown"
+        :reveal SHOW_BAR_CENTER_PAGE1
+        :duration "200ms"
+
+        (box
+          :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_P_H, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_P_V, 0)}
+
+          (box
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_C_H, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+          
+            (box
+              :halign "center"
+              :valign "center"
+              :space-evenly false
+              :spacing 10
+              
+              (box
+                :width {round(DP_WIDTH / 7.3, 0)}
+                :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+
+                (box
+                  :orientation "v"
+                  :space-evenly false
+                  :valign "center"
+
+                  (box
+                    :class "bar_center_lan"
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label
+                      :class "icon"
+                      :text {LAN_CON_STATUS == "connected" ?
+                      "󰤨"
+                      :
+                      "󰤭"
+                      }
+                    )
+
+                    (label
+                      :class "label"
+                      :limit-width 20
+                      :text {LAN_CON_STATUS == "connected" ?
+                      "${LAN_SSID}"
+                      :
+                      "offline"
+                      }
+                    )
+                  )
+
+                  (box
+                    :class "bar_center_bluetooth"
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label
+                      :class "icon"
+                      :text {BT_CON_STATUS == "connected" ?
+                      "󰋋"
+                      :
+                      "󰟎"
+                      }
+                    )
+
+                    (label
+                      :class "label"
+                      :limit-width 20
+                      :text {BT_CON_STATUS == "connected" ?
+                      "${BT_DEVNAME}"         
+                      :
+                      "offline"
+                      }
+                    )
+                  )
+                )
+              )
+
+              (box
+                :class "bar_center_sysinfo_levels"
+                :width {round(DP_WIDTH / 8.2, 0)}
+                :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+
+                (box
+                  :halign "center"
+                  :space-evenly false
+                  :spacing 20
+                  
+                  (box
+                    :class "bar_center_micvol"
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label :class "icon" :text "")
+                    (label :class "label" :text "${MICVOL_LEVEL}")
+                  )
+
+                  (box
+                    :class "bar_center_volume"
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label :class "icon" :text "")
+                    (label :class "label" :text "${VOLUME_LEVEL}")
+                  )
+                  
+                  (box
+                    :class "bar_center_brightness"
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label :class "icon" :text "")
+                    (label :class "label" :text "${BRIGHTNESS}")
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+      
+      ;; Page 2
+      (revealer
+        :transition "slidedown"
+        :reveal SHOW_BAR_CENTER_PAGE2
+        :duration "200ms"
+
+        (box
+          :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_P_H, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_P_V, 0)}
+
+          (box
+            :halign "center"
+            :valign "center"
+            :space-evenly false
+            :spacing 20
+
+            (eventbox
+              :class "center_bar_shutdown"
+              :onclick "systemctl poweroff"
+              :width {round(DP_WIDTH / 32, 0)}
+              :height {round(DP_HEIGHT / 28, 0)}
+
+              (label :class "icon" :text "󰐥")
+            )
+            
+            (eventbox
+              :class "center_bar_suspend"
+              :onclick "systemctl suspend"
+              :width {round(DP_WIDTH / 32, 0)}
+              :height {round(DP_HEIGHT / 28, 0)}
+              
+              (label :class "icon" :text "󰤄")
+            )
+            
+            (eventbox
+              :class "center_bar_logout"
+              :onclick "kill -9 -1"
+              :width {round(DP_WIDTH / 32, 0)}
+              :height {round(DP_HEIGHT / 28, 0)}
+              
+              (label :class "icon" :text "󰗼")
+            )
+            
+            (eventbox
+              :class "center_bar_reboot"
+              :onclick "systemctl reboot"
+              :width {round(DP_WIDTH / 32, 0)}
+              :height {round(DP_HEIGHT / 28, 0)}
+              
+              (label :class "icon" :text "󰑙")
+            )
+          )
+        )
+      )
+    )
+  )  
+)
