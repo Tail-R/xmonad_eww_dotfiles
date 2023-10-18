@@ -1,3 +1,0 @@
-(defwidget widget_center_dashboard []
-  (box)
-)
