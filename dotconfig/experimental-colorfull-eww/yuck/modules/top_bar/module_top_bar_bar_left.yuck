@@ -1,0 +1,92 @@
+(defwidget module_top_bar_bar_left []
+  (box
+    :halign "start"
+    :valign "center"
+    :space-evenly false
+    :spacing 10
+
+    (eventbox
+      :class "bar_left_uptime"     
+      :width {round(DP_WIDTH / 10, 0)}
+      :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+
+      (box
+        (label :class "label" :limit-width 15 :text "${UPTIME}")
+      )
+    )
+    
+    (box
+      :class "bar_left_workspaces"     
+      :width {round(DP_WIDTH / 8.7, 0)}
+      :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+
+      (box
+        :halign "center"
+        :valign "center"
+      
+        (literal :content WS)
+      ) 
+    )
+
+    (eventbox
+      :onclick {SHOW_BAR_CENTER ?
+      "
+      ${EWW_CMD} update SHOW_BAR_CENTER=false &
+      "
+      :
+      "
+      scripts/launcher/launch_left_widget.sh --close &&
+      ${EWW_CMD} update SHOW_BAR_CENTER=true &
+      "
+      }
+      
+      (box
+        :orientation "v"
+        :space-evenly false
+
+        (revealer
+          :transition "slidedown"
+          :reveal {SHOW_BAR_CENTER == false}
+
+          (eventbox
+            :class "bar_left_divide"
+            :width {round(DP_WIDTH / 28, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+          
+            (box
+              (label
+                :class "icon"
+                :text "󱢡"
+                ; :text ""
+              )
+            )
+          )
+        )
+        
+        (revealer
+          :reveal SHOW_BAR_CENTER
+          :transition "slidedown"
+
+          (eventbox
+            :class "bar_left_conquer"
+            :width {round(DP_WIDTH / 28, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+          
+            (box
+              (label
+                :class "icon"
+                :text "󱢮"
+                ; :text ""
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)
+
+
+
+
+

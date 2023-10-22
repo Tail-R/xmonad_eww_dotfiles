@@ -1,0 +1,9 @@
+(defwidget module_center_dashboard_rev_sw []
+  (box
+    :class "center_dashboard_rev_sw"
+    :halign "center"
+    :valign "center"
+    :width {round(DP_WIDTH / 6, 0)}
+    :height {round(DP_HEIGHT / BOX_SIZE_CENTER_DASHBOARD_ROOT_BOX_P_V, 0)}
+  )
+)

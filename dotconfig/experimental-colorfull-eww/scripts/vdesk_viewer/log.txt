@@ -1,0 +1,4469 @@
+
+/home/tailr/.config/eww/scripts/vdesk_viewer
+<Xlib.display.Display object at 0x7ff715062410>
+<Window 0x000007a1>
+[<__main__.Thumbnail object at 0x7ff715099f50>, <__main__.Thumbnail object at 0x7ff715102890>, <__main__.Thumbnail object at 0x7ff715102a50>, <__main__.Thumbnail object at 0x7ff714e08250>, <__main__.Thumbnail object at 0x7ff714e08210>]
+nod = 5
+---------- Event ----------
+from<Window 0x00600001>
+name6291457
+---------- Event ----------
+from<Window 0x00800001>
+name8388609
+---------- Event ----------
+---------- Event ----------
+---------- Event ----------
+from<Window 0x00600003>
+name6291459
+---------- Event ----------
+from<Window 0x00800003>
+name8388611
+---------- Event ----------
+from<Window 0x00800003>
+name8388611
+---------- Event ----------
+from<Window 0x00800003>
+name8388611
+---------- Event ----------
+from<Window 0x00800003>
+name8388611
+---------- Event ----------
+from<Window 0x00800008>
+name8388616
+---------- Event ----------
+from<Window 0x0080000d>
+name8388621
+---------- Event ----------
+from<Window 0x0080000d>
+name8388621
+---------- Event ----------
+from<Window 0x0080000d>
+name8388621
+---------- Event ----------
+from<Window 0x00800013>
+name8388627
+---------- Event ----------
+from<Window 0x00800013>
+name8388627
+---------- Event ----------
+from<Window 0x00800013>
+name8388627
+---------- Event ----------
+from<Window 0x00800013>
+name8388627
+---------- Event ----------
+from<Window 0x00800327>
+name8389415
+---------- Event ----------
+from<Window 0x00800327>
+name8389415
+---------- Event ----------
+from<Window 0x00800327>
+name8389415
+---------- Event ----------
+---------- Event ----------
+---------- Event ----------
+from<Window 0x00800327>
+name8389415
+destroyed 8389415
+---------- Event ----------
+from<Window 0x00800327>
+name8389415
+destroyed 8389415
+---------- Event ----------
+from<Window 0x00800327>
+name8389415
+---------- Event ----------
+from<Window 0x00800013>
+name8388627
+destroyed 8388627
+---------- Event ----------
+from<Window 0x00800013>
+name8388627
+destroyed 8388627
+---------- Event ----------
+from<Window 0x00800013>
+name8388627
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x00400006>
+name4194310
+---------- Event ----------
+from<Window 0x00400006>
+name4194310
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0040000b>
+name4194315
+---------- Event ----------
+from<Window 0x0040000b>
+name4194315
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x00400010>
+name4194320
+---------- Event ----------
+from<Window 0x00400010>
+name4194320
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x008015c3>
+name8394179
+---------- Event ----------
+from<Window 0x008015c3>
+name8394179
+---------- Event ----------
+from<Window 0x008015c3>
+name8394179
+---------- Event ----------
+from<Window 0x008015c3>
+name8394179
+destroyed 8394179
+---------- Event ----------
+from<Window 0x008015c3>
+name8394179
+destroyed 8394179
+---------- Event ----------
+from<Window 0x008015c3>
+name8394179
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+destroyed 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x00802181>
+name8397185
+---------- Event ----------
+from<Window 0x00802181>
+name8397185
+---------- Event ----------
+from<Window 0x00802181>
+name8397185
+---------- Event ----------
+from<Window 0x00802181>
+name8397185
+destroyed 8397185
+---------- Event ----------
+from<Window 0x00802181>
+name8397185
+destroyed 8397185
+---------- Event ----------
+from<Window 0x00802181>
+name8397185
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01a00001>
+name27262977
+---------- Event ----------
+from<Window 0x01a00007>
+name27262983
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x01a00007>
+name27262983
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x00400015>
+name4194325
+---------- Event ----------
+from<Window 0x00400015>
+name4194325
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+mapped 27262990
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+unmapped 23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+unmapped 20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+unmapped 18874382
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0080265f>
+name8398431
+---------- Event ----------
+from<Window 0x0080265f>
+name8398431
+---------- Event ----------
+from<Window 0x0080265f>
+name8398431
+---------- Event ----------
+from<Window 0x0080265f>
+name8398431
+destroyed 8398431
+---------- Event ----------
+from<Window 0x0080265f>
+name8398431
+destroyed 8398431
+---------- Event ----------
+from<Window 0x0080265f>
+name8398431
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+destroyed 27262990
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01a00001>
+name27262977
+---------- Event ----------
+from<Window 0x00803525>
+name8402213
+---------- Event ----------
+from<Window 0x00803525>
+name8402213
+---------- Event ----------
+from<Window 0x00803525>
+name8402213
+---------- Event ----------
+from<Window 0x00803525>
+name8402213
+destroyed 8402213
+---------- Event ----------
+from<Window 0x00803525>
+name8402213
+destroyed 8402213
+---------- Event ----------
+from<Window 0x00803525>
+name8402213
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+destroyed 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x00803eee>
+name8404718
+---------- Event ----------
+from<Window 0x00803eee>
+name8404718
+---------- Event ----------
+from<Window 0x00803eee>
+name8404718
+---------- Event ----------
+from<Window 0x00803eee>
+name8404718
+destroyed 8404718
+---------- Event ----------
+from<Window 0x00803eee>
+name8404718
+destroyed 8404718
+---------- Event ----------
+from<Window 0x00803eee>
+name8404718
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+unmapped 20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+unmapped 18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+unmapped 23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+unmapped 20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+unmapped 18874382
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0040001a>
+name4194330
+---------- Event ----------
+from<Window 0x0040001a>
+name4194330
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+mapped 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01a00001>
+name27262977
+---------- Event ----------
+from<Window 0x01a00007>
+name27262983
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x01a00007>
+name27262983
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+mapped 27262990
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x00804705>
+name8406789
+---------- Event ----------
+from<Window 0x00804705>
+name8406789
+---------- Event ----------
+from<Window 0x00804705>
+name8406789
+---------- Event ----------
+from<Window 0x00804705>
+name8406789
+destroyed 8406789
+---------- Event ----------
+from<Window 0x00804705>
+name8406789
+destroyed 8406789
+---------- Event ----------
+from<Window 0x00804705>
+name8406789
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+destroyed 27262990
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01a00001>
+name27262977
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+destroyed 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+destroyed 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x00804f07>
+name8408839
+---------- Event ----------
+from<Window 0x00804f07>
+name8408839
+---------- Event ----------
+from<Window 0x00804f07>
+name8408839
+---------- Event ----------
+from<Window 0x00804f07>
+name8408839
+destroyed 8408839
+---------- Event ----------
+from<Window 0x00804f07>
+name8408839
+destroyed 8408839
+---------- Event ----------
+from<Window 0x00804f07>
+name8408839
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+destroyed 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120012f>
+name18874671
+---------- Event ----------
+from<Window 0x0120012f>
+name18874671
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200003>
+name18874371
+---------- Event ----------
+from<Window 0x01200003>
+name18874371
+---------- Event ----------
+from<Window 0x01200027>
+name18874407
+---------- Event ----------
+from<Window 0x01200027>
+name18874407
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x01200039>
+name18874425
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x0120003c>
+name18874428
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x0120003c>
+name18874428
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x0040025b>
+name4194907
+---------- Event ----------
+from<Window 0x0040025b>
+name4194907
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+mapped 18874412
+---------- Event ----------
+from<Window 0x01200048>
+name18874440
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600003>
+name23068675
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x01600016>
+name23068694
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x0040049e>
+name4195486
+---------- Event ----------
+from<Window 0x0040049e>
+name4195486
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+mapped 23068679
+---------- Event ----------
+from<Window 0x0160005e>
+name23068766
+---------- Event ----------
+from<Window 0x01600211>
+name23069201
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+unmapped 20971534
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+unmapped 18874412
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+mapped 18874412
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+unmapped 23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+unmapped 20971534
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+unmapped 18874412
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+mapped 23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+mapped 18874412
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+unmapped 20971534
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+unmapped 18874412
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+mapped 18874412
+---------- Event ----------
+from<Window 0x00805ab9>
+name8411833
+---------- Event ----------
+from<Window 0x00805ab9>
+name8411833
+---------- Event ----------
+from<Window 0x00805ab9>
+name8411833
+---------- Event ----------
+from<Window 0x00805ab9>
+name8411833
+destroyed 8411833
+---------- Event ----------
+from<Window 0x00805ab9>
+name8411833
+destroyed 8411833
+---------- Event ----------
+from<Window 0x00805ab9>
+name8411833
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+destroyed 23068679
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+destroyed 23068679
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x01600211>
+name23069201
+---------- Event ----------
+from<Window 0x0160005e>
+name23068766
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600003>
+name23068675
+---------- Event ----------
+from<Window 0x01600016>
+name23068694
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+destroyed 18874412
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+destroyed 18874412
+---------- Event ----------
+from<Window 0x0120002c>
+name18874412
+---------- Event ----------
+from<Window 0x01200048>
+name18874440
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200039>
+name18874425
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+mapped 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x00806663>
+name8414819
+---------- Event ----------
+from<Window 0x00806663>
+name8414819
+---------- Event ----------
+from<Window 0x00806663>
+name8414819
+---------- Event ----------
+from<Window 0x00806663>
+name8414819
+destroyed 8414819
+---------- Event ----------
+from<Window 0x00806663>
+name8414819
+destroyed 8414819
+---------- Event ----------
+from<Window 0x00806663>
+name8414819
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+destroyed 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600000>
+name23068672
+---------- Event ----------
+from<Window 0x01a00001>
+name27262977
+---------- Event ----------
+from<Window 0x01a00003>
+name27262979
+---------- Event ----------
+from<Window 0x01600003>
+name23068675
+---------- Event ----------
+from<Window 0x01600003>
+name23068675
+---------- Event ----------
+from<Window 0x01600004>
+name23068676
+---------- Event ----------
+from<Window 0x01600003>
+name23068675
+---------- Event ----------
+from<Window 0x01600003>
+name23068675
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600003>
+name23068675
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01600003>
+name23068675
+mapped 23068675
+---------- Event ----------
+from<Window 0x01600003>
+name23068675
+---------- Event ----------
+from<Window 0x01600003>
+name23068675
+---------- Event ----------
+from<Window 0x0080725a>
+name8417882
+---------- Event ----------
+from<Window 0x0080725a>
+name8417882
+---------- Event ----------
+from<Window 0x0080725a>
+name8417882
+---------- Event ----------
+from<Window 0x0080725a>
+name8417882
+destroyed 8417882
+---------- Event ----------
+from<Window 0x0080725a>
+name8417882
+destroyed 8417882
+---------- Event ----------
+from<Window 0x0080725a>
+name8417882
+---------- Event ----------
+from<Window 0x01600003>
+name23068675
+destroyed 23068675
+---------- Event ----------
+from<Window 0x01600003>
+name23068675
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01a00001>
+name27262977
+---------- Event ----------
+from<Window 0x01a00003>
+name27262979
+---------- Event ----------
+from<Window 0x01600000>
+name23068672
+---------- Event ----------
+from<Window 0x01600004>
+name23068676
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+destroyed 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+mapped 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+unmapped 23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+unmapped 20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+unmapped 18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+destroyed 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+destroyed 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+mapped 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0080811e>
+name8421662
+---------- Event ----------
+from<Window 0x0080811e>
+name8421662
+---------- Event ----------
+from<Window 0x0080811e>
+name8421662
+---------- Event ----------
+from<Window 0x0080811e>
+name8421662
+destroyed 8421662
+---------- Event ----------
+from<Window 0x0080811e>
+name8421662
+destroyed 8421662
+---------- Event ----------
+from<Window 0x0080811e>
+name8421662
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+destroyed 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+destroyed 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+destroyed 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x00809006>
+name8425478
+---------- Event ----------
+from<Window 0x00809006>
+name8425478
+---------- Event ----------
+from<Window 0x00809006>
+name8425478
+---------- Event ----------
+from<Window 0x00809006>
+name8425478
+destroyed 8425478
+---------- Event ----------
+from<Window 0x00809006>
+name8425478
+destroyed 8425478
+---------- Event ----------
+from<Window 0x00809006>
+name8425478
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+destroyed 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x00809ba5>
+name8428453
+---------- Event ----------
+from<Window 0x00809ba5>
+name8428453
+---------- Event ----------
+from<Window 0x00809ba5>
+name8428453
+---------- Event ----------
+from<Window 0x0080a173>
+name8429939
+---------- Event ----------
+from<Window 0x0080a173>
+name8429939
+---------- Event ----------
+from<Window 0x0080a173>
+name8429939
+---------- Event ----------
+from<Window 0x0080a173>
+name8429939
+---------- Event ----------
+from<Window 0x0080aac6>
+name8432326
+---------- Event ----------
+from<Window 0x0080aac6>
+name8432326
+---------- Event ----------
+from<Window 0x0080aac6>
+name8432326
+---------- Event ----------
+from<Window 0x0080aac6>
+name8432326
+destroyed 8432326
+---------- Event ----------
+from<Window 0x0080aac6>
+name8432326
+destroyed 8432326
+---------- Event ----------
+from<Window 0x0080aac6>
+name8432326
+---------- Event ----------
+from<Window 0x00809ba5>
+name8428453
+destroyed 8428453
+---------- Event ----------
+from<Window 0x00809ba5>
+name8428453
+destroyed 8428453
+---------- Event ----------
+from<Window 0x00809ba5>
+name8428453
+---------- Event ----------
+from<Window 0x0080a173>
+name8429939
+destroyed 8429939
+---------- Event ----------
+from<Window 0x0080a173>
+name8429939
+destroyed 8429939
+---------- Event ----------
+from<Window 0x0080a173>
+name8429939
+---------- Event ----------
+from<Window 0x0080cb53>
+name8440659
+---------- Event ----------
+from<Window 0x0080cb53>
+name8440659
+---------- Event ----------
+from<Window 0x0080cb53>
+name8440659
+---------- Event ----------
+from<Window 0x0080d331>
+name8442673
+---------- Event ----------
+from<Window 0x0080d331>
+name8442673
+---------- Event ----------
+from<Window 0x0080d331>
+name8442673
+---------- Event ----------
+from<Window 0x0080d331>
+name8442673
+---------- Event ----------
+from<Window 0x0080d331>
+name8442673
+destroyed 8442673
+---------- Event ----------
+from<Window 0x0080d331>
+name8442673
+destroyed 8442673
+---------- Event ----------
+from<Window 0x0080d331>
+name8442673
+---------- Event ----------
+from<Window 0x0080cb53>
+name8440659
+destroyed 8440659
+---------- Event ----------
+from<Window 0x0080cb53>
+name8440659
+destroyed 8440659
+---------- Event ----------
+from<Window 0x0080cb53>
+name8440659
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+mapped 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0080f40c>
+name8451084
+---------- Event ----------
+from<Window 0x0080f40c>
+name8451084
+---------- Event ----------
+from<Window 0x0080f40c>
+name8451084
+---------- Event ----------
+from<Window 0x0080f40c>
+name8451084
+destroyed 8451084
+---------- Event ----------
+from<Window 0x0080f40c>
+name8451084
+destroyed 8451084
+---------- Event ----------
+from<Window 0x0080f40c>
+name8451084
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+destroyed 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+destroyed 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x0080ffcc>
+name8454092
+---------- Event ----------
+from<Window 0x0080ffcc>
+name8454092
+---------- Event ----------
+from<Window 0x0080ffcc>
+name8454092
+---------- Event ----------
+from<Window 0x0080ffcc>
+name8454092
+destroyed 8454092
+---------- Event ----------
+from<Window 0x0080ffcc>
+name8454092
+destroyed 8454092
+---------- Event ----------
+from<Window 0x0080ffcc>
+name8454092
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0081049e>
+name8455326
+---------- Event ----------
+from<Window 0x0081049e>
+name8455326
+---------- Event ----------
+from<Window 0x0081049e>
+name8455326
+---------- Event ----------
+from<Window 0x0081049e>
+name8455326
+destroyed 8455326
+---------- Event ----------
+from<Window 0x0081049e>
+name8455326
+destroyed 8455326
+---------- Event ----------
+from<Window 0x0081049e>
+name8455326
+---------- Event ----------
+from<Window 0x00810c71>
+name8457329
+---------- Event ----------
+from<Window 0x00810c71>
+name8457329
+---------- Event ----------
+from<Window 0x00810c71>
+name8457329
+---------- Event ----------
+from<Window 0x00810c71>
+name8457329
+destroyed 8457329
+---------- Event ----------
+from<Window 0x00810c71>
+name8457329
+destroyed 8457329
+---------- Event ----------
+from<Window 0x00810c71>
+name8457329
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+mapped 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x00811475>
+name8459381
+---------- Event ----------
+from<Window 0x00811475>
+name8459381
+---------- Event ----------
+from<Window 0x00811475>
+name8459381
+---------- Event ----------
+from<Window 0x00811475>
+name8459381
+destroyed 8459381
+---------- Event ----------
+from<Window 0x00811475>
+name8459381
+destroyed 8459381
+---------- Event ----------
+from<Window 0x00811475>
+name8459381
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+destroyed 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+unmapped 18874382
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+unmapped 20971534
+---------- Event ----------
+from<Window 0x0081202a>
+name8462378
+---------- Event ----------
+from<Window 0x0081202a>
+name8462378
+---------- Event ----------
+from<Window 0x0081202a>
+name8462378
+---------- Event ----------
+from<Window 0x0081202a>
+name8462378
+destroyed 8462378
+---------- Event ----------
+from<Window 0x0081202a>
+name8462378
+destroyed 8462378
+---------- Event ----------
+from<Window 0x0081202a>
+name8462378
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+unmapped 18874382
+---------- Event ----------
+from<Window 0x008124ff>
+name8463615
+---------- Event ----------
+from<Window 0x008124ff>
+name8463615
+---------- Event ----------
+from<Window 0x008124ff>
+name8463615
+---------- Event ----------
+from<Window 0x008124ff>
+name8463615
+destroyed 8463615
+---------- Event ----------
+from<Window 0x008124ff>
+name8463615
+destroyed 8463615
+---------- Event ----------
+from<Window 0x008124ff>
+name8463615
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x008129b1>
+name8464817
+---------- Event ----------
+from<Window 0x008129b1>
+name8464817
+---------- Event ----------
+from<Window 0x008129b1>
+name8464817
+---------- Event ----------
+from<Window 0x008129b1>
+name8464817
+destroyed 8464817
+---------- Event ----------
+from<Window 0x008129b1>
+name8464817
+destroyed 8464817
+---------- Event ----------
+from<Window 0x008129b1>
+name8464817
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01000001>
+name16777217
+---------- Event ----------
+from<Window 0x01000007>
+name16777223
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01000007>
+name16777223
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x004004a3>
+name4195491
+---------- Event ----------
+from<Window 0x004004a3>
+name4195491
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+mapped 16777230
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x00812e96>
+name8466070
+---------- Event ----------
+from<Window 0x00812e96>
+name8466070
+---------- Event ----------
+from<Window 0x00812e96>
+name8466070
+---------- Event ----------
+from<Window 0x00812e96>
+name8466070
+destroyed 8466070
+---------- Event ----------
+from<Window 0x00812e96>
+name8466070
+destroyed 8466070
+---------- Event ----------
+from<Window 0x00812e96>
+name8466070
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+destroyed 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+destroyed 16777230
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01000001>
+name16777217
+---------- Event ----------
+from<Window 0x01000001>
+name16777217
+---------- Event ----------
+from<Window 0x01000007>
+name16777223
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01000007>
+name16777223
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+mapped 16777230
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x00813a53>
+name8469075
+---------- Event ----------
+from<Window 0x00813a53>
+name8469075
+---------- Event ----------
+from<Window 0x00813a53>
+name8469075
+---------- Event ----------
+from<Window 0x00813a53>
+name8469075
+destroyed 8469075
+---------- Event ----------
+from<Window 0x00813a53>
+name8469075
+destroyed 8469075
+---------- Event ----------
+from<Window 0x00813a53>
+name8469075
+---------- Event ----------
+from<Window 0x00813c86>
+name8469638
+---------- Event ----------
+from<Window 0x00813c86>
+name8469638
+---------- Event ----------
+from<Window 0x00813c86>
+name8469638
+---------- Event ----------
+from<Window 0x00813c86>
+name8469638
+destroyed 8469638
+---------- Event ----------
+from<Window 0x00813c86>
+name8469638
+destroyed 8469638
+---------- Event ----------
+from<Window 0x00813c86>
+name8469638
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+unmapped 23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+unmapped 20971534
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+unmapped 16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+mapped 16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+unmapped 23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+unmapped 20971534
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+unmapped 16777230
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+mapped 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01a00001>
+name27262977
+---------- Event ----------
+from<Window 0x01a00007>
+name27262983
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x01a00007>
+name27262983
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+mapped 27262990
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x01c00001>
+name29360129
+---------- Event ----------
+from<Window 0x01c00007>
+name29360135
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+---------- Event ----------
+from<Window 0x01c00007>
+name29360135
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x004004a8>
+name4195496
+---------- Event ----------
+from<Window 0x004004a8>
+name4195496
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+mapped 29360142
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+---------- Event ----------
+from<Window 0x00813ed5>
+name8470229
+---------- Event ----------
+from<Window 0x00813ed5>
+name8470229
+---------- Event ----------
+from<Window 0x00813ed5>
+name8470229
+---------- Event ----------
+from<Window 0x00813ed5>
+name8470229
+destroyed 8470229
+---------- Event ----------
+from<Window 0x00813ed5>
+name8470229
+destroyed 8470229
+---------- Event ----------
+from<Window 0x00813ed5>
+name8470229
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+destroyed 29360142
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01c00001>
+name29360129
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+destroyed 27262990
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01a00001>
+name27262977
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+destroyed 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01c00001>
+name29360129
+---------- Event ----------
+from<Window 0x01c00007>
+name29360135
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+---------- Event ----------
+from<Window 0x01c00007>
+name29360135
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+mapped 29360142
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+mapped 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x00814a96>
+name8473238
+---------- Event ----------
+from<Window 0x00814a96>
+name8473238
+---------- Event ----------
+from<Window 0x00814a96>
+name8473238
+---------- Event ----------
+from<Window 0x00814a96>
+name8473238
+destroyed 8473238
+---------- Event ----------
+from<Window 0x00814a96>
+name8473238
+destroyed 8473238
+---------- Event ----------
+from<Window 0x00814a96>
+name8473238
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+destroyed 25165838
+---------- Event ----------
+from<Window 0x0180000e>
+name25165838
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+destroyed 29360142
+---------- Event ----------
+from<Window 0x01c0000e>
+name29360142
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01c00001>
+name29360129
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+mapped 16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+destroyed 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+destroyed 16777230
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01000001>
+name16777217
+---------- Event ----------
+from<Window 0x01000001>
+name16777217
+---------- Event ----------
+from<Window 0x01000007>
+name16777223
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01000007>
+name16777223
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+mapped 16777230
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01200007>
+name18874375
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+mapped 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0081565c>
+name8476252
+---------- Event ----------
+from<Window 0x0081565c>
+name8476252
+---------- Event ----------
+from<Window 0x0081565c>
+name8476252
+---------- Event ----------
+from<Window 0x0081565c>
+name8476252
+destroyed 8476252
+---------- Event ----------
+from<Window 0x0081565c>
+name8476252
+destroyed 8476252
+---------- Event ----------
+from<Window 0x0081565c>
+name8476252
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+destroyed 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+destroyed 18874382
+---------- Event ----------
+from<Window 0x0120000e>
+name18874382
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01200001>
+name18874369
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+destroyed 16777230
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01000001>
+name16777217
+---------- Event ----------
+from<Window 0x00816286>
+name8479366
+---------- Event ----------
+from<Window 0x00816286>
+name8479366
+---------- Event ----------
+from<Window 0x00816286>
+name8479366
+---------- Event ----------
+from<Window 0x00816286>
+name8479366
+destroyed 8479366
+---------- Event ----------
+from<Window 0x00816286>
+name8479366
+destroyed 8479366
+---------- Event ----------
+from<Window 0x00816286>
+name8479366
+---------- Event ----------
+from<Window 0x01000001>
+name16777217
+---------- Event ----------
+from<Window 0x01000007>
+name16777223
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01000007>
+name16777223
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+mapped 16777230
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+mapped 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01600001>
+name23068673
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x01600007>
+name23068679
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x00817ce8>
+name8486120
+---------- Event ----------
+from<Window 0x00817ce8>
+name8486120
+---------- Event ----------
+from<Window 0x00817ce8>
+name8486120
+---------- Event ----------
+from<Window 0x00817ce8>
+name8486120
+destroyed 8486120
+---------- Event ----------
+from<Window 0x00817ce8>
+name8486120
+destroyed 8486120
+---------- Event ----------
+from<Window 0x00817ce8>
+name8486120
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+unmapped 23068686
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+unmapped 16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+mapped 16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+unmapped 23068686
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+unmapped 16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+mapped 23068686
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+mapped 16777230
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400003>
+name20971523
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x01400016>
+name20971542
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x004006eb>
+name4196075
+---------- Event ----------
+from<Window 0x004006eb>
+name4196075
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x0140005e>
+name20971614
+---------- Event ----------
+from<Window 0x0140088b>
+name20973707
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400003>
+name20971523
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+destroyed 20971527
+---------- Event ----------
+from<Window 0x01400007>
+name20971527
+---------- Event ----------
+from<Window 0x01400016>
+name20971542
+---------- Event ----------
+from<Window 0x0140005e>
+name20971614
+---------- Event ----------
+from<Window 0x0140088b>
+name20973707
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+---------- Event ----------
+from<Window 0x0160000e>
+name23068686
+unmapped 23068686
+---------- Event ----------
+from<Window 0x0100000e>
+name16777230
+unmapped 16777230
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x0140008f>
+name20971663
+---------- Event ----------
+from<Window 0x0140008f>
+name20971663
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+destroyed 20971534
+---------- Event ----------
+from<Window 0x0140000e>
+name20971534
+---------- Event ----------
+from<Window 0x01400001>
+name20971521
+---------- Event ----------
+from<Window 0x01400003>
+name20971523
+---------- Event ----------
+from<Window 0x01400003>
+name20971523
+---------- Event ----------
+from<Window 0x01400027>
+name20971559
+---------- Event ----------
+from<Window 0x01400027>
+name20971559
+---------- Event ----------
+from<Window 0x0140002c>
+name20971564
+---------- Event ----------
+from<Window 0x01400039>
+name20971577
+---------- Event ----------
+from<Window 0x0140002c>
+name20971564
+---------- Event ----------
+from<Window 0x0140002c>
+name20971564
+---------- Event ----------
+from<Window 0x0140003c>
+name20971580
+---------- Event ----------
+from<Window 0x0140002c>
+name20971564
+---------- Event ----------
+from<Window 0x0140003c>
+name20971580
+---------- Event ----------
+from<Window 0x0140002c>
+name20971564
+---------- Event ----------
+from<Window 0x0040092c>
+name4196652
+---------- Event ----------
+from<Window 0x0040092c>
+name4196652
+---------- Event ----------
+from<Window 0x0140002c>
+name20971564
+mapped 20971564
+---------- Event ----------
+from<Window 0x01400048>
+name20971592
+---------- Event ----------
+from<Window 0x0140005e>
+name20971614
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400070>
+name20971632
+---------- Event ----------
+from<Window 0x01400070>
+name20971632
+---------- Event ----------
+from<Window 0x01400070>
+name20971632
+---------- Event ----------
+from<Window 0x01400070>
+name20971632
+---------- Event ----------
+from<Window 0x01400070>
+name20971632
+destroyed 20971632
+---------- Event ----------
+from<Window 0x01400070>
+name20971632
+destroyed 20971632
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x0140007e>
+name20971646
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01400062>
+name20971618
+destroyed 20971618
+---------- Event ----------
+from<Window 0x01800001>
+name25165825
+---------- Event ----------
+from<Window 0x01800003>
+name25165827
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x01800016>
+name25165846
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0140002c>
+name20971564
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0140002c>
+name20971564
+---------- Event ----------
+from<Window 0x00400b6f>
+name4197231
+---------- Event ----------
+from<Window 0x00400b6f>
+name4197231
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+mapped 25165831
+---------- Event ----------
+from<Window 0x0180005e>
+name25165918
+---------- Event ----------
+from<Window 0x018001f4>
+name25166324
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0140002c>
+name20971564
+---------- Event ----------
+from<Window 0x01a00001>
+name27262977
+---------- Event ----------
+from<Window 0x01a00007>
+name27262983
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x01a00007>
+name27262983
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0140002c>
+name20971564
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+---------- Event ----------
+from<Window 0x01800007>
+name25165831
+---------- Event ----------
+from<Window 0x0140002c>
+name20971564
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990
+mapped 27262990
+---------- Event ----------
+from<Window 0x01a0000e>
+name27262990

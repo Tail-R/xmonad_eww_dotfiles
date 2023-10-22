@@ -1,0 +1,84 @@
+(defwidget widget_center_dashboard []
+  (box
+    :halign "center"
+    :valign "center"
+    :space-evenly false
+
+    (box
+      :halign "center"
+      :valign "center"
+      :width {round(DP_WIDTH / 5, 0)}
+      :height {round(DP_HEIGHT, 0)}
+
+      (module_center_dashboard_rev_sw)
+    )
+
+    (box
+      :class "center_dashboard_root_box"
+      :orientation "v"
+      :halign "center"
+      :valign "center"
+      :space-evenly false
+
+      ;; Page 0
+      (revealer
+        :transition "slidedown"
+        :reveal SHOW_CENTER_DASHBOARD_PAGE0
+        :duration "200ms"
+
+        (box
+          :halign "center"
+          :valign "center"
+          :width {round(DP_WIDTH / BOX_SIZE_CENTER_DASHBOARD_ROOT_BOX_P_H, 0)}
+          :height {round(DP_HEIGHT, 0)}
+
+          (module_center_dashboard_vdesk_viewer)
+        )
+      )
+      
+      ;; Page 1
+      (revealer
+        :transition "slidedown"
+        :reveal SHOW_CENTER_DASHBOARD_PAGE1
+        :duration "200ms"
+
+        (box
+          :halign "center"
+          :valign "center"
+          :width {round(DP_WIDTH / BOX_SIZE_CENTER_DASHBOARD_ROOT_BOX_P_H, 0)}
+          :height {round(DP_HEIGHT, 0)}
+
+          (box
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / BOX_SIZE_CENTER_DASHBOARD_ROOT_BOX_P_H, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_CENTER_DASHBOARD_ROOT_BOX_P_V, 0)}
+            :style "background-color: #eeaaaa;"
+          )
+        )
+      )
+      
+      ;; Page 2
+      (revealer
+        :transition "slidedown"
+        :reveal SHOW_CENTER_DASHBOARD_PAGE2
+        :duration "200ms"
+
+        (box
+          :halign "center"
+          :valign "center"
+          :width {round(DP_WIDTH / BOX_SIZE_CENTER_DASHBOARD_ROOT_BOX_P_H, 0)}
+          :height {round(DP_HEIGHT, 0)}
+
+          (box
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / BOX_SIZE_CENTER_DASHBOARD_ROOT_BOX_P_H, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_CENTER_DASHBOARD_ROOT_BOX_P_V, 0)}
+            :style "background-color: #aaeeee;"
+          )
+        )
+      )
+    )
+  )
+)

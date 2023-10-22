@@ -1,0 +1,61 @@
+(defwidget module_left_widget_weather []
+  (box
+    :halign "center"
+    :valign "center"
+    :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_P_H, 0)}
+    :height {round(DP_HEIGHT / 9, 0)}
+    
+    (box
+      :orientation "v"
+      :halign "center"
+      :valign "center"
+      :space-evenly false
+    
+      ;; Conditions
+      (box
+        :class "left_widget_weather_con"
+        :halign "center"
+        :valign "center"
+        :height {round(DP_HEIGHT / 22, 0)}
+
+        {"${WEATHER_CON}" == "" ?
+        "offline"
+        :
+        "${WEATHER_CON}"
+        }
+      )
+
+      ;; Locale and temperature
+      (box
+        :halign "center"
+        :space-evenly false
+        :height {round(DP_HEIGHT / 22, 0)}
+        :spacing 20
+
+        (box
+          :class "left_widget_weather_locale"
+
+          (label :class "label" :text "${WEATHER_LOCALE}")
+        )
+
+        (box
+          :class "left_widget_weather_temp"
+          :halign "center"
+          :valign "center"
+          :space-evenly false
+          :spacing 5
+
+          (label
+            :class "label"
+            :text "${WEATHER_TEMP}"
+          )
+
+          (label 
+            :class "icon"
+            :text "󰔄"
+          )
+        )
+      )
+    )
+  )
+)

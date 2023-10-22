@@ -1,0 +1,26 @@
+(defwidget widget_right_mplayer []
+  (box
+    :style {SHOW_RIGHT_MPLAYER ?
+    "
+    transition: 400ms ease;
+    "
+    :
+    "
+    margin-top: -40rem;
+    transition: 400ms ease;
+    "
+    }
+
+    (box
+      :class "right_mplayer_root_box"
+      :halign "center"
+      :valign "center"
+      :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_P_H, 0)}
+      :height {round(DP_HEIGHT / BOX_SIZE_RIGHT_MPLAYER_P_V, 0)}
+    
+      (box
+        (right_mplayer_uwustagram)
+      )
+    )
+  )
+)

@@ -1,0 +1,152 @@
+(defwidget module_left_widget_bluetooth []
+  (eventbox
+    :halign "center"
+    :valign "center"
+    :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_P_H, 0)}
+    :height {round(DP_HEIGHT / 20, 0)}
+    :onhover "${EWW_CMD} update HOVER_BLUETOOTH=true &"
+    :onhoverlost "${EWW_CMD} update HOVER_BLUETOOTH=false SHOW_BLUETOOTH=false &"
+
+    (box
+      :orientation "v"
+      :halign "start"
+      :valign "center"
+      :space-evenly false
+      :spacing 10
+
+      ;; Top Box
+      (box
+        :halign "center"
+        :valign "center"
+        :space-evenly false
+        :spacing 15
+
+        ;; Left
+        (revealer
+          :transition "slideright"
+          :reveal {HOVER_BLUETOOTH == false}
+          :duration "200ms"
+
+          (box
+            :class "left_widget_bt_status"
+            :width {round(DP_WIDTH / 30, 0)}
+            :height {round(DP_HEIGHT / 20, 0)}
+
+            (box
+              (label
+                :class "icon"
+                :text {BT_CON_STATUS == "connected" ?
+                "󰋋"
+                :
+                "󰟎"
+                }
+              )
+            )
+          )
+        )
+
+        ;; Center
+        (eventbox
+          :class "left_widget_bt_button_rect"
+          :onclick "scripts/bluetooth.sh --toggle"
+          
+          (box
+            :width {round(DP_WIDTH / 6.4, 0)}
+            :height {round(DP_HEIGHT / 20, 0)}
+
+            (box
+              (label
+                :class "label"
+                :limit-width 20
+                :text {BT_CON_STATUS == "connected" ?
+                "${BT_DEVNAME}"
+                :
+                "offline"
+                }
+              )
+            )
+          )
+        )
+
+        ;; Right
+        (revealer
+          :transition "slideright"
+          :reveal HOVER_BLUETOOTH
+          :duration "200ms"
+
+          (eventbox
+            :class "left_widget_bt_button_square"
+            :width {round(DP_WIDTH / 30, 0)}
+            :height {round(DP_HEIGHT / 20, 0)}
+            :onclick "${EWW_CMD} update SHOW_BLUETOOTH=true"
+
+            (box
+              (label :class "icon" :text "󰅂")
+            )
+          )
+        )
+      )
+
+      ;; Bottom box
+      (revealer
+        :transition "slidedown"
+        :reveal SHOW_BLUETOOTH
+        :duration "200ms"
+
+        (box
+          :halign "center"
+          :valign "center"
+          :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_P_H, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_LEFT_WIDGET_P_V, 0)}
+
+          (box
+            :class "left_widget_bt_devname_entry"
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_P_H, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_LEFT_WIDGET_P_V, 0)}
+
+            (scroll
+              :hscroll false
+              :vscroll true
+              :vexpand true
+
+              (box
+                :orientation "v"
+                :halign "center"
+                :valign "center"
+                :space-evenly false
+                :spacnig 10
+
+                (for entry in JSON_BT_DEVNAME
+                  (eventbox
+                    :class "left_widget_bt_devname_button"
+                    :halign "center"
+                    :valign "center"
+                    :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_C_H, 0)}
+                    :height {round(DP_HEIGHT / 20, 0)}
+
+                    (box
+                      (button
+                        :onclick "bluetoothctl connect '${entry}'"
+                        
+                        (label
+                          :class "label"
+                          :limit-width 20
+                          :text "${entry}"
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)
+
+
+

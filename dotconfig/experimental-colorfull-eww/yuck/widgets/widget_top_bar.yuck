@@ -1,0 +1,97 @@
+(defwidget widget_top_bar []
+  (box
+    :style {SHOW_LEFT_WIDGET ?
+    "
+    margin-left: 40rem;
+    transition: 400ms ease;
+    "
+    :
+    "
+    transition: 400ms ease;
+    "
+    }
+    
+    (box
+      :class {SHOW_BAR_CENTER == true && SHOW_BAR_CENTER_REV_SW == true ?
+      "top_bar_root_box_div"
+      :
+      "top_bar_root_box"
+      }
+      
+      (box
+        :halign "center"
+        :space-evenly false
+
+        ;; Bar left
+        (box
+          :class {SHOW_BAR_CENTER ?
+          "top_bar_left_div"
+          :
+          "top_bar_left"
+          }
+
+          :halign "center"
+          :valign "center"
+          :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_P_H, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_P_V, 0)}
+          
+          ;; Dummy for the margin
+          (box
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_C_H, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+
+            (module_top_bar_bar_left)
+          )
+        )
+        
+
+        ;; Bar center
+        (revealer
+          :transition "slideleft"
+          :reveal SHOW_BAR_CENTER
+          :duration "300ms"
+        
+          ;; Dummy space for the box shadow
+          (box
+            :halign "center"
+            :width {round(DP_WIDTH / 3.2, 0)}
+          
+            (box
+              :class "top_bar_center"
+              :halign "center"
+              :valign "center"
+
+              (module_top_bar_bar_center)
+            )
+          )
+        )
+
+        ;; Bar right
+        (box
+          :class {SHOW_BAR_CENTER ?
+          "top_bar_right_div"
+          :
+          "top_bar_right"
+          }
+
+          :halign "center"
+          :valign "center"
+          :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_P_H, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_P_V, 0)}
+          
+          ;; Dummy for the margin
+          (box
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_C_H, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+
+            (module_top_bar_bar_right)
+          )
+        )
+      )
+    )
+  )
+)

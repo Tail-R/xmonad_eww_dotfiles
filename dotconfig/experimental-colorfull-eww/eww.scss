@@ -1,0 +1,16 @@
+* {
+    all: unset;
+    font-family: "Source Code";
+ }
+
+/***** Color scheme *************************************************/
+@import 'scss/colors/halloween.scss'
+// @import 'scss/colors/soft_blue.scss'
+
+/***** Style ********************************************************/
+@import 'scss/_style_top_bar.scss'
+@import 'scss/_style_bottom_bar.scss'
+@import 'scss/_style_left_widget.scss'
+@import 'scss/_style_right_mplayer.scss'
+@import 'scss/_style_center_dashboard.scss'
+
