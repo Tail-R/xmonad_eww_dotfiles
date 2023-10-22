@@ -1,5 +1,0 @@
-(defwidget module_left_widget_lan_entry []
-  (box
-  
-  )
-)
