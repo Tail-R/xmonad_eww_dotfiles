@@ -1,0 +1,111 @@
+
+/home/tailr/.config/eww/scripts/vdesk_viewer
+<Xlib.display.Display object at 0x7f9377122310>
+<Window 0x000007a1>
+5
+[<__main__.Thumbnail object at 0x7f9376e97e90>, <__main__.Thumbnail object at 0x7f9376ea0250>, <__main__.Thumbnail object at 0x7f9376ea0090>, <__main__.Thumbnail object at 0x7f9376ea00d0>, <__main__.Thumbnail object at 0x7f9376ea0150>]
+/home/tailr/.config/eww/scripts/ws_preview
+<Xlib.display.Display object at 0x7f1865226550>
+<Window 0x000007a1>
+5
+[<__main__.Thumbnail object at 0x7f1864fa9fd0>, <__main__.Thumbnail object at 0x7f1864fcc350>, <__main__.Thumbnail object at 0x7f1864fcc190>, <__main__.Thumbnail object at 0x7f1864fcc150>, <__main__.Thumbnail object at 0x7f1864fcc310>]
+/home/tailr/.config/eww/scripts/ws_preview
+<Xlib.display.Display object at 0x7fe1a0b5e450>
+<Window 0x000007a1>
+5
+[<__main__.Thumbnail object at 0x7fe1a08d3f50>, <__main__.Thumbnail object at 0x7fe1a08d3d90>, <__main__.Thumbnail object at 0x7fe1a08d3f10>, <__main__.Thumbnail object at 0x7fe1a08d3fd0>, <__main__.Thumbnail object at 0x7fe1a08dc150>]
+/home/tailr/.config/eww/scripts/ws_preview
+<Xlib.display.Display object at 0x7f3a9815e3d0>
+<Window 0x000007a1>
+5
+[<__main__.Thumbnail object at 0x7f3a98195d90>, <__main__.Thumbnail object at 0x7f3a97ec7fd0>, <__main__.Thumbnail object at 0x7f3a97ec7e10>, <__main__.Thumbnail object at 0x7f3a97ec7dd0>, <__main__.Thumbnail object at 0x7f3a97ec7f90>]
+/home/tailr/.config/eww/scripts/ws_preview
+<Xlib.display.Display object at 0x7fb614c265d0>
+<Window 0x000007a1>
+5
+[<__main__.Thumbnail object at 0x7fb614bf03d0>, <__main__.Thumbnail object at 0x7fb6153266d0>, <__main__.Thumbnail object at 0x7fb6149b4610>, <__main__.Thumbnail object at 0x7fb6149b42d0>, <__main__.Thumbnail object at 0x7fb6149b4490>]
+destroyed20971534
+destroyed20971534
+unmapped18874382
+destroyed25165838
+destroyed23068686
+destroyed20971534
+destroyed18874382
+destroyed25165838
+destroyed23068686
+destroyed27262990
+destroyed23068686
+destroyed20971534
+/home/tailr/.config/eww/scripts/ws_preview
+<Xlib.display.Display object at 0x7f64c055e350>
+<Window 0x000007a1>
+5
+[<__main__.Thumbnail object at 0x7f64c05fed10>, <__main__.Thumbnail object at 0x7f64c07fe850>, <__main__.Thumbnail object at 0x7f64c0303f50>, <__main__.Thumbnail object at 0x7f64c0303d90>, <__main__.Thumbnail object at 0x7f64c0303dd0>]
+mapped20971534
+unmapped18874382
+unmapped25165838
+mapped23068686
+mapped27262990
+mapped29360142
+destroyed29360142
+destroyed27262990
+destroyed23068686
+mapped18874382
+mapped25165838
+unmapped20971534
+mapped20971534
+unmapped18874382
+unmapped25165838
+mapped18874382
+mapped25165838
+unmapped20971534
+mapped20971534
+unmapped18874382
+unmapped25165838
+destroyed23068673
+destroyed20971534
+mapped18874382
+mapped25165838
+/home/tailr/.config/eww/scripts/ws_preview
+<Xlib.display.Display object at 0x7f95154265d0>
+<Window 0x000007a1>
+5
+[<__main__.Thumbnail object at 0x7f9515b266d0>, <__main__.Thumbnail object at 0x7f95151c8210>, <__main__.Thumbnail object at 0x7f95151c8590>, <__main__.Thumbnail object at 0x7f95151c83d0>, <__main__.Thumbnail object at 0x7f95151c8410>]
+/home/tailr/.config/eww/scripts/desktop_prev
+<Xlib.display.Display object at 0x7f9b28e26610>
+<Window 0x000007a1>
+5
+[<__main__.Thumbnail object at 0x7f9b28baa150>, <__main__.Thumbnail object at 0x7f9b28bc8110>, <__main__.Thumbnail object at 0x7f9b28bc8490>, <__main__.Thumbnail object at 0x7f9b28bc82d0>, <__main__.Thumbnail object at 0x7f9b28bc8310>]
+mapped27262990
+destroyed27262990
+/home/tailr/.config/eww/scripts/desktop_prev
+<Xlib.display.Display object at 0x7f9062626610>
+<Window 0x000007a1>
+5
+[<__main__.Thumbnail object at 0x7f90623aa150>, <__main__.Thumbnail object at 0x7f90623c8110>, <__main__.Thumbnail object at 0x7f90623c8490>, <__main__.Thumbnail object at 0x7f90623c82d0>, <__main__.Thumbnail object at 0x7f90623c8310>]
+unmapped18874382
+unmapped14680078
+unmapped16777230
+mapped18874382
+mapped14680078
+mapped16777230
+/home/tailr/.config/eww/scripts/desktop_view
+<Xlib.display.Display object at 0x7f33d1c62590>
+<Window 0x000007a1>
+5
+[<__main__.Thumbnail object at 0x7f33d230aad0>, <__main__.Thumbnail object at 0x7f33d1d02990>, <__main__.Thumbnail object at 0x7f33d1d02b50>, <__main__.Thumbnail object at 0x7f33d1a17fd0>, <__main__.Thumbnail object at 0x7f33d1a17f10>]
+mapped27262990
+destroyed27262990
+mapped27262990
+destroyed27262990
+unmapped18874382
+unmapped14680078
+unmapped16777230
+mapped18874382
+mapped14680078
+mapped16777230
+/home/tailr/.config/eww/scripts/desktop_view
+<Xlib.display.Display object at 0x7f1306522490>
+<Window 0x000007a1>
+5
+[<__main__.Thumbnail object at 0x7f130628fdd0>, <__main__.Thumbnail object at 0x7f130628ff90>, <__main__.Thumbnail object at 0x7f130628ffd0>, <__main__.Thumbnail object at 0x7f1306298190>, <__main__.Thumbnail object at 0x7f1306298090>]

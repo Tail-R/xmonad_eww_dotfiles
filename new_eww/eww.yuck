@@ -1,0 +1,47 @@
+;; ***** Variables *****
+(include "variables.yuck")
+(include "config.yuck")
+
+;; ***** Windows *****
+(include "windows.yuck")
+
+;; ***** Widgets *****
+(include "yuck/widgets/widget_top_bar.yuck")
+(include "yuck/widgets/widget_bottom_bar.yuck")
+(include "yuck/widgets/widget_left_widget.yuck")
+(include "yuck/widgets/widget_right_mplayer.yuck")
+(include "yuck/widgets/widget_right_notifpop.yuck")
+(include "yuck/widgets/widget_center_dmenu.yuck")
+
+;; ***** Modules *****
+
+;; Top bar
+(include "yuck/modules/top_bar/module_top_bar_bar_left.yuck")
+(include "yuck/modules/top_bar/module_top_bar_bar_center.yuck")
+(include "yuck/modules/top_bar/module_top_bar_bar_right.yuck")
+
+;; Bottom bar
+(include "yuck/modules/bottom_bar/module_bottom_bar_dock_center.yuck")
+
+;; Left widget
+(include "yuck/modules/left_widget/module_left_widget_clock.yuck")
+(include "yuck/modules/left_widget/module_left_widget_weather.yuck")
+(include "yuck/modules/left_widget/module_left_widget_profile.yuck")
+(include "yuck/modules/left_widget/module_left_widget_sysinfo.yuck")
+(include "yuck/modules/left_widget/module_left_widget_lan.yuck")
+(include "yuck/modules/left_widget/module_left_widget_bluetooth.yuck")
+
+;; Right mplayer
+(include "yuck/modules/right_mplayer/module_right_mplayer_uwustagram.yuck")
+
+;; Right notifpop
+(include "yuck/modules/right_notifpop/module_right_notifpop_bg.yuck")
+(include "yuck/modules/right_notifpop/module_right_notifpop_fg.yuck")
+
+;; Center dmenu
+(include "yuck/modules/center_dmenu/module_center_dmenu_gamepad.yuck")
+
+
+
+
+

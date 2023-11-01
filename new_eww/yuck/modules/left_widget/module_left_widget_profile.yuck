@@ -1,0 +1,45 @@
+(defwidget module_left_widget_profile []
+  (box
+    (revealer
+      :transition "slideup"
+      :reveal {SHOW_CALENDAR == SHOW_LAN == SHOW_BLUETOOTH == false}
+      :duration "200ms"
+
+      (box
+        :class "left_widget_profile_bg"
+        :halign "center"
+        :valign "center"
+        :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_P_H, 0)}
+        :height {round(DP_HEIGHT / BOX_SIZE_LEFT_WIDGET_P_V, 0)}
+
+        (box
+          :orientation "v"
+          :halign "center"
+          :valign "center"
+          :space-evenly false
+          :spacing 20
+         
+          (box
+            :halign "center"
+            :valign "center"
+            :style
+            "
+            background-image: url('${PF_FACE}');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            min-width: 8rem;
+            min-height: 8rem;
+            border-radius: 4rem;
+            "
+          )
+
+          (label
+            :class "left_widget_profile_name"
+            :text "${PF_NAME}"
+          )  
+        )
+      )
+    )
+  )
+)

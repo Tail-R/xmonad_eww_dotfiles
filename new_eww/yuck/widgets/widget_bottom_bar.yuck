@@ -1,0 +1,55 @@
+(defwidget widget_bottom_bar []
+  (box 
+    :style {SHOW_LEFT_WIDGET ?
+    "
+    margin-left: 20rem;
+    transition: 200ms ease;
+    "
+    :
+    "
+    transition: 200ms ease;
+    "
+    }
+
+    (box
+      :class "bottom_bar_root_box"
+    
+      (box
+        :class "bottom_bar_dock_center"  
+        :halign "center"
+        :valign "center"
+        :width {round(DP_WIDTH / BOX_SIZE_BOTTOM_BAR_P_H, 0)}
+        :height {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_P_V, 0)}
+        
+        (centerbox
+          (box
+            :class "dock_center_bumper_left"
+            :halign "start"
+            :valign "center"
+            :width {round(DP_WIDTH / 60, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_P_V, 0)}
+          )
+
+          (box
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / BOX_SIZE_BOTTOM_BAR_C_H, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+            ; :style "background-color: #ffffff;"
+          
+            (module_bottom_bar_dock_center)
+          )
+          
+          (box
+            :class "dock_center_bumper_right"
+            :halign "end"
+            :valign "center"
+            :width {round(DP_WIDTH / 60, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_P_V, 0)}
+          )
+        )
+      )
+    )
+  )
+)
+    

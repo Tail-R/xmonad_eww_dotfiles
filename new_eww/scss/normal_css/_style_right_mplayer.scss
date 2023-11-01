@@ -1,0 +1,203 @@
+/***** Window *******************************************************/
+.window_right_mplayer {
+    // background-color: rgba($primary, 0.5);
+}
+
+/***** Widget *******************************************************/
+
+/***** uwustagram ***************************************************/
+.right_mplayer_uwustagram_root_box {
+    background-color: $fg;
+    box-shadow: 0rem 0rem 0.4rem $shadow;
+}
+
+// ***** Bumper top *****
+.right_mplayer_bumper_top {
+    background-color: $primary;
+
+    .label {
+        color: $primary-alt;
+        font-size: 1.6rem;
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+
+// ***** Box top *****
+.right_mplayer_box_top {
+}
+
+.right_mplayer_decoration_artist_face {
+    border: 0.2rem solid $fg-alt;
+    border-radius: 2rem;
+
+    .icon {
+        color: $fg-alt;
+        font-size: 1.5rem;
+        padding-right: 0.2rem; 
+    }
+}
+
+.right_mplayer_artist_name {
+    .label {
+        color: $fg-alt;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+.right_mplayer_decoration_dots {
+    .icon {
+        color: $fg-alt;
+        font-size: 2rem; 
+    }
+}
+
+// ***** Box center *****
+.right_mplayer_box_center {
+    background-color: $bg;
+}
+
+.right_mplayer_music_cover_fg {
+    box-shadow: 0rem 0rem 0.4rem $fg;
+}
+
+.right_mplayer_player_status {
+    background-color: $primary;
+    border-radius: 1rem;
+
+    .label {
+        color: $primary-alt;
+        font-size: 1.2rem;
+        font-weight: bold;  
+    }
+    
+    .icon {
+        color: $secondary-alt;
+        font-size: 1.6rem;
+        padding-right: 0.25rem; 
+    }
+}
+
+// ***** Box bottom *****
+.right_mplayer_box_bottom {
+
+}
+
+.right_mplayer_decoration_icons { 
+    .heart {
+        color: $secondary;
+        font-size: 2.2rem;
+    }
+    
+    .comment {
+        color: $primary;
+        font-size: 2rem;
+    }
+    
+    .share {
+        color: $secondary-alt;
+        font-size: 2rem;
+        padding-right: 0.4rem;
+    }
+}
+
+// Title
+.right_mplayer_music_title {
+    .label {
+        color: $fg-alt;
+        font-size: 1.4rem;
+        font-style: italic;
+        font-weight: bold;    
+    }
+}
+
+// Volume bar
+.right_mplayer_volume scale trough {
+    background-color: $fg-alt;
+    min-width: 20rem;
+    min-height: 0.5rem;
+    border-radius: 2rem;
+}
+
+.right_mplayer_volume scale highlight {
+    background-color: $primary;
+    border-radius: 2rem;
+}
+
+// Controll buttons
+.right_mplayer_controll_buttons {
+}
+
+.right_mplayer_prev {
+    // background-color: $fg-alt;
+    // border-radius: 4rem;
+    transition: 200ms ease;
+
+    .icon {
+        color: $fg-alt;
+        font-size: 3.2rem; 
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+.right_mplayer_toggle {
+    // background-color: $fg-alt;
+    border: solid 0.25rem $fg-alt;
+    border-radius: 2rem;
+    transition: 200ms ease;
+    
+    .icon {
+        color: $fg-alt;
+        font-size: 3.2rem; 
+    }
+    
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+.right_mplayer_next {    
+    // background-color: $fg-alt;
+    // border-radius: 4rem;
+    transition: 200ms ease;
+    
+    .icon {
+        color: $fg-alt;
+        font-size: 3.2rem; 
+    }
+    
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+// ***** Bumper bottom *****
+.right_mplayer_bumper_bottom {
+    background-color: $primary;
+
+    .label {
+        color: $primary-alt;
+        font-size: 1.6rem;
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

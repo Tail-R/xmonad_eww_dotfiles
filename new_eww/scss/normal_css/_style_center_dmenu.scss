@@ -1,0 +1,258 @@
+/***** Window *******************************************************/
+.window_center_dmenu {
+    // background-color: rgba($bg, 0.5);
+}
+
+/***** Widget *******************************************************/
+.gamepad_root_box {
+    background-color: $primary;
+    border: 0.25rem solid $fg;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 10rem 4rem;
+    border-bottom-left-radius: 10rem 4rem;
+    box-shadow: 0rem 0rem 0.4rem $shadow; 
+}
+
+.gamepad_disp_padding {
+    background-color: $fg-alt;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 8rem 4rem;
+    border-bottom-left-radius: 8rem 4rem;
+    box-shadow: inset 0rem 0rem 0.4rem $bg; 
+}
+
+.gamepad_disp_bg {
+    background-color: $bg;
+    border-radius: 0.5rem;
+}
+
+.gamepad_input_bar {
+    background-color: $fg;
+    border-radius: 1rem;
+}
+
+.gamepad_input_placeholder {
+    .icon {
+        color: $primary;
+        font-size: 1.2rem; 
+    }
+
+    .label {
+        color: $primary;
+        font-size: 1.2rem;
+        font-weight: bold;         
+    }
+}
+
+.gamepad_input_box {
+    color: $fg-alt;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.gamepad_app_elem {
+    .label {
+        color: $fg;
+        font-weight: bold; 
+    }
+}
+
+.gamepad_app_btn {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    border: 1rem solid transparent;
+    transition: 200ms ease;
+
+    &:hover {
+        background-color: $fg-alt;
+        border: 0rem solid $primary;
+        transition: 300ms ease;
+    }
+}
+
+.gamepad_systemfetch {
+    .hostname {
+        .icon {
+            color: $primary;
+            font-size: 1.2rem;
+        }
+    }
+    
+    .distro {
+        .icon {
+            color: $primary-alt;
+            font-size: 1.2rem;
+        }
+
+        .label {
+            color: $fg;
+            font-size: 1.1rem; 
+            font-weight: bold;
+        } 
+    }
+    
+    .model {
+        .icon {
+            color: $secondary;
+            font-size: 1.2rem;
+        } 
+        
+        .label {
+            color: $fg;
+            font-size: 1.1rem; 
+            font-weight: bold;
+        } 
+    }
+    
+    .wmname {
+        .icon {
+            color: $primary;
+            font-size: 1.4rem;
+        } 
+        
+        .label {
+            color: $fg;
+            font-size: 1.1rem; 
+            font-weight: bold;
+        } 
+    }
+}
+
+.gamepad_disp_title {
+    .e {
+        color: $primary;
+        font-size: 2.2rem; 
+        font-weight: bold;
+        font-style: italic;
+        text-shadow: 0rem 0rem 0.8rem $primary;
+    }
+
+    .n {
+        color: $primary-alt;
+        font-size: 2.2rem; 
+        font-weight: bold;
+        font-style: italic;
+        text-shadow: 0rem 0rem 0.8rem $primary;
+    }
+
+    .d {
+        color: $secondary;
+        font-size: 2.2rem; 
+        font-weight: bold;
+        font-style: italic;
+        text-shadow: 0rem 0rem 0.8rem $secondary;
+    }
+
+    .label {
+        color: $fg;
+        font-size: 2.2rem; 
+        font-weight: bold;
+        font-style: italic;
+        text-shadow: 0rem 0rem 0.8rem $primary;
+    }
+}
+
+// .gamepad_con_0_btn,
+.gamepad_con_1_btn,
+// .gamepad_con_2_btn,
+.gamepad_con_3_btn,
+.gamepad_con_4_btn,
+.gamepad_con_5_btn,
+// .gamepad_con_6_btn,
+.gamepad_con_7_btn {
+// .gamepad_con_8_btn {
+    background-color: $bg-alt;
+
+    .icon {
+        color: $fg;
+        font-size: 1.2rem;
+        padding-right: 0.2rem; 
+    }
+}
+
+.gamepad_con_1_btn {
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.gamepad_con_3_btn {
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    transition: 200ms ease; 
+    &:hover {opacity: 0.5;}
+}
+    
+.gamepad_con_5_btn {
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    transition: 200ms ease; 
+    &:hover {opacity: 0.5;}
+}
+
+.gamepad_con_7_btn {
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.gamepad_con_b_btn {
+    background-color: $bg-alt;
+    border-radius: 4rem;
+    transition: 200ms ease; 
+
+    .icon {
+        color: $fg;
+        font-size: 3.2rem; 
+    }
+    
+    &:hover {opacity: 0.5;}
+}
+
+.gamepad_con_a_btn {
+    background-color: $bg-alt;
+    border-radius: 4rem;
+    transition: 200ms ease; 
+    
+    .icon {
+        color: $fg;
+        font-size: 3.2rem; 
+    }
+    
+    &:hover {opacity: 0.5;}
+}
+
+.gamepad_reset_btn {
+    background-color: $fg; 
+    border-radius: 2rem;
+    transition: 200ms ease;
+
+    .label {
+        color: $fg-alt; 
+        font-weight: bold;
+    }
+
+    &:hover {opacity: 0.5;}
+}
+
+.gamepad_show_wall_btn {
+    background-color: $fg; 
+    border-radius: 2rem;
+    transition: 200ms ease;
+    
+    .label {
+        color: $fg-alt; 
+        font-weight: bold;
+    }
+    
+    &:hover {opacity: 0.5;}
+}
+
+.gamepad_sound_hole {
+    .icon {
+        color: $fg-alt;
+        font-size: 4rem; 
+    }
+}
+
+
+
+
+
+

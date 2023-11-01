@@ -1,0 +1,383 @@
+(defwidget module_top_bar_bar_center []
+  (eventbox
+    :onhover "scripts/rev_sw/rev_sw_top_bar.sh --rev_rev_switcher"
+
+    (box
+      :orientation "v"
+      :space-evenly false
+
+      ;; Page rev switcher
+      (revealer
+        :transition "slidedown"
+        :reveal SHOW_BAR_CENTER_REV_SW
+        :duration "200ms"
+
+        (box
+          :class "bar_center_rev_sw"
+          :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_P_H, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_P_V, 0)}
+
+          (box
+            :orientation "v"
+            :halign "center"
+            :valign "center"
+            :space-evenly false
+
+            (box
+              :halign "center"
+              :valign "center"
+              :space-evenly false
+              :spacing 10
+
+              ;; Reveal page 0
+              (eventbox
+                :class "bar_center_rev_sw_page0"
+                :onclick "scripts/rev_sw/rev_sw_top_bar.sh --rev_page0"
+
+                (box
+                  :halign "center"
+                  :valign "center"
+                  :width {round(DP_WIDTH / 16, 0)}
+                  :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+
+                  (box
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label :class "icon" :text "󰝚")
+                    (label :class "label" :text "music")
+                  )
+                )
+              )
+              
+              ;; Reveal page 1
+              (eventbox
+                :class "bar_center_rev_sw_page1"
+                :onclick "scripts/rev_sw/rev_sw_top_bar.sh --rev_page1"
+
+                (box
+                  :halign "center"
+                  :valign "center"
+                  :width {round(DP_WIDTH / 16, 0)}
+                  :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+                  
+                  (box
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label :class "icon" :text "󰌢")
+                    (label :class "label" :text "system")
+                  )
+                )
+              )
+              
+              ;; Reveal page 2
+              (eventbox
+                :class "bar_center_rev_sw_page2"
+                :onclick "scripts/rev_sw/rev_sw_top_bar.sh --rev_page2"
+
+                (box
+                  :halign "center"
+                  :valign "center"
+                  :width {round(DP_WIDTH / 16, 0)}
+                  :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+                  
+                  (box
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label :class "icon" :text "")
+                    (label :class "label" :text "power")
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+
+      ;; Page 0
+      (revealer
+        :transition "slidedown"
+        :reveal SHOW_BAR_CENTER_PAGE0
+        :duration "200ms"
+
+        (box
+          :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_P_H, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_P_V, 0)}
+
+          ;; Mpris
+          (overlay
+
+            ;; Background
+            (box
+              :style
+              "
+              background-image: url('${MPRIS_COVER_BLUR}');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              border-radius: 1rem;
+              "
+            )
+ 
+            ;; Foreground
+            (box
+              :halign "center"
+              :space-evenly false
+              :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_C_H, 0)}
+              :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+              
+              (box
+                :space-evenly false
+                :spacing 10
+
+                ;; Default art
+                (overlay
+                  (box
+                    :halign "center" 
+                    :valign "center"
+                    :width {round(DP_WIDTH / 38, 0)}
+                    :height {round(DP_WIDTH / 38, 0)}
+                    :style
+                    "
+                    background-image: url('${MPRIS_COVER_DEFAULT}');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    border-radius: 1rem;
+                    "
+                  )
+                  
+                  ;; Mpris art
+                  (box
+                    :halign "center" 
+                    :valign "center"
+                    :width {round(DP_WIDTH / 38, 0)}
+                    :height {round(DP_WIDTH / 38, 0)}
+                    :style
+                    "
+                    background-image: url('${MPRIS_COVER}');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    border-radius: 1rem;
+                    "
+                  )
+                )
+
+                ;; Title and the Artist
+                (box
+                  :class "bar_center_mpris_label"
+                  :orientation "v"
+                  :valign "center"
+                  :space-evenly false
+                  
+                  (label
+                    :class "title"
+                    :halign "start"
+                    :limit-width 30
+                    :text "${MPRIS_TITLE}"
+                  )
+
+                  (label
+                    :class "artist"
+                    :halign "start"
+                    :limit-width 30
+                    :text "${MPRIS_ARTIST}"
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+
+      ;; Page 1
+      (revealer
+        :transition "slidedown"
+        :reveal SHOW_BAR_CENTER_PAGE1
+        :duration "200ms"
+
+        (box
+          :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_P_H, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_P_V, 0)}
+
+          (box
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_C_H, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+          
+            (box
+              :halign "center"
+              :valign "center"
+              :space-evenly false
+              :spacing 10
+              
+              ;; Network status
+              (box
+                :class "bar_center_networks"
+                :width {round(DP_WIDTH / 6.4, 0)}
+                :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+
+                (box
+                  :orientation "v"
+                  :space-evenly false
+                  :valign "center"
+
+                  (box
+                    :class "bar_center_lan"
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label
+                      :class "icon"
+                      :text {LAN_CON_STATUS == "connected" ?
+                      "󰤨"
+                      :
+                      "󰤭"
+                      }
+                    )
+
+                    (label
+                      :class "label"
+                      :limit-width 20
+                      :text {LAN_CON_STATUS == "connected" ?
+                      "${LAN_SSID}"
+                      :
+                      "offline"
+                      }
+                    )
+                  )
+
+                  (box
+                    :class "bar_center_bluetooth"
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label
+                      :class "icon"
+                      :text {BT_CON_STATUS == "connected" ?
+                      "󰋋"
+                      :
+                      "󰟎"
+                      }
+                    )
+
+                    (label
+                      :class "label"
+                      :limit-width 20
+                      :text {BT_CON_STATUS == "connected" ?
+                      "${BT_DEVNAME}"         
+                      :
+                      "offline"
+                      }
+                    )
+                  )
+                )
+              )
+
+              ;; Volume and brightness
+              (box
+                :class "bar_center_sysinfo_levels"
+                :width {round(DP_WIDTH / 10, 0)}
+                :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+
+                (box
+                  :halign "center"
+                  :space-evenly false
+                  :spacing 15
+                  
+                  (box
+                    :class "bar_center_volume"
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 10
+
+                    (label :class "icon" :text "")
+                    (label :class "label" :text "${VOLUME_LEVEL}%")
+                  )
+                  
+                  (box
+                    :class "bar_center_brightness"
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 10
+
+                    (label :class "icon" :text "")
+                    (label :class "label" :text "${BRIGHTNESS}%")
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+      
+      ;; Page 2
+      (revealer
+        :transition "slidedown"
+        :reveal SHOW_BAR_CENTER_PAGE2
+        :duration "200ms"
+
+        (box
+          :width {round(DP_WIDTH / BOX_SIZE_TOP_BAR_P_H, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_P_V, 0)}
+
+          (box
+            :halign "center"
+            :valign "center"
+            :space-evenly false
+            :spacing 20
+
+            ;; Shutdown
+            (eventbox
+              :class "center_bar_shutdown"
+              :onclick "scripts/manage_power.sh --poweroff"
+              :width {round(DP_WIDTH / 32, 0)}
+              :height {round(DP_HEIGHT / 28, 0)}
+
+              (label :class "icon" :text "󰐥")
+            )
+            
+            ;; Suspend
+            (eventbox
+              :class "center_bar_suspend"
+              :onclick "scripts/manage_power.sh --suspend"
+              :width {round(DP_WIDTH / 32, 0)}
+              :height {round(DP_HEIGHT / 28, 0)}
+              
+              (label :class "icon" :text "󰤄")
+            )
+            
+            ;; Logout
+            (eventbox
+              :class "center_bar_logout"
+              :onclick "scripts/manage_power.sh --logout"
+              :width {round(DP_WIDTH / 32, 0)}
+              :height {round(DP_HEIGHT / 28, 0)}
+              
+              (label :class "icon" :text "󰗼")
+            )
+            
+            ;; Reboot
+            (eventbox
+              :class "center_bar_reboot"
+              :onclick "scripts/manage_power.sh --reboot"
+              :width {round(DP_WIDTH / 32, 0)}
+              :height {round(DP_HEIGHT / 28, 0)}
+              
+              (label :class "icon" :text "󰑙")
+            )
+          )
+        )
+      )
+    )
+  )  
+)

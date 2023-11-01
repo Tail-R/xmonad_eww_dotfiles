@@ -1,0 +1,28 @@
+(defwidget widget_center_dmenu []
+  (box
+    :style {SHOW_LEFT_WIDGET ?
+    "
+    margin-left: 10rem;
+    transition: 300ms ease;
+    "
+    :
+    "
+    transition: 300ms ease;
+    "
+    }
+
+    (box
+      ; :style {SHOW_CENTER_DMENU ?
+      ; "
+      ; transition: 400ms ease;
+      ; "
+      ; :
+      ; "
+      ; margin-top: -10rem;
+      ; "
+      ; }
+      
+      (module_center_dmenu_gamepad)
+    ) 
+  )
+)

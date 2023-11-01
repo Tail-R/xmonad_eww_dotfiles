@@ -1,0 +1,368 @@
+/***** Window *******************************************************/
+.window_top_bar {
+    background-color: rgba($primary, 0.5);
+}
+
+/***** Widget *******************************************************/
+.top_bar_root_box {
+    transition: 300ms ease;
+}
+
+.top_bar_root_box_div {
+    background-color: $bg;
+    transition: 300ms ease;
+}
+
+.top_bar_left {
+    background-color: $bg;
+    border-radius: 1rem 0rem 0rem 1rem;
+    box-shadow: 0rem 0rem 0.4rem $bg;
+    transition: 300ms ease;
+}
+
+.top_bar_left_div {
+    background-color: $bg;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.4rem $bg;
+    transition: 300ms ease;
+}
+
+.top_bar_center {
+    background-color: $bg;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.4rem $bg;
+    // transition: 300ms ease;
+}
+
+.top_bar_right {
+    background-color: $bg; 
+    border-radius: 0rem 1rem 1rem 0rem;
+    box-shadow: 0rem 0rem 0.4rem $bg;
+    transition: 300ms ease;
+}
+
+.top_bar_right_div {
+    background-color: $bg;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.4rem $bg;
+    transition: 300ms ease;
+}
+
+// Bar left
+.bar_left_uptime {
+    background-color: $primary;
+    border-radius: 1rem;
+
+    .label {
+        color: $primary-alt;
+        font-size: 1.2rem;
+        // font-style: italic;
+        font-weight: bold;
+    }
+}
+
+.bar_left_workspaces {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+}
+
+.ws_active {
+    color: $primary-alt;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.ws_inactive {
+    color: $primary;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.ws_occupied {
+    color: $secondary-alt;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.bar_left_divide {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    transition: 200ms ease;
+
+    .icon {
+        color: $primary-alt;
+        font-size: 2rem;
+        padding-right: 0.5rem;  
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+.bar_left_conquer {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    transition: 200ms ease;
+
+    .icon {
+        color: $primary-alt;
+        font-size: 2rem;
+        // padding-right: 0.5rem;
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+// Bar center
+
+// Page rev sw
+.bar_center_rev_sw {
+}
+
+.bar_center_rev_sw_page0 {
+    border-radius: 2rem;
+    transition: 200ms ease;
+
+    .icon {
+        color: $secondary;
+        font-size: 1.6rem;
+    }
+
+    .label {
+        color: $fg;
+        font-size: 1.2rem;
+        font-weight: bold; 
+    }
+
+    &:hover {
+        background-color: $fg-alt;
+    }
+}
+
+.bar_center_rev_sw_page1 {
+    border-radius: 2rem;
+    transition: 200ms ease;
+    
+    .icon {
+        color: $primary-alt;
+        font-size: 1.2rem;
+    }
+
+    .label {
+        color: $fg;
+        font-size: 1.2rem;
+        font-weight: bold; 
+    }
+    
+    &:hover {
+        background-color: $fg-alt;
+    }
+}
+
+.bar_center_rev_sw_page2 {
+    border-radius: 2rem;
+    transition: 200ms ease;
+    
+    .icon {
+        color: $secondary-alt;
+        font-size: 1.2rem;
+    }
+
+    .label {
+        color: $fg;
+        font-size: 1.2rem;
+        font-weight: bold; 
+    }
+    
+    &:hover {
+        background-color: $fg-alt;
+    }
+}
+
+// Page 0
+.bar_center_mpris_label {
+    .title {
+        color: $fg;
+        font-size: 1.12rem;
+        font-weight: bold;
+    }
+
+    .artist {
+        color: $fg;
+        font-size: 1rem;
+        font-weight: bold; 
+    }
+}
+
+// Page 1
+.bar_center_networks {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+}
+
+.bar_center_lan {
+    .icon {
+        color: $secondary-alt;
+        font-size: 1.2rem; 
+    }
+
+    .label {
+        color: $fg;
+        font-size: 1.12rem;
+        font-weight: bold; 
+    }
+}
+
+.bar_center_bluetooth {
+    .icon {
+        color: $primary;
+        font-size: 1.2rem; 
+    }
+
+    .label {
+        color: $fg;
+        font-size: 1.12rem;
+        font-weight: bold; 
+    }
+}
+
+.bar_center_sysinfo_levels {
+    background-color: $primary;
+    border-radius: 1rem;
+}
+
+.bar_center_volume {
+    .icon {
+        color: $primary-alt;
+        font-size: 1.2rem; 
+    }
+
+    .label {
+        color: $primary-alt;
+        font-size: 1.2rem;
+        font-weight: bold; 
+    }
+}
+
+.bar_center_brightness {
+    .icon {
+        color: $primary-alt;
+        font-size: 1.2rem; 
+    }
+
+    .label {
+        color: $primary-alt;
+        font-size: 1.2rem;
+        font-weight: bold; 
+    }
+}
+
+// Page 2
+.center_bar_shutdown {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    transition: 200ms;
+
+    .icon {
+        color: $secondary-alt;
+        font-size: 1.8rem; 
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+.center_bar_suspend {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    transition: 200ms;
+    
+    .icon {
+        color: $primary-alt;
+        font-size: 1.8rem; 
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+.center_bar_logout {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    transition: 200ms;
+    
+    .icon {
+        color: $primary;
+        font-size: 1.8rem; 
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+.center_bar_reboot {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    transition: 200ms;
+    
+    .icon {
+        color: $secondary;
+        font-size: 1.8rem; 
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+// Bar right
+.bar_right_battery {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+
+    .icon {
+        color: $secondary;
+        font-size: 1.2rem;
+    }
+}
+
+.bar_right_date {
+    background-color: $primary;
+    border-radius: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    
+    .label {
+        color: $primary-alt;
+        font-size: 1.2rem;
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+
+.bar_right_time {
+    background-color: $primary;
+    border-radius: 1rem;
+
+    .time_icon {
+        color: $primary-alt;
+        font-size: 1.2rem;
+    }
+
+    .time_label {
+        color: $primary-alt;
+        font-size: 1.2rem;
+        font-weight: bold; 
+    }
+}
+
+
+
+
+

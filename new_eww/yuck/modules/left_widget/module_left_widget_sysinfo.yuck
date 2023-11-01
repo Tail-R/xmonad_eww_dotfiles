@@ -1,0 +1,111 @@
+(defwidget module_left_widget_sysinfo []
+  (box
+    :halign "center"
+    :valign "center"
+    :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_P_H, 0)}
+    :height {round(DP_HEIGHT / 4, 0)}
+
+    (box
+      :halign "center"
+      :valign "center"
+      :space-evenly false
+      :spacing 20
+      
+      (box
+        :class "left_widget_sysinfo_micvol"
+        :orientation "v"
+        :halign "center"
+        :valign "center"
+        :space-evenly false
+        :spacing 20
+
+        (box
+          :class "scale"
+
+          (scale
+            :orientation "v"
+            :flipped true
+            :value MICVOL_LEVEL
+            :min 0
+            :max 100
+            :active false
+          )
+        )
+
+        (label :class "icon" :text "")
+      )
+      
+      (box
+        :class "left_widget_sysinfo_volume"
+        :orientation "v"
+        :halign "center"
+        :valign "center"
+        :space-evenly false
+        :spacing 20
+
+        (box
+          :class "scale"
+
+          (scale
+            :orientation "v"
+            :flipped true
+            :value VOLUME_LEVEL
+            :min 0
+            :max 100
+            :active false
+          )
+        )
+
+        (label :class "icon" :text "")
+      )
+      
+      (box
+        :class "left_widget_sysinfo_bright"
+        :orientation "v"
+        :halign "center"
+        :valign "center"
+        :space-evenly false
+        :spacing 20
+
+        (box
+          :class "scale"
+
+          (scale
+            :orientation "v"
+            :flipped true
+            :value BRIGHTNESS
+            :min 0
+            :max 100
+            :active false
+          )
+        )
+
+        (label :class "icon" :text "")
+      )
+      
+      (box
+        :class "left_widget_sysinfo_battery"
+        :orientation "v"
+        :halign "center"
+        :valign "center"
+        :space-evenly false
+        :spacing 20
+
+        (box
+          :class "scale"
+
+          (scale
+            :orientation "v"
+            :flipped true
+            :value BATTERY_LEVEL
+            :min 0
+            :max 100
+            :active false
+          )
+        )
+
+        (label :class "icon" :text "")
+      )
+    )
+  )
+)

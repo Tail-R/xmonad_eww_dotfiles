@@ -1,0 +1,90 @@
+(defwidget module_bottom_bar_dock_center []
+  (box
+    (box
+      (box
+        :halign "center"
+        :valign "center"
+        :space-evenly false
+        :spacing 15
+        
+        ;; Left widget launcher
+        (eventbox
+          :class "dock_center_launch_left_widget"
+          :width {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :onclick "scripts/launcher/launch_left_widget.sh --toggle &"
+
+          (box
+            (label :class "icon" :text "󱂪")
+          )
+        )
+
+        (eventbox
+          :class "dock_center_launch_center_dashboard"
+          :width {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :onclick "scripts/launcher/launch_center_dmenu.sh --toggle &"
+          
+          (box
+            (label :class "icon" :text "󱗼")
+          )
+        )
+        
+        (eventbox
+          :class "dock_center_launch_terminal"
+          :width {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :onclick "${_TERMINAL} &"
+          
+          (box
+            (label :class "icon" :text "")
+          )
+        )
+        
+        (eventbox
+          :class "dock_center_launch_browser"
+          :width {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :onclick "${_BROWSER} &"
+          
+          (box
+            (label :class "icon" :text "󰈹")
+          )
+        )
+        
+        (eventbox
+          :class "dock_center_launch_ss_full"
+          :width {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :onclick "scripts/screenshot.sh --full"
+          
+          (box
+            (label :class "icon" :text "󰄀")
+          )
+        )
+        
+        (eventbox
+          :class "dock_center_launch_ss_select"
+          :width {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :onclick "scripts/screenshot.sh --select"
+          
+          (box
+            (label :class "icon" :text "󰆐")
+          )
+        )
+        
+        (eventbox
+          :class "dock_center_launch_right_mplayer"
+          :width {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_BOTTOM_BAR_C_V, 0)}
+          :onclick "scripts/launcher/launch_right_mplayer.sh --toggle &"
+          
+          (box
+            (label :class "icon" :text "󰝚")
+          )
+        )
+      )
+    )
+  )
+)

@@ -1,0 +1,53 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; This is a ".yuck" file for the eww configuration
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; ***** User variables **********************************************
+;; Profile
+(defvar PF_FACE "images/gab.png")
+(defpoll PF_NAME :interval "1h" "echo $USER")
+
+; ;; Display size
+; (defvar DP_WIDTH "1920")
+; (defvar DP_HEIGHT "1200")
+
+;; Automaticary detect the primary mointor size 
+(defpoll DP_WIDTH :interval "1h"
+  "scripts/display.sh --get_dp_width")
+
+(defpoll DP_HEIGHT :interval "1h"
+  "scripts/display.sh --get_dp_height")
+
+;; Distro logo
+(defvar DISTRO_LOGO "images/endeavouros-icon.png")
+
+;; Default apps name
+(defvar _TERMINAL "kitty")
+(defvar _BROWSER "firefox")
+
+;; ***** Dependency list  ********************************************
+(defvar _DEPENDENCY_LIST
+  "
+  source-code-font
+  nerd-font
+
+  xdotool
+  xprop
+  wmctrl
+  feh
+  maim
+  acpi
+  pamixer
+
+  networkmanager
+  iw
+  nmcli
+
+  brightnessctl
+  playerctl
+
+  python-opencv
+  "
+)
+
+

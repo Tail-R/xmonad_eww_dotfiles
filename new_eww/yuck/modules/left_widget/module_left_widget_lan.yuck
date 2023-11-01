@@ -1,0 +1,152 @@
+(defwidget module_left_widget_lan []
+  (eventbox
+    :halign "center"
+    :valign "center"
+    :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_P_H, 0)}
+    :height {round(DP_HEIGHT / 20, 0)}
+    :onhover "${EWW_CMD} update HOVER_LAN=true &"
+    :onhoverlost "${EWW_CMD} update HOVER_LAN=false SHOW_LAN=false &"
+
+    (box
+      :orientation "v"
+      :halign "start"
+      :valign "center"
+      :space-evenly false
+      :spacing 10
+
+      ;; Top Box
+      (box
+        :halign "center"
+        :valign "center"
+        :space-evenly false
+        :spacing 15
+
+        ;; Left
+        (revealer
+          :transition "slideright"
+          :reveal {HOVER_LAN == false}
+          :duration "200ms"
+
+          (box
+            :class "left_widget_lan_status"
+            :width {round(DP_WIDTH / 30, 0)}
+            :height {round(DP_HEIGHT / 20, 0)}
+
+            (box
+              (label
+                :class "icon"
+                :text {LAN_CON_STATUS == "connected" ?
+                "󰤨"
+                :
+                "󰤭"
+                }
+              )
+            )
+          )
+        )
+
+        ;; Center
+        (eventbox
+          :class "left_widget_lan_button_rect"
+          :onclick "scripts/network.sh --toggle"
+          
+          (box
+            :width {round(DP_WIDTH / 6.4, 0)}
+            :height {round(DP_HEIGHT / 20, 0)}
+
+            (box
+              (label
+                :class "label"
+                :limit-width 20
+                :text {LAN_CON_STATUS == "connected" ?
+                "${LAN_SSID}"
+                :
+                "offline"
+                }
+              )
+            )
+          )
+        )
+
+        ;; Right
+        (revealer
+          :transition "slideright"
+          :reveal HOVER_LAN
+          :duration "200ms"
+
+          (eventbox
+            :class "left_widget_lan_button_square"
+            :width {round(DP_WIDTH / 30, 0)}
+            :height {round(DP_HEIGHT / 20, 0)}
+            :onclick "${EWW_CMD} update SHOW_LAN=true"
+
+            (box
+              (label :class "icon" :text "󰅂")
+            )
+          )
+        )
+      )
+
+      ;; Bottom box
+      (revealer
+        :transition "slidedown"
+        :reveal SHOW_LAN
+        :duration "200ms"
+
+        (box
+          :halign "center"
+          :valign "center"
+          :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_P_H, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_LEFT_WIDGET_P_V, 0)}
+
+          (box
+            :class "left_widget_lan_ssid_entry"
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_P_H, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_LEFT_WIDGET_P_V, 0)}
+
+            (scroll
+              :hscroll false
+              :vscroll true
+              :vexpand true
+
+              (box
+                :orientation "v"
+                :halign "center"
+                :valign "center"
+                :space-evenly false
+                :spacing 10
+
+                (for entry in JSON_SSID
+                  (eventbox
+                    :class "left_widget_lan_ssid_button"
+                    :halign "center"
+                    :valign "center"
+                    :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_C_H, 0)}
+                    :height {round(DP_HEIGHT / 20, 0)}
+
+                    (box
+                      (button
+                        :onclick "nmcli con up '${entry}'"
+                        
+                        (label
+                          :class "label"
+                          :limit-width 20
+                          :text "${entry}"
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)
+
+
+

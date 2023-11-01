@@ -1,0 +1,33 @@
+(defwidget widget_right_mplayer []
+  (box
+    :halign "center"
+    :valign "center"
+    :space-evenly false
+
+    ;; uwustagram
+    (box
+      :style {SHOW_RIGHT_MPLAYER ?
+      "
+      transition: 400ms ease;
+      "
+      :
+      "
+      margin-right: -20rem;
+      "
+      }
+    
+      (box
+        :class "right_mplayer_uwustagram_root_box"
+        :halign "center"
+        :valign "center"
+        :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_P_H, 0)}
+        :height {round(DP_HEIGHT / BOX_SIZE_RIGHT_MPLAYER_P_V, 0)}
+      
+        (box
+          (module_right_mplayer_uwustagram)
+        )
+      )
+    )
+  )
+)
+

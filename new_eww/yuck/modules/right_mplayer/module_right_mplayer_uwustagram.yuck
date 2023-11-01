@@ -1,0 +1,351 @@
+(defwidget module_right_mplayer_uwustagram []
+  ;; Instagram music player
+  (centerbox
+    :orientation "v"
+    
+    ;; Bumper top
+    (box
+      :class "right_mplayer_bumper_top"
+      :halign "center"
+      :valign "start"
+      :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_P_H, 0)}
+      :height {round(DP_HEIGHT / 20, 0)}
+      
+      (box
+        :halign "center"
+        :valign "center"
+
+        (label
+          :class "label"
+          :text "uwustagram"
+        )
+      )
+    )
+
+    (box
+      :orientation "v"
+      :halign "center"
+      :valign "center"
+      :space-evenly false
+
+      ;; Box top
+      (box
+        :class "right_mplayer_box_top"
+        :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_P_H, 0)}
+        :height {round(DP_HEIGHT / 20, 0)}
+
+        (box
+          :halign "center"
+          :valign "center"
+          :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_C_H, 0)}
+          :height {round(DP_HEIGHT / 20, 0)}
+
+          (centerbox
+            (box 
+              :halign "start"
+              :valign "center"
+              :space-evenly false
+              :spacing 15
+
+              (box
+                :class "right_mplayer_decoration_artist_face"
+                :width {round(DP_WIDTH / 50, 0)}
+                :height {round(DP_WIDTH / 50, 0)}
+                
+                (box
+                  (label :class "icon" :text "")
+                )
+              )
+              
+              (box
+                :class "right_mplayer_artist_name"
+                
+                (label
+                  :class "label"
+                  :limit-width 10
+                  :text "${MPRIS_ARTIST}"
+                )
+              )
+            )
+            
+            (box
+              :halign "center"
+              :valign "center"
+            )
+
+            (box
+              :class "right_mplayer_decoration_dots"
+              :halign "end"
+              :valign "center"
+              :width {round(DP_WIDTH / 50, 0)}
+              :height {round(DP_WIDTH / 50, 0)}
+
+              (label
+                :class "icon"
+                :text "󰇘"
+              )
+            )
+          )
+        )
+      )
+
+      ;; Box center
+      (box
+        :class "right_mplayer_box_center"
+        :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_P_H, 0)}
+        :height {round(DP_HEIGHT / 3.5, 0)}
+        
+        ;; Music cover
+        (overlay
+          
+          ;; Background
+          (box
+            :style
+            "
+            background-image: url('${MPRIS_COVER_BLUR}');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            "
+          )
+
+          ;; Foreground
+          (box
+            (overlay
+              (box
+                :class "right_mplayer_music_cover_fg"
+                :halign "center"
+                :valign "center"
+                :width {round(DP_WIDTH / 10, 0)}
+                :height {round(DP_WIDTH / 10, 0)}
+                :style
+                "
+                background-image: url('${MPRIS_COVER_DEFAULT}');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                border-radius: 1rem;
+                "
+              )
+
+              (box
+                :class "right_mplayer_music_cover_fg"
+                :halign "center"
+                :valign "center"
+                :width {round(DP_WIDTH / 10, 0)}
+                :height {round(DP_WIDTH / 10, 0)}
+                :style
+                "
+                background-image: url('${MPRIS_COVER}');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                border-radius: 1rem;
+                "
+              )
+            )
+          )
+        )
+      )
+      
+      ;; Box bottom
+      (box
+        :class "right_mplayer_box_bottom"
+        :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_P_H, 0)}
+        :height {round(DP_HEIGHT / 8, 0)}
+
+        (box
+          :orientation "v"
+          :halign "center"
+          :valign "center"
+          :space-evenly false
+          :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_C_H, 0)}
+          :height {round(DP_HEIGHT / 5, 0)}
+
+          (box
+            :height {round(DP_HEIGHT / 20, 0)}
+            :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_C_H, 0)}
+            :halign "center"
+            :valign "start"
+
+            (centerbox
+              
+              ;; It's so unnecessary lol. but extermely cute <3
+              (box
+                :class "right_mplayer_decoration_icons"
+                :halign "start"
+                :valign "center"
+                :space-evenly false
+                :spacing 25
+
+                (label :class "heart" :text "󰣐")
+                (label :class "share" :text "󰅟")
+                (label :class "comment" :text "󰅺")
+              )
+
+              (box
+                :halign "center"
+                :valign "center"
+              )
+
+              (box
+                :class "right_mplayer_player_status"
+                :halign "end"
+                :valign "center"
+
+                (box
+                  :halign "center"
+                  :valign "center"
+                  :width {round(DP_WIDTH / 15, 0)}
+                  :height {round(DP_WIDTH / 50, 0)}
+                
+                  (box
+                    :halign "center"
+                    :space-evenly false
+                    :spacing 15
+
+                    (label
+                      :class "label"
+                      :text {MPRIS_PLAYER_NAME != "" ?
+                      "${MPRIS_PLAYER_NAME}"
+                      :
+                      "-----"
+                      }
+                    )
+                    
+                    (label
+                      :class "icon"
+                      :text {MPRIS_PLAYER_NAME != "" ?
+                      "${MPRIS_PLAYER_ICON}"
+                      :
+                      "󰒲"
+                      }
+                    )
+                  ) 
+                ) 
+              )
+            )
+          )
+
+          ;; Music title
+          (overlay
+            
+            ;; For lock the box size
+            (box
+              :height {round(DP_HEIGHT / 25, 0)}
+              :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_C_H, 0)}
+            )
+
+            (box
+              :halign "center"
+              :valign "start"
+              :height {round(DP_HEIGHT / 25, 0)}
+              :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_C_H, 0)}
+              
+              (box
+                :class "right_mplayer_music_title"
+                
+                (label
+                  :class "label"
+                  :limit-width 25
+                  :text "${MPRIS_TITLE}"
+                )
+              )
+            )
+          )
+
+          ;; Volume bar
+          (box
+            :height {round(DP_HEIGHT / 20, 0)}
+            :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_C_H, 0)}
+
+            (box
+              :class "right_mplayer_volume"
+              :halign "center"
+              :valign "center"
+
+              (scale
+                :value VOLUME_LEVEL
+                :min 0
+                :max 100
+                :active false
+              )
+            )
+          )
+          
+          ;; Controll buttons
+          (box
+            :class "right_mplayer_controll_buttons"
+            :height {round(DP_HEIGHT / 10, 0)}
+            :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_C_H, 0)}
+
+            (box
+              :halign "center"
+              :valign "center"
+              :space-evenly false
+              :spacing 20
+
+              ;; Prev button
+              (eventbox
+                :class "right_mplayer_prev"
+                :width {round(DP_WIDTH / 32, 0)}
+                :height {round(DP_WIDTH / 32, 0)}
+                :onclick "scripts/mpris.sh --prev"
+
+                (box
+                  (label :class "icon" :text "󰒮")
+                )
+              )
+              
+              ;; Toggle button
+              (eventbox
+                :class "right_mplayer_toggle"
+                :width {round(DP_WIDTH / 32, 0)}
+                :height {round(DP_WIDTH / 32, 0)}
+                :onclick "scripts/mpris.sh --toggle"
+                
+                (box
+                  (label
+                    :class "icon"
+                    :style {MPRIS_STATUS == "playing" ?
+                    ""
+                    :
+                    "padding-left: 0.5rem;"
+                    }
+                    
+                    :text {MPRIS_STATUS == "playing" ?
+                    "󰏤"
+                    :
+                    "󰐊"
+                    }  
+                  )
+                )
+              )
+              
+              ;; Next button
+              (eventbox
+                :class "right_mplayer_next"
+                :width {round(DP_WIDTH / 32, 0)}
+                :height {round(DP_WIDTH / 32, 0)}
+                :onclick "scripts/mpris.sh --next"
+                
+                (box
+                  (label :class "icon" :text "󰒭")
+                )
+              )
+            )
+          )
+        )
+      )
+    ) 
+    
+    ;; Bumper bottom
+    (box
+      :class "right_mplayer_bumper_bottom"
+      :halign "center"
+      :valign "end"
+      :width {round(DP_WIDTH / BOX_SIZE_RIGHT_MPLAYER_P_H, 0)}
+      :height {round(DP_HEIGHT / 40, 0)}
+    )
+  )
+)

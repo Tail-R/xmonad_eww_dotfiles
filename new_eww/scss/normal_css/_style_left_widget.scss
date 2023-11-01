@@ -1,0 +1,310 @@
+/***** Window *******************************************************/
+.window_left_widget {
+}
+
+/***** Widget *******************************************************/
+.left_widget_root_box {
+    background-color: $bg;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 0.4rem $shadow;
+}
+
+// Clock
+.left_widget_clock_time {
+    background-color: $primary;
+    border-radius: 2rem;
+    transition: 200ms ease;
+
+    .label {
+        color: $primary-alt;
+        font-size: 5rem;
+        // font-style: italic;
+        font-weight: bold; 
+    }
+
+    &:hover {
+        opacity: 0.5; 
+    }
+}
+
+.left_widget_clock_tray {
+    border: 0.25rem solid $primary;
+    border-radius: 2rem;
+    padding: 1rem 1rem 0.2rem 1rem;
+}
+
+.left_widget_clock_date {
+    color: $primary-alt;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.left_widget_clock_calendar {
+    color: $fg;
+    font-weight: bold;
+
+    &:selected {
+        color:$bg;
+        background-color: $primary-alt;
+        border-radius: 1rem; 
+    }
+}
+
+// Weather
+.left_widget_weather_con {
+    background-color: $secondary;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    color: $fg;
+    font-size: 1.8rem;
+    font-weight: bold; 
+    
+}
+
+.left_widget_weather_locale {
+    .label {
+        color: $fg;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+}
+
+.left_widget_weather_temp {
+    .label {
+        color: $fg;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .icon {
+        color: $fg;
+        font-size: 1.8rem;
+    }
+}
+
+// Profile
+.left_widget_profile_bg {
+    border: 0.25rem solid $fg-alt; 
+    border-radius: 2rem;
+}
+
+.left_widget_profile_name {
+    color: $fg;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+// Sysinfo
+.left_widget_sysinfo_micvol {
+    .scale scale trough {
+        background-color: $bg-alt;
+        border-radius: 2rem;
+        min-width: 2rem;
+        min-height: 12rem;
+    }
+
+    .scale scale highlight {
+        background-color: $secondary-alt; 
+        border-radius: 2rem;
+    }
+
+    .icon {
+        color: $secondary-alt;
+        font-size: 2rem; 
+        padding-right: 0.2rem;
+    }
+}
+
+.left_widget_sysinfo_volume {
+    .scale scale trough {
+        background-color: $bg-alt;
+        border-radius: 2rem;
+        min-width: 2rem;
+        min-height: 12rem;
+    }
+
+    .scale scale highlight {
+        background-color: $primary; 
+        border-radius: 2rem;
+    }
+
+    .icon {
+        color: $primary;
+        font-size: 2rem; 
+        padding-right: 0.5rem;
+    }
+}
+
+.left_widget_sysinfo_bright {
+    .scale scale trough {
+        background-color: $bg-alt;
+        border-radius: 2rem;
+        min-width: 2rem;
+        min-height: 12rem;
+    }
+
+    .scale scale highlight {
+        background-color: $primary-alt; 
+        border-radius: 2rem;
+    }
+
+    .icon {
+        color: $primary-alt;
+        font-size: 1.8rem;
+        padding-right: 0.5rem;
+    }
+}
+
+.left_widget_sysinfo_battery {
+    .scale scale trough {
+        background-color: $bg-alt;
+        border-radius: 2rem;
+        min-width: 2rem;
+        min-height: 12rem;
+    }
+
+    .scale scale highlight {
+        background-color: $secondary; 
+        border-radius: 2rem;
+    }
+
+    .icon {
+        color: $secondary;
+        font-size: 1.8rem; 
+        padding-right: 0.8rem;
+    }
+}
+
+// Lan
+.left_widget_lan_status {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+
+    .icon {
+        color: $secondary-alt;
+        font-size: 1.8rem;
+        padding-right: 0.7rem; 
+    }
+}
+
+.left_widget_lan_button_rect {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    transition: 200ms ease;
+
+    .label {
+        color: $secondary-alt;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    
+    &:hover {
+        opacity: 0.5 
+    }
+}
+
+.left_widget_lan_button_square {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    transition: 200ms ease;
+
+    .icon {
+        color: $secondary-alt;
+        font-size: 2rem; 
+    }
+    
+    &:hover {
+        opacity: 0.5 
+    }
+}
+
+.left_widget_lan_ssid_entry {
+    // background-color: $bg-alt;
+    border: 0.25rem solid $secondary-alt; 
+    border-radius: 1rem;
+    transition: 200ms ease;
+}
+
+.left_widget_lan_ssid_button {
+    border-radius: 1rem;
+
+    .label {
+        color: $fg;
+        font-size: 1.2rem;
+        font-weight: bold; 
+    }
+
+    &:hover {
+        background-color: $fg-alt;
+    }
+}
+
+// Bluetooth
+.left_widget_bt_status {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+
+    .icon {
+        color: $primary;
+        font-size: 1.8rem;
+        padding-right: 0.5rem; 
+    }
+}
+
+.left_widget_bt_button_rect {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    transition: 200ms ease;
+
+    .label {
+        color: $primary;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    
+    &:hover {
+        opacity: 0.5 
+    }
+}
+
+.left_widget_bt_button_square {
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    transition: 200ms ease;
+
+    .icon {
+        color: $primary;
+        font-size: 2rem; 
+    }
+    
+    &:hover {
+        opacity: 0.5 
+    }
+}
+
+.left_widget_bt_devname_entry {
+    // background-color: $bg-alt;
+    border: 0.25rem solid $primary; 
+    border-radius: 1rem;
+    transition: 200ms ease;
+}
+
+.left_widget_bt_devname_button {
+    border-radius: 1rem;
+
+    .label {
+        color: $fg;
+        font-size: 1.2rem;
+        font-weight: bold; 
+    }
+
+    &:hover {
+        background-color: $fg-alt;
+    }
+}
+
+
+

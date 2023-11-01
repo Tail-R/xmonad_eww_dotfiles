@@ -1,0 +1,65 @@
+;; ***** Windows *****************************************************
+(defwindow window_top_bar
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry :width "100%"
+                      :height "8%"
+                      :anchor "top center"
+            )
+  (widget_top_bar)
+)
+
+(defwindow window_bottom_bar
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry :width "100%"
+                      :height "9.5%"
+                      :anchor "bottom center"
+            )
+  (widget_bottom_bar)
+)
+
+(defwindow window_left_widget
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry :width "30%"
+                      :height "100%"
+                      :anchor "center left"
+            )
+  (widget_left_widget)
+)
+
+(defwindow window_right_mplayer
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry :width "30%"
+                      :height "70%"
+                      :anchor "center right"
+            )
+  (widget_right_mplayer)
+)
+
+(defwindow window_right_notifpop
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry :width "28%"
+                      :height "85%"
+                      :anchor "top right"
+            )
+  (widget_right_notifpop)
+)
+
+(defwindow window_center_dmenu
+  :monitor 0
+  :stacking "fg"
+  :wm-ignore false
+  :geometry (geometry :width "40%"
+                      :height "80%"
+                      :anchor "center center"
+            )
+  (widget_center_dmenu)
+)
+
+
+
+

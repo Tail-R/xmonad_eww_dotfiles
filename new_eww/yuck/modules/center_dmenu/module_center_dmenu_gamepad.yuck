@@ -1,0 +1,537 @@
+(defwidget module_center_dmenu_gamepad []
+  (box
+    :class "gamepad_root_box"
+    :orientation "v"
+    :halign "center"
+    :valign "center"
+    :space-evenly false
+    :width {round(DP_WIDTH / BOX_SIZE_CENTER_DMENU_P_H, 0)}
+    :height {round(DP_HEIGHT / 1.6, 0)}
+    :spacing 20
+    
+    ;; Display
+    (box 
+      (box
+        :halign "center"
+        :valign "center"
+        :width {round(DP_WIDTH / BOX_SIZE_CENTER_DMENU_P_H, 0)}
+        :height {round(DP_HEIGHT / BOX_SIZE_CENTER_DMENU_P_V, 0)}
+
+        (box      
+          (box
+            :class "gamepad_disp_padding"
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / 4.4, 0)}
+            :height {round(DP_HEIGHT / 3, 0)}
+            
+            (box
+              :orientation "v"
+              :valign "center"
+              :halign "center"
+              :space-evenly false
+              :spacing 20
+ 
+              ;; Wait... does this supported the multiple pages !!!??????
+
+              (box
+                :class "gamepad_disp_bg"
+                :halign "center"
+                :valign "center"
+                :space-evenly false
+
+                ;; Page0
+                (revealer
+                  :transition "slideright"
+                  :reveal SHOW_CENTER_DMENU_PAGE0
+                  :duration "400ms"
+
+                  (box
+                    :class "gamepad_page0"
+                    :halign "center"
+                    :valign "center"
+                    :width {round(DP_WIDTH / BOX_SIZE_CENTER_DMENU_C_H, 0)}
+                    :height {round(DP_HEIGHT / BOX_SIZE_CENTER_DMENU_C_V, 0)}
+                    :style {GAMEPAD_SHOW_WALL ?
+                    "
+                    background-image: url('${CURRENTWALL_BLUR}');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    transition: 200ms ease;
+                    "
+                    :
+                    "
+                    transition: 200ms ease;
+                    "
+                    }
+                    
+                    
+                    (box
+                      (box
+                        :orientation "v"
+                        :halign "center"
+                        :valign "center"
+                        :space-evenly false
+                        :spacing 25
+
+                        (box
+                          :halign "center"
+                          :space-evenly false
+                          :spacing 20
+
+                          (box
+                            :class "gamepad_input_bar"
+                            :orientation "v"
+                            :halign "center"
+                            :valign "center"
+                            :width {round(DP_WIDTH / 7, 0)}
+                            :height {round(DP_HEIGHT / 32, 0)}
+
+                            ;; Dummy padding
+                            (box
+                              :halign "center"
+                              :valign "center"
+                              :width {round(DP_WIDTH / 20, 0)}
+
+                              (box
+                                :halign "start"
+                                :space-evenly false
+                                :spacing 10
+
+                                (box
+                                  :class "gamepad_input_placeholder"
+                                  :halign "start"
+                                  :space-evenly false
+                                  :spacing 15
+                                  
+                                  (label :class "icon" :text "")
+                                  (label :class "label" :text "Search")
+                                )
+
+                                (input
+                                  :class "gamepad_input_box"
+                                  :value INPUT_DESKTOP_APPS
+                                  :onchange "scripts/desktop_apps/manage_eww_json.sh --regex_match {} &"
+                                  :onaccept "scripts/launcher/launch_center_dmenu.sh --toggle && ${JSON_DESKTOP_APPS[0].exec_name} &"
+                                )
+                              )
+                            )
+                          )
+                        )
+
+                        ;; Application icons entry
+                        (box
+                          :width {round(DP_WIDTH / BOX_SIZE_CENTER_DMENU_C_H, 0)}
+                          :height {round(DP_HEIGHT / 8, 0)}
+
+                          (scroll
+                            :hscroll true
+                            :vscroll false
+                            :hexpand true
+
+                            (box
+                              :halign "center"
+                              :valign "center"
+                              :space-evenly false
+                              :spacing 10
+
+                              (for entry in JSON_DESKTOP_APPS
+                                (box
+                                  :class "gamepad_app_elem"
+                                  :orientation "v"
+                                  :valign "center"
+                                  :space-evenly false
+                                  :spacing 5
+
+                                  (eventbox
+                                    :class "gamepad_app_btn"
+                                    :width 80
+                                    :height 80
+                                    :style
+                                    "
+                                    background-image: url('${entry.icon_path}');
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                    "
+                                    :onclick "scripts/launcher/launch_center_dmenu.sh --close && ${entry.exec_name} &"
+                                  )
+
+                                  (label :class "label" :text "${entry.disp_name}")
+                                )
+                              )
+                            )
+                          )
+                        )
+                      ) 
+                    )
+                  )
+                )
+                
+                ;; Page1
+                (revealer
+                  :transition "slideleft"
+                  :reveal SHOW_CENTER_DMENU_PAGE1
+                  :duration "400ms"
+                
+                  (box
+                    :class "gamepad_page1"
+                    :halign "center"
+                    :valign "center"
+                    :width {round(DP_WIDTH / BOX_SIZE_CENTER_DMENU_C_H, 0)}
+                    :height {round(DP_HEIGHT / 10, 0)}
+                  
+                    (box
+                      ;; System fetch
+                      (box
+                        :class "gamepad_systemfetch"
+                        :halign "center"
+                        :valign "center"
+                        :space-evenly false
+
+                        ;; pfp
+                        (box
+                          :width {round(DP_WIDTH / 16, 0)}
+                          :height {round(DP_HEIGHT / 16, 0)}
+                          
+                          (box
+                            :halign "center"
+                            :valign "center"
+                            :style
+                            "
+                            background-image: url('${PF_FACE}');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center center;
+                            min-width: 6.5rem;
+                            min-height: 6.5rem;
+                            border-radius: 1rem;
+                            "
+                          )
+                        )
+
+                        ;; Systeminfo
+                        (box
+                          :valign "center"
+                          :halign "center"
+                          :width {round(DP_WIDTH / 12, 0)}
+                          :height {round(DP_HEIGHT / 12, 0)}
+                          
+                          (box
+                            :orientation "v"
+                            :valign "center"
+                            :halign "center"
+                            :space-evenly false
+                            :spacing 10
+                             
+                            (box
+                              :class "distro"
+                              :halign "start"
+                              :space-evenly false
+                              :spacing 15
+                              
+                              (label
+                                :class "icon"
+                                :text ""
+                              )
+                            
+                              (label
+                                :class "label"
+                                :limit-width 18
+                                :text "${DISTRO}"
+                              )
+                            )
+                            
+                            (box
+                              :class "model"
+                              :halign "start"
+                              :space-evenly false
+                              :spacing 15
+                              
+                              (label
+                                :class "icon"
+                                :text "󰌢"
+                              )
+                              
+                              (label
+                                :class "label"
+                                :limit-width 18
+                                :text "${MODEL}"
+                              )
+                            )
+                            
+                            (box
+                              :class "wmname"
+                              :halign "start"
+                              :space-evenly false
+                              :spacing 15
+                              
+                              (label
+                                :class "icon"
+                                :text ""
+                              )
+                              
+                              (label
+                                :class "label"
+                                :limit-width 18
+                                :text "${WMNAME}"
+                              )
+                            )
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+
+              ;; Title
+              (box
+                :class "gamepad_disp_title"
+                
+                ; (label
+                ;   :class "label" 
+                ;   :text "${DISTRO}"
+                ; )
+
+                (box
+                  :halign "center"
+                  :space-evenly false
+
+                  (label :class "e" :text "E")
+                  (label :class "n" :text "N")
+                  (label :class "d" :text "D")
+
+                  (label
+                    :class "label"
+                    :text "EAVOUR OS"
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+    
+    ;; Bottom controller
+    (box
+      :halign "center"
+      :valign "center"
+    
+      (box
+        :class "gamepad_con_bottom"
+        :orientation "v"
+        :halign "center"
+        :valign "center"
+        :width {round(DP_WIDTH / BOX_SIZE_CENTER_DMENU_P_H, 0)}
+        :height {round(DP_HEIGHT / 8, 0)}
+
+        (box
+          :halign "center"
+          :valign "center"
+
+          ;; + button
+          (box
+            :orientation "v"
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / 8.5, 0)}
+            
+            (box
+              :halign "center"
+              :valign "center"
+
+              (box
+                :class "gamepad_con_0_btn"
+                :halign "center"
+                :valign "center"
+                :width 35
+                :height 35
+              )
+              
+              (box
+                :class "gamepad_con_1_btn"
+                :halign "center"
+                :valign "center"
+                :width 35
+                :height 35
+                
+                (label :class "icon" :text "")
+              )
+              
+              (box
+                :class "gamepad_con_2_btn"
+                :halign "center"
+                :valign "center"
+                :width 35
+                :height 35
+              )
+            )  
+            
+            (box
+              :halign "center"
+              :valign "center"
+
+              (eventbox
+                :class "gamepad_con_3_btn"
+                :halign "center"
+                :valign "center"
+                :width 35
+                :height 35
+                :onclick "scripts/rev_sw/rev_sw_center_dmenu.sh --rev_page0 &"
+                
+                (label :class "icon" :text "")
+              )
+              
+              (box
+                :class "gamepad_con_4_btn"
+                :halign "center"
+                :valign "center"
+                :width 35
+                :height 35
+              )                
+              
+              (eventbox
+                :class "gamepad_con_5_btn"
+                :halign "center"
+                :valign "center"
+                :width 35
+                :height 35
+                :onclick "scripts/rev_sw/rev_sw_center_dmenu.sh --rev_page1 &"
+
+                (label :class "icon" :text "")
+              )
+            )  
+            
+            (box
+              :halign "center"
+              :valign "center"
+
+              (box
+                :class "gamepad_con_6_btn"
+                :halign "center"
+                :valign "center"
+                :width 35
+                :height 35
+              )
+              
+              (box
+                :class "gamepad_con_7_btn"
+                :halign "center"
+                :valign "center"
+                :width 35
+                :height 35
+                
+                (label :class "icon" :text "")
+              )
+              
+              (box
+                :class "gamepad_con_8_btn"
+                :halign "center"
+                :valign "center"
+                :width 35
+                :height 35
+              )
+            )  
+          )
+
+          ;; A, B button
+          (box
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / 8.5, 0)}
+            :spacing 20
+             
+            (box
+              :halign "center"
+              :valign "center"
+              :space-evenly false
+              :spacing 20
+              
+              (eventbox
+                :class "gamepad_con_b_btn"
+                :halign "center"
+                :valign "center"
+                :width {round(DP_WIDTH / 32, 0)}
+                :height {round(DP_WIDTH / 32, 0)}
+                :onclick "scripts/desktop_apps/manage_eww_json.sh --des_order &"
+
+                (label :class "icon" :text "󰬇")
+              )
+              
+              (box
+                :orientation "v"
+
+                (eventbox
+                  :class "gamepad_con_a_btn"
+                  :halign "center"
+                  :valign "center"
+                  :width {round(DP_WIDTH / 32, 0)}
+                  :height {round(DP_WIDTH / 32, 0)}
+                  :onclick "scripts/desktop_apps/manage_eww_json.sh --asc_order &"
+
+                  (label :class "icon" :text "󰫮")
+                )
+
+                (box
+                )
+              )
+            )
+          )
+        )
+        
+        (box
+          :halign "center"
+          :valign "center"
+          :width {round(DP_WIDTH / 5, 0)}
+          :height {round(DP_HEIGHT / 12, 0)}
+
+          (box
+            :halign "center"
+            :valign "center"
+            :space-evenly false
+            :spacing 25
+            
+            (box
+              :valign "center"
+              :width {round(DP_WIDTH / 25, 0)}
+              :height {round(DP_HEIGHT / 46, 0)}
+              
+            )
+
+            (eventbox
+              :class "gamepad_reset_btn"
+              :valign "center"
+              :width {round(DP_WIDTH / 25, 0)}
+              :height {round(DP_HEIGHT / 46, 0)}
+              :onclick "scripts/desktop_apps/manage_eww_json.sh --regex_match ''"
+
+              ; (label :class "label" :text "reset")
+            )
+            
+            (eventbox
+              :class "gamepad_show_wall_btn"
+              :valign "center"
+              :width {round(DP_WIDTH / 25, 0)}
+              :height {round(DP_HEIGHT / 46, 0)}
+              :onclick "${EWW_CMD} update GAMEPAD_SHOW_WALL=${!GAMEPAD_SHOW_WALL} &"
+              
+              ; (label :class "label" :text "wall on")
+            )
+
+            (box
+              :class "gamepad_sound_hole"
+              :halign "center"
+              :valign "center"
+              :width {round(DP_WIDTH / 32, 0)}
+              :height {round(DP_HEIGHT / 22, 0)}
+              
+              (label :class "icon" :text "󱗿")
+            )
+          )
+        )
+      )
+    )
+  )
+)
