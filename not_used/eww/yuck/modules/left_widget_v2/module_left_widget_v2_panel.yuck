@@ -1,0 +1,283 @@
+(defwidget module_left_widget_v2_panel []
+  (box
+    :halign "center"
+    :valign "center"
+
+    (box
+      :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_V2_ROOT_BOX_C_H, 0)}
+      :height {round(DP_HEIGHT / BOX_SIZE_LEFT_WIDGET_V2_ROOT_BOX_C_V, 0)}
+
+      (box
+        :orientation "v"
+        :halign "center"
+        :valign "start"
+        :space-evenly false
+        :spacing 10
+
+        ;; Clock
+        (box
+          :halign "center"
+          :valign "center"
+          :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_V2_C_H, 0)}
+          :height {round(DP_HEIGHT / 8, 0)}
+
+          (box
+            :halign "center"
+            :valign "center"
+            :space-evenly false
+            :spacing 10
+
+            ;; Left
+            (box
+              :class "left_widget_v2_panel_clock_left"
+              :halign "start"
+              :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_V2_C_H / 2.2, 0)}
+              :height {round(DP_HEIGHT / 8.2, 0)}
+
+              (box
+                (label :class "label-time" :text "${TIME_HOUR}")
+              )
+            )
+
+            ;; Right
+            (box
+              :class "left_widget_v2_panel_clock_right"
+              :halign "end"
+              :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_V2_C_H / 2.2, 0)}    
+              :height {round(DP_HEIGHT / 8.2, 0)}
+              
+              (box
+                :orientation "v"
+                :halign "center"
+                :valign "center"
+                :space-evenly false
+                :spacing 5
+                
+                (box
+                  (label :class "label-time" :text "${TIME_MIN}")
+                )
+
+                (box
+                  :class "separator"
+                  :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_V2_C_H / 5, 0)}
+                  :height 2
+                )
+
+                (box
+                  (label
+                    :class "label-date"
+                    :text "${TIME_MER}"
+                  )
+                )
+              )
+            )
+          )
+        )
+
+        ;; Quote
+        (box
+          :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_V2_C_H, 0)}
+          :height {round(DP_HEIGHT / BOX_SIZE_LEFT_WIDGET_V2_C_V, 0)}
+          
+          (box
+            :class "left_widget_v2_panel_quote"
+            :halign "center"
+            :valign "center"
+            :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_V2_C_H / 1.05, 0)}
+            :height {round(DP_HEIGHT / BOX_SIZE_LEFT_WIDGET_V2_C_V / 1.05, 0)}
+            
+            (overlay
+
+              ;; Current background
+              (box
+                :class "left_widget_v2_panel_quote_bg"
+                :style
+                "
+                background-image: url('${CURRENTWALL_BLUR}');
+                background-repeat: no-repeat;
+                background-position: center center;
+                "
+              )
+                
+              ; background-size: cover;
+
+              ;; Quote
+              (box
+                :class "left_widget_v2_panel_quote_fg"
+                :orientation "v"
+                :halign "center"
+                :valign "center"
+                :space-evenly false
+                :spacing 20
+
+                (box
+                  :orientation "v"
+                  :halign "center"
+                  :valign "center"
+                  :spacing 10
+                  
+                  (for line in {JSON_QUOTE[INDEX_QUOTE].quote}
+                    (label :class "quote" :text "${line}")
+                  )
+                )
+
+                (box
+                  (box
+                    :halign "end"
+                    :space-evenly false
+                    :spacing 5
+                    
+                    (label :class "ricer" :text "-")
+                    (label :class "ricer" :text {JSON_QUOTE[INDEX_QUOTE].ricer})
+                  )
+                )
+              )
+            )
+          )
+        )
+        
+        ;; System info
+        (box
+          :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_V2_C_H, 0)}
+          :height {round(DP_HEIGHT / 4.8, 0)}
+          
+          (box
+            :class "left_widget_v2_panel_sysinfo"
+            :halign "center"
+            :valign "start"
+            :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_V2_C_H / 1.05, 0)}
+            :height {round(DP_HEIGHT / 5, 0)}
+
+            (box
+              :orientation "v"
+              :halign "center"
+              :valign "center"
+              :space-evenly false
+              :spacing 25
+
+              (box
+                :class "left_widget_v2_panel_sysinfo_title"
+                :halign "center"
+                :valign "center"
+                :width {round(DP_WIDTH / 10, 0)}
+                :height {round(DP_HEIGHT / 26, 0)}
+
+                (box
+                  (label :class "label" :text "SYSTEM INFO")
+                )
+              )
+            
+              (box
+                :orientation "v"
+                :halign "center"
+                :valign "center"
+                :space-evenly false
+                :spacing 10
+
+                ;; Mic volume
+                (box
+                  :class "left_widget_v2_sysinfo_micvol"
+                  :halign "center"
+                  :valign "start"
+                  :space-evenly false
+                  :spacing 15
+                  
+                  (box
+                    :class "scale"
+                    
+                    (scale
+                      :value MICVOL_LEVEL
+                      :min 0
+                      :max 100
+                      :active false
+                    )
+                  )
+
+                  (label :class "label" :text "MIC")
+                  (label :class "label" :text "${MICVOL_LEVEL}%")
+                )
+                
+                ;; Volume level
+                (box
+                  :class "left_widget_v2_sysinfo_volume"
+                  :halign "start"
+                  :valign "center"
+                  :space-evenly false
+                  :spacing 15
+                  
+                  (box
+                    :class "scale"
+                    
+                    (scale
+                      :value VOLUME_LEVEL
+                      :min 0
+                      :max 100
+                      :active false
+                    )
+                  )
+                  
+                  (label :class "label" :text "VOL")
+                  (label :class "label" :text "${VOLUME_LEVEL}%")
+                )
+                
+                ;; Brightness
+                (box
+                  :class "left_widget_v2_sysinfo_bright"
+                  :halign "start"
+                  :valign "center"
+                  :space-evenly false
+                  :spacing 15
+                  
+                  (box
+                    :class "scale"
+                    
+                    (scale
+                      :value BRIGHTNESS
+                      :min 0
+                      :max 100
+                      :active false
+                    )
+                  )
+                  
+                  (label :class "label" :text "BRI")
+                  (label :class "label" :text "${BRIGHTNESS}%")
+                )
+                
+                ;; Battery level
+                (box
+                  :class "left_widget_v2_sysinfo_battery"
+                  :halign "start"
+                  :valign "center"
+                  :space-evenly false
+                  :spacing 15
+                  
+                  (box
+                    :class "scale"
+                    
+                    (scale
+                      :value BATTERY_LEVEL
+                      :min 0
+                      :max 100
+                      :active false
+                    )
+                  )
+                  
+                  (label :class "label" :text "BAT")
+                  (label :class "label" :text "${BATTERY_LEVEL}%")
+                )
+              )
+            )
+          ) 
+        )
+
+        (module_left_widget_v2_lan)
+        (module_left_widget_v2_bluetooth)
+      )
+    )
+  )
+)
+
+
+
+
+

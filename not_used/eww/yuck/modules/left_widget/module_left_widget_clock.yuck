@@ -1,0 +1,59 @@
+(defwidget module_left_widget_clock []
+  (eventbox
+    :onclick "${EWW_CMD} update SHOW_CALENDAR=true &"
+    :onhoverlost "${EWW_CMD} update SHOW_CALENDAR=false &"
+
+    (box
+      :orientation "v"
+      :halign "center"
+      :space-evenly false
+      :spacing 20
+
+      ;; Current time
+      (eventbox
+        :class "left_widget_clock_time"
+        :width {round(DP_WIDTH / BOX_SIZE_LEFT_WIDGET_P_H, 0)}
+        :height {round(DP_HEIGHT / 10, 0)}
+
+        (label :class "label" :text "${TIME_HOUR} : ${TIME_MIN}")
+      )
+
+      ;; Calendar
+      (revealer
+        :transition "slidedown"
+        :reveal "${SHOW_CALENDAR}"
+        :duration "200ms"
+
+        (box
+          :class "left_widget_clock_tray"
+          :orientation "v"
+          :valign "center"
+          :space-evenly false
+          :height {round(DP_HEIGHT / BOX_SIZE_LEFT_WIDGET_P_V, 0)}
+          :spacing 10
+
+          (box
+            :class "left_widget_clock_date"
+            :halign "center"
+            :space-evenly false
+            :spacing 20
+            
+            (label :text "${DATE_DOW}")
+            (label :text "${DATE_DAY}")
+          )
+
+          (calendar
+            :class "left_widget_clock_calendar"
+            :show-heading false
+            :active false
+          )
+        )
+      )
+    )
+  )
+)
+
+
+
+
+

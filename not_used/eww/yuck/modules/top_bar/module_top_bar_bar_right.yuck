@@ -1,0 +1,45 @@
+(defwidget module_top_bar_bar_right []
+  (box
+    :halign "end"
+    :valign "center"
+    :space-evenly false
+    :spacing 10
+
+    (box
+      :class "bar_right_battery"
+      :width {round(DP_WIDTH / 7.5, 0)}
+      :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+      
+      (label
+        :class "icon"
+        :text "${BATTERY_ICONS}"
+      )
+    )
+
+    (box
+      :class "bar_right_date"
+      :width {round(DP_WIDTH / 18, 0)}
+      :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+
+      (box
+        (label :class "label" :text "${DATE_DOW} / ${DATE_DAY}")
+      )
+    )
+
+    (box
+      :class "bar_right_time"
+      :width {round(DP_WIDTH / 16, 0)}
+      :height {round(DP_HEIGHT / BOX_SIZE_TOP_BAR_C_V, 0)}
+
+      (box
+        :halign "center"
+        :valign "center"
+        :space-evenly false
+        :spacing 15
+        
+        (label :class "time_icon" :text "")
+        (label :class "time_label" :text "${TIME_HOUR} : ${TIME_MIN}")
+      )
+    )
+  )
+)

@@ -1,0 +1,17 @@
+(defwidget widget_right_notifpop []
+  (box
+    :class "right_notifpop_root_box"
+    :halign "center"
+    :valign "center"
+    :width {round(DP_WIDTH / BOX_SIZE_RIGHT_NOTIFPOP_ROOT_BOX_P_H, 0)}
+    :height {round(DP_HEIGHT / BOX_SIZE_RIGHT_NOTIFPOP_ROOT_BOX_P_V, 0)}
+
+    (box
+      (overlay
+        (module_right_notifpop_bg)
+        (module_right_notifpop_fg)
+      )
+    )
+  )
+)
+

@@ -1,0 +1,3 @@
+(defwidget module_right_notifpop_bg []
+  (box)
+)

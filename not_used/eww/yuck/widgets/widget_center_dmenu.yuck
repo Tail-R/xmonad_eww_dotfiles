@@ -1,0 +1,5 @@
+(defwidget widget_center_dmenu []
+  (box 
+    (module_center_dmenu_gamepad)
+  )
+)
