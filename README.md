@@ -4,6 +4,8 @@ this is my personal linux setup. these are probably has many bugs and glitches. 
 [new version]
 ![image](https://github.com/Tail-R/xmonad_eww_dotfiles/assets/132870183/95fea5d7-28c2-442e-af79-25a2f5a93587)
 
+![screenShot20231111_213717](https://github.com/Tail-R/xmonad_eww_dotfiles/assets/132870183/2ca8b874-270a-4d54-987b-b1e774e2acab)
+
 ![image](https://github.com/Tail-R/xmonad_eww_dotfiles/assets/132870183/11678ded-c716-489e-9ef6-1d92d18cf91e)
 
 [old version]
