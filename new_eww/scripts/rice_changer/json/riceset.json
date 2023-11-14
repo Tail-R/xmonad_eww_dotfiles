@@ -1,0 +1,57 @@
+[
+    {
+        "rice_name": "rose",
+        "wall_path": "rose.jpeg",
+        "scss_name": "rose"
+    },
+    {
+        "rice_name": "sugar",
+        "wall_path": "sugar.jpg",
+        "scss_name": "sugar"
+    },
+    {
+        "rice_name": "hard_purple",
+        "wall_path": "hard_purple.jpg",
+        "scss_name": "hard_purple"
+    },
+    {
+        "rice_name": "soft_blue",
+        "wall_path": "soft_blue.jpg",
+        "scss_name": "soft_blue"
+    },
+    {
+        "rice_name": "solid_white",
+        "wall_path": "solid_white.png",
+        "scss_name": "solid_white"
+    },
+    {
+        "rice_name": "cosmic",
+        "wall_path": "cosmic.jpg",
+        "scss_name": "cosmic"
+    },
+    {
+        "rice_name": "soft_purple",
+        "wall_path": "soft_purple.jpg",
+        "scss_name": "soft_purple"
+    },
+    {
+        "rice_name": "bubblegum",
+        "wall_path": "bubblegum.jpg",
+        "scss_name": "bubblegum"
+    },
+    {
+        "rice_name": "rosepine",
+        "wall_path": "rosepine_flower.jpg",
+        "scss_name": "rosepine"
+    },
+    {
+        "rice_name": "calm_pink",
+        "wall_path": "calm_pink.jpg",
+        "scss_name": "calm_pink"
+    },
+    {
+        "rice_name": "siroihana",
+        "wall_path": "hana.jpg",
+        "scss_name": "siroihana"
+    }
+]
