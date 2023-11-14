@@ -1,0 +1,218 @@
+(defwidget module_center_dashboard_rice_changer []
+  (box
+    :class "rice_changer_root_box"
+    :halign "center"
+    :valign "center"
+    :width {round(DP_WIDTH / BOX_SIZE_CENTER_DASHBOARD_P_H, 0)}
+    :height {round(DP_HEIGHT / BOX_SIZE_CENTER_DASHBOARD_P_V, 0)}
+
+    (overlay
+
+      ;; Background
+      (box
+        :halign "center"
+        :valign "center"
+        :width {round(DP_WIDTH / BOX_SIZE_CENTER_DASHBOARD_P_H, 0)}
+        :height {round(DP_HEIGHT / BOX_SIZE_CENTER_DASHBOARD_P_V, 0)}
+        :style
+        "
+        background-image: url('scripts/convert_images/images/wall_blur/${JSON_RICESET[INDEX_RICESET_CURR].wall_path}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 2rem;
+        opacity: 0.5;
+        "
+      )
+
+      ;; Foreground
+      (box
+        :orientation "v"
+        :halign "center"
+        :valign "center"
+        :space-evenly false
+ 
+        (box
+          :halign "center"
+          :valign "center"
+          :width {round(DP_WIDTH / 1.6, 0)}
+          :height {round(DP_HEIGHT / 3.6, 0)}
+          
+          (box
+            :halign "center"
+            :valign "end"
+            :space-evenly false
+            :spacing 25
+
+            (rice_changer_audio_visualizer :index 0 :flipped true)
+            (rice_changer_audio_visualizer :index 1 :flipped true)
+            (rice_changer_audio_visualizer :index 2 :flipped true)
+            (rice_changer_audio_visualizer :index 3 :flipped true)
+            (rice_changer_audio_visualizer :index 4 :flipped true)
+            (rice_changer_audio_visualizer :index 5 :flipped true)
+            (rice_changer_audio_visualizer :index 6 :flipped true)
+            (rice_changer_audio_visualizer :index 7 :flipped true)
+            (rice_changer_audio_visualizer :index 8 :flipped true)
+            (rice_changer_audio_visualizer :index 9 :flipped true)
+            (rice_changer_audio_visualizer :index 10 :flipped true)
+            (rice_changer_audio_visualizer :index 11 :flipped true)
+            (rice_changer_audio_visualizer :index 12 :flipped true)
+            (rice_changer_audio_visualizer :index 13 :flipped true)
+            (rice_changer_audio_visualizer :index 14 :flipped true)
+            (rice_changer_audio_visualizer :index 15 :flipped true)
+            (rice_changer_audio_visualizer :index 16 :flipped true)
+            (rice_changer_audio_visualizer :index 17 :flipped true)
+            (rice_changer_audio_visualizer :index 18 :flipped true)
+            (rice_changer_audio_visualizer :index 19 :flipped true)
+            (rice_changer_audio_visualizer :index 20 :flipped true)
+            (rice_changer_audio_visualizer :index 21 :flipped true)
+            (rice_changer_audio_visualizer :index 22 :flipped true)
+            (rice_changer_audio_visualizer :index 23 :flipped true)
+            (rice_changer_audio_visualizer :index 24 :flipped true)
+            (rice_changer_audio_visualizer :index 25 :flipped true)
+            (rice_changer_audio_visualizer :index 26 :flipped true)
+            (rice_changer_audio_visualizer :index 27 :flipped true)
+            (rice_changer_audio_visualizer :index 28 :flipped true)
+            (rice_changer_audio_visualizer :index 29 :flipped true)
+          )
+        )
+        
+        (box
+          :halign "center"
+          :valign "center"
+          :width {round(DP_WIDTH / 1.6, 0)}
+          :height {round(DP_HEIGHT / 3, 0)}
+          
+          (box
+            (box
+              :halign "center"
+              :valign "center"
+              :space-evenly false
+              :spacing 20
+
+              ;; Sauare image
+              (box
+                :width {round(DP_WIDTH / 6, 0)}
+                :height {round(DP_HEIGHT / 3.2, 0)}
+                    
+                (box
+                  :class "rice_changer_monstercat_cover"
+                  :halign "center"
+                  :valign "center"
+                  :width {round(DP_WIDTH / 7, 0)}
+                  :height {round(DP_WIDTH / 7, 0)}
+                  :style
+                  "
+                  background-image: url('scripts/convert_images/images/zip_imgs/${JSON_RICESET[INDEX_RICESET_CURR].wall_path}');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center center;
+                  "
+                )
+              )
+
+              (box
+                :class "rice_changer_monstercat_general_box"
+                :orientation "v"
+                :width {round(DP_WIDTH / 2.4, 0)}
+                :height {round(DP_HEIGHT / 3.2, 0)}
+
+                ;; Title
+                (box
+                  :class "rice_changer_monstercat_title"
+                  :halign "start"
+                  :valign "center"
+                  
+                  (label
+                    :class "title"
+                    :limit-width 12
+                    :text "${JSON_RICESET[INDEX_RICESET_CURR].rice_name}"
+                  )
+                )
+
+                ;; Buttons
+                (box
+                  :class "rice_changer_monstercat_btns_bg"
+                  :halign "start"
+                  :valign "start"
+                  :width {round(DP_WIDTH / 6, 0)}
+                  :height {round(DP_HEIGHT / 10, 0)}
+
+
+                  (box
+                    :halign "center"
+                    :valign "center"
+                    :space-evenly false
+                    :spacing 20
+
+                    (eventbox
+                      :class "rice_changer_monstercat_btn_prev"
+                      :width {round(DP_WIDTH / 30, 0)}
+                      :height {round(DP_WIDTH / 30, 0)}
+                      :onclick "scripts/rice_changer/manage_eww_index.sh --decr && scripts/rice_changer/manage_eww_colors.sh --update_all &"
+                      
+                      (label
+                        :class "icon"
+                        :text "󰒮"
+                      )
+                    )
+
+                    (eventbox
+                      :class "rice_changer_monstercat_btn_play"
+                      :width {round(DP_WIDTH / 30, 0)}
+                      :height {round(DP_WIDTH / 30, 0)}
+                      :onclick "scripts/rice_changer/rice_changer.py --sort_by ${JSON_RICESET[INDEX_RICESET_CURR].rice_name} && scripts/rice_changer/rice_changer.py --set ${JSON_RICESET[INDEX_RICESET_CURR].rice_name} &"
+                      
+                      (label
+                        :class "icon"
+                        :text "󰐊"
+                      )
+                    )
+
+                    (eventbox
+                      :class "rice_changer_monstercat_btn_next"
+                      :width {round(DP_WIDTH / 30, 0)}
+                      :height {round(DP_WIDTH / 30, 0)}
+                      :onclick "scripts/rice_changer/manage_eww_index.sh --incr && scripts/rice_changer/manage_eww_colors.sh --update_all &"
+                      
+                      (label
+                        :class "icon"
+                        :text "󰒭"
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)
+
+;; Submodules
+(defwidget rice_changer_audio_visualizer [index flipped]
+  (box
+    :class {flipped ?
+    "rice_changer_audio_bar_flipped"
+    :
+    "rice_changer_audio_bar"
+    }
+
+    (scale
+      :orientation "v"
+      :flipped "${flipped}"
+      :value {JSON_CAVA_OUTPUT[index]}
+      :min 0
+      :max 100
+      :active false
+    )
+  )
+)
+
+
+
+
+
+
