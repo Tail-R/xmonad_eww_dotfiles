@@ -1,0 +1,17 @@
+[general]
+
+framerate = 60
+bars = 30
+
+[input]
+method = pulse
+
+[output]
+
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+bit_format = 8bit
+ascii_max_range = 100
+
+
