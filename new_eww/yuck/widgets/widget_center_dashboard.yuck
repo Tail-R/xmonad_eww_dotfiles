@@ -1,0 +1,7 @@
+(defwidget widget_center_dashboard []
+  (box
+    :class "center_dashboard_root_box"
+
+    (module_center_dashboard_rice_changer)
+  )
+)
