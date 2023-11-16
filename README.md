@@ -6,8 +6,6 @@ this is my personal linux setup. these are probably has many bugs and glitches. 
 
 ![screenShot20231111_213717](https://github.com/Tail-R/xmonad_eww_dotfiles/assets/132870183/2ca8b874-270a-4d54-987b-b1e774e2acab)
 
-![image](https://github.com/Tail-R/xmonad_eww_dotfiles/assets/132870183/11678ded-c716-489e-9ef6-1d92d18cf91e)
-
 [old version]
 ![image](https://github.com/Tail-R/xmonad_eww_dotfiles/assets/132870183/ce5286a3-2f4f-40b4-8d9b-c4d8c13d342c)
 
