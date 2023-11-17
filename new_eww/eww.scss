@@ -1,0 +1,19 @@
+* {
+    all: unset;
+    font-family: "Source Code";
+ }
+
+/***** Color scheme *************************************************/
+// @import 'scss/color.scss'
+@import 'scss/colors/calm_pink.scss'
+
+/***** Style ********************************************************/
+@import 'scss/normal_css/_style_top_bar.scss'
+@import 'scss/normal_css/_style_bottom_bar.scss'
+@import 'scss/normal_css/_style_left_widget.scss'
+@import 'scss/normal_css/_style_right_mplayer.scss'
+@import 'scss/normal_css/_style_right_notifpop.scss'
+@import 'scss/normal_css/_style_center_dmenu.scss'
+
+
+
