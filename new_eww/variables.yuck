@@ -1,0 +1,270 @@
+;; ***** Variables ***************************************************
+
+;; ***** General *****************************************************
+;; Workspaces
+; (deflisten WORKSPACES :initial "[]"
+;   `scripts/./workspaces.py`)
+
+(deflisten WS :initial "(box (label :text 'init'))"
+  `scripts/./workspaces.sh`)
+
+;; Activewindow name
+(defpoll ACTIVE_WINNAME :interval "1s"
+  "scripts/ws_old.sh --active_winname")
+
+;; Time and Date
+; (deflisten TIME :initial "init" `scripts/./time.py`)
+(defpoll TIME_HOUR      :interval "30s" "date +'%H'")
+(defpoll TIME_MIN       :interval "30s" "date +'%M'")
+(defpoll TIME_MER       :interval "1m" "date +'%p'")
+(defpoll DATE_DOW       :interval "1m" "date +'%a'")
+(defpoll DATE_DOW_FULL  :interval "1m" "date +'%A'")
+(defpoll DATE_MON       :interval "1m" "date +'%b'")
+(defpoll DATE_MON_FULL  :interval "1m" "date +'%B'")
+(defpoll DATE_DAY       :interval "1m" "date +'%d'")
+(defpoll UPTIME         :interval "1m"
+  "uptime -p | awk '{print $1 \" \" $2 \" \" $3}' | sed -e s/,//g")
+
+;; Weather
+(defpoll WEATHER_CON :interval "1h"
+  "scripts/weather.sh --conditions")
+
+(defpoll WEATHER_TEMP :interval "1h"
+  "scripts/weather.sh --temperature")
+
+(defpoll WEATHER_LOCALE :interval "1h"
+  "scripts/weather.sh --locale")
+
+;; Battery
+(defpoll BATTERY_ICONS :interval "1m"
+  "scripts/battery.sh --icons")
+
+(defpoll BATTERY_LEVEL :interval "2s"
+  "scripts/battery.sh --level")
+
+;; Brightmess
+(defpoll BRIGHTNESS :interval "2s"
+  "scripts/display.sh --get_brightness")
+
+;; Volume
+(defpoll VOLUME_LEVEL :interval "2s"
+  "scripts/audio.sh --get_volume")
+
+(defpoll MICVOL_LEVEL :interval "2s"
+  "scripts/audio.sh --get_micvol")
+
+;; LAN
+(defpoll LAN_CON_STATUS :interval "2s"
+  "scripts/network.sh --con_status")
+
+(defpoll LAN_SSID :interval "2s"
+  "scripts/network.sh --ssid")
+
+;; Bluetooth
+(defpoll BT_CON_STATUS :interval "2s"
+  "scripts/bluetooth.sh --con_status")
+
+(defpoll BT_DEVNAME :interval "2s"
+  "scripts/bluetooth.sh --devname")
+
+;; Music status from mpris
+(defpoll MPRIS_STATUS :interval "2s"
+  "scripts/mpris.sh --status")
+
+(defpoll MPRIS_TITLE :interval "2s"
+  "scripts/mpris.sh --title")
+
+(defpoll MPRIS_ARTIST :interval "2s"
+  "scripts/mpris.sh --artist")
+
+(defvar MPRIS_COVER_DEFAULT "images/music.png")
+
+(deflisten MPRIS_COVER :initial "" `scripts/./mpris.sh --cover`)
+
+(deflisten MPRIS_COVER_BLUR :initial ""
+  `scripts/convert_images/./mpris_blur.sh`)
+
+(defpoll MPRIS_PLAYER_NAME :interval "2s"
+  "scripts/mpris.sh --player_name")
+
+(defpoll MPRIS_PLAYER_ICON :interval "2s"
+  "scripts/mpris.sh --player_icon")
+
+(defvar CURRENTWALL "images/currentwall/currentwall")
+(defvar CURRENTWALL_BLUR "scripts/convert_images/images/currentwall/res.png")
+
+; (defpoll CURRENTWALL :interval "2s"
+;   "readlink images/currentwall/currentwall")
+
+(defvar INPUT_DESKTOP_APPS "")
+
+;; System fet
+(defpoll HOSTNAME :interval "1h" "scripts/fet.sh --hostname")
+(defpoll DISTRO :interval "1h" "scripts/fet.sh --distro")
+(defpoll MODEL :interval "1h" "scripts/fet.sh --model")
+(defpoll WMNAME :interval "1h" "scripts/fet.sh --wmname")
+
+;; ***** Inline css **************************************************
+(deflisten MPRIS_COVER_COLOR :initial "ffffff"
+  `scripts/convert_images/./mpris_mean_col.sh`)
+
+(deflisten COLOR_RICESET_CURR_FG :initial "ffffff"
+  `scripts/rice_changer/manage_eww_colors.sh --get_fg`)
+
+(deflisten COLOR_RICESET_CURR_PR :initial "ffffff"
+  `scripts/rice_changer/manage_eww_colors.sh --get_primary`)
+
+;; ***** Json ********************************************************
+;; Json array of the LAN AP's SSID
+(defvar JSON_SSID `["there are no AP..."]`)
+
+;; Json array of the know Bluetooth devices name
+(defvar JSON_BT_DEVNAME `["there are no BT dev..."]`)
+
+;; Json array of the desktop applications
+(defvar JSON_DESKTOP_APPS `[]`)
+
+;; Json array of the currient apps
+(deflisten JSON_DOCK_CLIENT_LIST :initial "[]"
+  `scripts/client_list/./manage_eww_json.sh`)
+
+;; Json array of the todo list
+(defvar JSON_TODO `["there are no Todo..."]`)
+
+;; Json array of the cava output
+(deflisten JSON_CAVA_OUTPUT :initial "[]"
+  `scripts/cava/./cava_pipe.sh`)
+
+;; Json array of the available rices
+(defpoll JSON_RICESET :interval "10s"
+  `cat scripts/rice_changer/json/riceset.json`)
+
+(defvar INDEX_RICESET_CURR 0)
+(defpoll INDEX_RICESET_NEXT :interval "69h"
+  "scripts/rice_changer/./manage_eww_index.sh --get_next")
+
+(defpoll INDEX_RICESET_PREV :interval "69h"
+  "scripts/rice_changer/./manage_eww_index.sh --get_prev")
+
+;; Json array of the quotes
+(defvar JSON_QUOTE
+  `
+  [
+    {"ricer": "ElKowar",          "quote": [ "Tell the computer", "what you want,", "not what to do" ]},
+    {"ricer": "end_4",            "quote": [ "IT'S PERFECTLY LEAVE", "1 PIXEL", "ON THE RIGHT EDGE", "AWAAHAHAHAHAH" ]},
+    {"ricer": "Linus Torvalds",   "quote": [ "So NVIDIA...  F*ck you!" ]},
+    {"ricer": "elenapan",         "quote": [ "There is no place like ~/" ]}
+  ]
+  `
+)
+
+(defvar INDEX_QUOTE 0)
+
+;; ***** Box size ****************************************************
+;; Top bar
+(defvar BOX_SIZE_TOP_BAR_P_H "3.6")
+(defvar BOX_SIZE_TOP_BAR_P_V "18")
+(defvar BOX_SIZE_TOP_BAR_C_H "3.8")
+(defvar BOX_SIZE_TOP_BAR_C_V "26")
+
+;; Bottom bar
+(defvar BOX_SIZE_BOTTOM_BAR_P_H "2.8")
+(defvar BOX_SIZE_BOTTOM_BAR_P_V "14")
+(defvar BOX_SIZE_BOTTOM_BAR_C_H "3.6")
+(defvar BOX_SIZE_BOTTOM_BAR_C_V "20")
+
+;; Left widget
+(defvar BOX_SIZE_LEFT_WIDGET_ROOT_BOX_P_H "4")
+(defvar BOX_SIZE_LEFT_WIDGET_ROOT_BOX_P_V "1.08")
+(defvar BOX_SIZE_LEFT_WIDGET_ROOT_BOX_C_H "4.5")
+(defvar BOX_SIZE_LEFT_WIDGET_ROOT_BOX_C_V "1.2")
+(defvar BOX_SIZE_LEFT_WIDGET_P_H "5")
+(defvar BOX_SIZE_LEFT_WIDGET_P_V "5")
+(defvar BOX_SIZE_LEFT_WIDGET_C_H "5.5")
+(defvar BOX_SIZE_LEFT_WIDGET_C_V "5.5")
+
+;; Left widget v2
+(defvar BOX_SIZE_LEFT_WIDGET_V2_ROOT_BOX_P_H "5")
+(defvar BOX_SIZE_LEFT_WIDGET_V2_ROOT_BOX_P_V "1.2")
+(defvar BOX_SIZE_LEFT_WIDGET_V2_ROOT_BOX_C_H "5.25")
+(defvar BOX_SIZE_LEFT_WIDGET_V2_ROOT_BOX_C_V "1.25")
+(defvar BOX_SIZE_LEFT_WIDGET_V2_P_H "5.5")
+(defvar BOX_SIZE_LEFT_WIDGET_V2_P_V "3.2")
+(defvar BOX_SIZE_LEFT_WIDGET_V2_C_H "5.5")
+(defvar BOX_SIZE_LEFT_WIDGET_V2_C_V "5.5")
+
+;; Right mplayer
+(defvar BOX_SIZE_RIGHT_MPLAYER_P_H "5")
+(defvar BOX_SIZE_RIGHT_MPLAYER_P_V "1.5")
+(defvar BOX_SIZE_RIGHT_MPLAYER_C_H "5.5")
+(defvar BOX_SIZE_RIGHT_MPLAYER_C_V "1.55")
+
+;; Right notifpop
+(defvar BOX_SIZE_RIGHT_NOTIFPOP_ROOT_BOX_P_H "4.2")
+(defvar BOX_SIZE_RIGHT_NOTIFPOP_ROOT_BOX_P_V "1.6")
+(defvar BOX_SIZE_RIGHT_NOTIFPOP_P_H "5")
+(defvar BOX_SIZE_RIGHT_NOTIFPOP_P_V "1.8")
+(defvar BOX_SIZE_RIGHT_NOTIFPOP_C_H "5.5")
+(defvar BOX_SIZE_RIGHT_NOTIFPOP_C_V "2")
+
+;; Center dmenu
+(defvar BOX_SIZE_CENTER_DMENU_P_H "4")
+(defvar BOX_SIZE_CENTER_DMENU_P_V "2.6")
+(defvar BOX_SIZE_CENTER_DMENU_C_H "5.6")
+(defvar BOX_SIZE_CENTER_DMENU_C_V "4.6")
+
+;; Center dashboard
+(defvar BOX_SIZE_CENTER_DASHBOARD_P_H "1.4")
+(defvar BOX_SIZE_CENTER_DASHBOARD_P_V "1.4")
+(defvar BOX_SIZE_CENTER_DASHBOARD_C_H "1.5")
+(defvar BOX_SIZE_CENTER_DASHBOARD_C_V "1.5")
+
+
+;; ***** Reveal ******************************************************
+;; Top bar
+(defvar SHOW_BAR_CENTER         false)
+(defvar SHOW_BAR_CENTER_REV_SW  false)
+(defvar SHOW_BAR_CENTER_PAGE0   true)
+(defvar SHOW_BAR_CENTER_PAGE1   false)
+(defvar SHOW_BAR_CENTER_PAGE2   false)
+
+(defvar SHOW_BAR_CENTER_CAVA true)
+
+;; Bottom bar
+
+;; Left widget
+(defvar SHOW_LEFT_WIDGET  false)
+(defvar SHOW_CALENDAR     false)
+(defvar HOVER_BLUETOOTH   false)
+(defvar SHOW_BLUETOOTH    false)
+(defvar HOVER_LAN         false)
+(defvar SHOW_LAN          false)
+
+;; Left widget v2
+(defvar SHOW_LEFT_WIDGET_V2             false)
+(defvar HOVER_LEFT_WIDGET_V2_BLUETOOTH  false)
+(defvar SHOW_LEFT_WIDGET_V2_BLUETOOTH   false)
+(defvar HOVER_LEFT_WIDGET_V2_LAN        false)
+(defvar SHOW_LEFT_WIDGET_V2_LAN         false)
+
+;; Right mplayer
+; (defvar SHOW_RIGHT_MPLAYER false)
+(defvar SHOW_UWUSTAGRAM_CAVA true)
+
+;; Right notifpop
+(defvar SHOW_RIGHT_NOTIFPOP false)
+
+;; Center dmenu
+; (defvar SHOW_CENTER_DMENU false)
+(defvar SHOW_CENTER_DMENU_PAGE0   true)
+(defvar SHOW_CENTER_DMENU_PAGE1   false)
+
+;; Center dashboard
+(defvar SHOW_CENTER_DASHBOARD false)
+
+
+(defvar GAMEPAD_SHOW_WALL false)
+(defvar SHOW_RIGHT_MPLAYER true)
+
+
+
