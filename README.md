@@ -1,6 +1,6 @@
 # XMonad + Eww 🌸
 
-you can steal everything uwu*
+you are allowed to steal everything uwu*
 
 [new version]
 https://www.reddit.com/r/unixporn/s/Aney9YPD3a
