@@ -1,6 +1,6 @@
 # XMonad + EWW 🌸
 
-You are allowed to steal everything uwu*
+You are allowed to steal everything uwu
 
 ## New version
 
